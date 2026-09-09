@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 240 7% 3%;
+        --foreground: 40 20% 93%;
+        --card: 240 6% 5%;
+        --card-foreground: 40 20% 93%;
+        --popover: 240 6% 5%;
+        --popover-foreground: 40 20% 93%;
+        --primary: 39 45% 55%;
+        --primary-foreground: 240 7% 3%;
+        --secondary: 240 4% 10%;
+        --secondary-foreground: 40 20% 93%;
+        --muted: 240 4% 12%;
+        --muted-foreground: 240 3% 60%;
+        --accent: 160 74% 42%;
+        --accent-foreground: 40 20% 93%;
+        --destructive: 0 62.8% 45%;
+        --destructive-foreground: 40 20% 93%;
+        --border: 240 4% 14%;
+        --input: 240 4% 16%;
+        --ring: 39 45% 55%;
+        --radius: 0.125rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    html {
+        background: #070708;
+        scroll-behavior: auto;
+    }
+    body {
+        @apply bg-ink font-body text-bone;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+    }
+    ::selection {
+        background: #c2a059;
+        color: #070708;
+    }
+    :focus-visible {
+        outline: 1px solid #c2a059;
+        outline-offset: 3px;
+    }
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #070708;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgba(194, 160, 89, 0.35);
+    }
+}
+
+@keyframes marquee {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-track {
+    animation: marquee 46s linear infinite;
+}
+
+@keyframes rise-dot {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1200%);
+        opacity: 0;
+    }
+}
+
+.rise-dot {
+    animation: rise-dot 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track,
+    .rise-dot {
+        animation: none;
+    }
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}
