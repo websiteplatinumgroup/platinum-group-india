@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { TierBuild } from "./TierMark";
 
-const WORD = "PLATINUM GROUP";
-
 export default function Ascent() {
   const reduced = useReducedMotion();
   const [show, setShow] = useState(() => {
@@ -31,7 +29,7 @@ export default function Ascent() {
     }
     document.body.style.overflow = "hidden";
     window.__lenis?.stop();
-    const t = setTimeout(dismiss, 3700);
+    const t = setTimeout(dismiss, 4500);
     return () => clearTimeout(t);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [show, reduced]);
@@ -57,34 +55,11 @@ export default function Ascent() {
             transition={{ duration: 1.5, ease: "easeOut" }}
           />
           <motion.div
-            className="absolute bottom-[18%] left-1/2 h-px w-[42vw] -translate-x-1/2 bg-eglow/60"
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ delay: 0.5, duration: 0.9, ease: "easeOut" }}
-          />
-          <motion.div
-            exit={{ scale: 2.2, opacity: 0, y: -50 }}
+            exit={{ scale: 2.1, opacity: 0, y: -50 }}
             transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] }}
             className="relative flex flex-col items-center"
           >
-            <TierBuild className="h-40 w-52 md:h-52 md:w-64" />
-            <div className="mt-8 flex overflow-hidden">
-              {WORD.split("").map((ch, i) => (
-                <motion.span
-                  key={i}
-                  className="font-display text-lg tracking-[0.45em] text-bone md:text-2xl"
-                  initial={{ y: "120%", opacity: 0 }}
-                  animate={{ y: "0%", opacity: 1 }}
-                  transition={{
-                    delay: 2.25 + i * 0.04,
-                    duration: 0.6,
-                    ease: [0.22, 1, 0.36, 1],
-                  }}
-                >
-                  {ch === " " ? "\u00A0" : ch}
-                </motion.span>
-              ))}
-            </div>
+            <TierBuild className="w-72 md:w-96" />
           </motion.div>
           <motion.button
             data-testid="ascent-skip-button"
