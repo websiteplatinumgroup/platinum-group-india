@@ -23,7 +23,7 @@ app = FastAPI()
 api_router = APIRouter(prefix="/api")
 
 VALID_PROJECTS = {"opulence", "greens", "upcoming", "other"}
-VALID_INTENTS = {"site-visit", "brochure", "price", "sales", "enquiry"}
+VALID_INTENTS = {"site-visit", "brochure", "price", "sales", "enquiry", "floor-plan"}
 
 
 class LeadCreate(BaseModel):

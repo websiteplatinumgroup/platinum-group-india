@@ -7,6 +7,7 @@ import Nav from "@/components/Nav";
 import { MobileCTA, WhatsAppFloat } from "@/components/Conversion";
 import Home from "@/pages/Home";
 import Enquire from "@/pages/Enquire";
+import Opulence from "@/pages/Opulence";
 
 const ScrollManager = () => {
   const { pathname } = useLocation();
@@ -43,6 +44,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/platinum-greens-opulence" element={<Opulence />} />
         <Route path="/enquire" element={<Enquire />} />
         <Route path="*" element={<Home />} />
       </Routes>

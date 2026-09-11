@@ -13,6 +13,7 @@ const INTENTS = [
   { id: "site-visit", label: "Book a Site Visit" },
   { id: "brochure", label: "Receive Brochure" },
   { id: "price", label: "Get Price Details" },
+  { id: "floor-plan", label: "Request Floor Plans" },
   { id: "sales", label: "Speak to Sales" },
 ];
 
@@ -20,6 +21,7 @@ const INTENT_EVENTS = {
   "site-visit": "book_site_visit",
   brochure: "brochure_request",
   price: "price_request",
+  "floor-plan": "floorplan_request",
   sales: "enquiry",
 };
 

@@ -27,4 +27,19 @@ export const ASSETS = {
     need: "opulence-living-wide.jpg",
     alt: "Refined residence interior (temporary placeholder)",
   },
+  arrival: {
+    src: u("photo-1600596542815-ffad4c1539a9", 2200),
+    need: "opulence-hero-aerial-dusk.jpg",
+    alt: "Luxury residence exterior at dusk (temporary placeholder)",
+  },
+  scaleImg: {
+    src: u("photo-1545324418-cc1a3fa10c00"),
+    need: "opulence-scale-aerial.jpg",
+    alt: "White residential tower facade (temporary placeholder)",
+  },
+  residences: {
+    src: u("photo-1600585154340-be6161a56a0c"),
+    need: "opulence-residence-living.jpg",
+    alt: "Spacious modern residence living space (temporary placeholder)",
+  },
 };

@@ -6,6 +6,7 @@ import NineLevels from "../sections/NineLevels";
 import ProjectsPortal from "../sections/ProjectsPortal";
 import Marquee from "../sections/Marquee";
 import OpulenceFeature from "../sections/OpulenceFeature";
+import JaipurRising from "../sections/JaipurRising";
 import Finale from "../sections/Finale";
 import { scrollToId, track } from "../lib/config";
 
@@ -31,6 +32,7 @@ export default function Home() {
       <ProjectsPortal />
       <Marquee />
       <OpulenceFeature />
+      <JaipurRising />
       <Finale />
     </main>
   );

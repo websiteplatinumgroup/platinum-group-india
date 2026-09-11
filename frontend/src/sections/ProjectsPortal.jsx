@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import { ASSETS } from "../lib/assets";
 import { TempImage } from "../components/TempImage";
 import { FadeUp, Mask } from "../components/Rise";
-import { scrollToId, track } from "../lib/config";
+import { scrollToId as _scrollToId, track } from "../lib/config";
 
 const PANELS = [
   {
@@ -15,10 +15,7 @@ const PANELS = [
     cta: "EXPLORE THE FLAGSHIP",
     cursor: "VIEW",
     testid: "portal-panel-current",
-    action: () => {
-      track("cta_click", { placement: "portal", target: "opulence" });
-      scrollToId("opulence");
-    },
+    action: "opulence",
   },
   {
     n: "02",
@@ -47,7 +44,10 @@ export default function ProjectsPortal() {
   const navigate = useNavigate();
 
   const go = (p) => {
-    if (p.action === "upcoming") {
+    if (p.action === "opulence") {
+      track("cta_click", { placement: "portal", target: "opulence" });
+      navigate("/platinum-greens-opulence");
+    } else if (p.action === "upcoming") {
       track("cta_click", { placement: "portal", target: "upcoming" });
       navigate("/enquire?project=upcoming&intent=sales");
     } else if (p.action) p.action();
