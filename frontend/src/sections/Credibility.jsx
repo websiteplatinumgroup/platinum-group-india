@@ -4,29 +4,33 @@ import { FadeUp } from "../components/Rise";
 
 const STATS = [
   { value: 2006, suffix: "", label: "ESTABLISHED IN JAIPUR", plain: true },
-  { value: 70, suffix: "%", label: "OPEN SPACES AT OPULENCE" },
-  { value: 50, suffix: "+", label: "WORLD-CLASS AMENITIES" },
-  { value: 90, suffix: "%", label: "REFERRAL BUSINESS" },
+  { value: 1700000, suffix: "+", label: "SQ. FT. COMMERCIAL & RESIDENTIAL UNITS DELIVERED", format: true, long: true },
+  { value: 700000, suffix: "+", label: "SQ. FT. UNITS UNDER CONSTRUCTION", format: true, long: true },
+  { text: "CREDAI", label: "MEMBER — RAJASTHAN", plain: true },
 ];
 
-const Counter = ({ value, suffix, plain }) => {
+const Counter = ({ value, suffix, plain, format, long, text }) => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-10% 0px" });
-  const [display, setDisplay] = useState(plain ? value : 0);
+  const [display, setDisplay] = useState(plain || text ? value : 0);
 
   useEffect(() => {
-    if (!inView || plain) return;
+    if (!inView || plain || text) return;
     const c = animate(0, value, {
       duration: 1.8,
       ease: [0.22, 1, 0.36, 1],
-      onUpdate: (v) => setDisplay(Math.round(v)),
+      onUpdate: (v) =>
+        setDisplay(format ? Math.round(v).toLocaleString("en-IN") : Math.round(v)),
     });
     return () => c.stop();
-  }, [inView, value, plain]);
+  }, [inView, value, plain, text, format]);
 
   return (
-    <span ref={ref} className="font-display text-4xl text-bone md:text-5xl">
-      {display}
+    <span
+      ref={ref}
+      className={`font-display text-bone ${long ? "text-2xl md:text-4xl" : "text-4xl md:text-5xl"}`}
+    >
+      {text || (format && plain ? value.toLocaleString("en-IN") : display)}
       <span className="text-gold">{suffix}</span>
     </span>
   );
@@ -46,7 +50,7 @@ export default function Credibility() {
             delay={i * 0.08}
             className={`px-6 py-10 md:py-14 ${i > 0 ? "border-l border-white/5" : ""} ${i === 2 ? "max-md:border-l-0 max-md:border-t max-md:border-white/5" : ""} ${i === 3 ? "max-md:border-t max-md:border-white/5" : ""}`}
           >
-            <Counter value={s.value} suffix={s.suffix} plain={s.plain} />
+            <Counter value={s.value} suffix={s.suffix} plain={s.plain} format={s.format} long={s.long} text={s.text} />
             <p className="mt-3 font-mono text-[9px] tracking-[0.3em] text-platinum/50 md:text-[10px]">
               {s.label}
             </p>
