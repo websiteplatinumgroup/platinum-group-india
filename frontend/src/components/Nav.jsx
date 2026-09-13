@@ -69,25 +69,28 @@ export default function Nav() {
           </Link>
           <div className="flex items-center gap-4 md:gap-8">
             <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
-              {ITEMS.map((item) => (
-                <button
-                  key={item.n}
-                  data-testid={`nav-link-${item.label.toLowerCase()}`}
-                  onClick={() => go(item, "header")}
-                  className="font-mono text-[11px] tracking-[0.3em] text-platinum/70 transition-colors duration-300 hover:text-gold"
-                >
-                  {item.label}
-                </button>
-              ))}
+              {ITEMS.map((item) =>
+                item.label === "ENQUIRE" ? (
+                  <button
+                    key={item.n}
+                    data-testid="nav-link-enquire"
+                    onClick={() => go(item, "header")}
+                    className="border border-gold/60 px-5 py-2.5 font-mono text-[11px] tracking-[0.25em] text-gold transition-colors duration-300 hover:bg-gold hover:text-ink"
+                  >
+                    ENQUIRE
+                  </button>
+                ) : (
+                  <button
+                    key={item.n}
+                    data-testid={`nav-link-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
+                    onClick={() => go(item, "header")}
+                    className="font-mono text-[11px] tracking-[0.3em] text-platinum/70 transition-colors duration-300 hover:text-gold"
+                  >
+                    {item.label}
+                  </button>
+                )
+              )}
             </nav>
-            <Link
-              to="/enquire?intent=site-visit"
-              data-testid="nav-book-visit-button"
-              onClick={() => track("book_site_visit", { placement: "nav" })}
-              className="hidden items-center gap-2 border border-gold/60 px-5 py-2.5 font-mono text-[11px] tracking-[0.25em] text-gold transition-colors duration-300 hover:bg-gold hover:text-ink md:flex"
-            >
-              BOOK A VISIT <ArrowUpRight size={13} />
-            </Link>
             <button
               data-testid="nav-menu-button"
               onClick={() => setOpen(true)}

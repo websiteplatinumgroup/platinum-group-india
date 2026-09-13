@@ -10,7 +10,6 @@ const CHIPS = [
   { t: "3 & 4 BHK ULTRA-PREMIUM RESIDENCES", cls: "text-bone/90" },
   { t: "₹1.41 CR ONWARDS", cls: "text-gold" },
   { t: "FIT-OUT STARTED", cls: "text-eglow", dot: true },
-  { t: "70% OPEN SPACES", cls: "text-bone/90" },
 ];
 
 export default function OpulenceFeature() {
@@ -52,12 +51,7 @@ export default function OpulenceFeature() {
       </span>
 
       <div className="relative z-10 px-6 py-32 md:px-12 md:py-48">
-        <Mask>
-          <span className="font-mono text-[10px] tracking-[0.4em] text-gold">
-            FLAGSHIP — CURRENT
-          </span>
-        </Mask>
-        <h2 className="mt-6">
+        <h2>
           <Mask delay={0.08}>
             <span className="block font-display text-[12vw] leading-[0.95] text-bone md:text-[8.5vw]">
               PLATINUM

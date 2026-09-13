@@ -86,18 +86,6 @@ export default function Hero() {
           </span>
         </Mask>
       </div>
-
-      <div className="absolute bottom-8 right-8 z-10 hidden flex-col items-center gap-4 md:flex">
-        <span
-          className="font-mono text-[9px] tracking-[0.4em] text-platinum/50"
-          style={{ writingMode: "vertical-rl" }}
-        >
-          ASCEND
-        </span>
-        <span className="relative block h-16 w-px overflow-hidden bg-white/15">
-          <span className="rise-dot absolute bottom-0 left-0 h-4 w-px bg-gold" />
-        </span>
-      </div>
     </section>
   );
 }
