@@ -81,7 +81,7 @@ export default function Hero() {
               onClick={() => track("book_site_visit", { placement: "hero" })}
               className="flex items-center gap-2 bg-gold px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-ink transition-colors duration-300 hover:bg-bone"
             >
-              BOOK A VISIT <ArrowUpRight size={13} />
+              ENQUIRE <ArrowUpRight size={13} />
             </Link>
           </span>
         </Mask>

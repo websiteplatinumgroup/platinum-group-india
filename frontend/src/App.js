@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Lenis from "lenis";
 import Ascent from "@/components/Ascent";
-import Cursor from "@/components/Cursor";
 import Nav from "@/components/Nav";
 import { MobileCTA, WhatsAppFloat } from "@/components/Conversion";
 import Home from "@/pages/Home";
@@ -39,7 +38,6 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollManager />
-      <Cursor />
       <Ascent />
       <Nav />
       <Routes>

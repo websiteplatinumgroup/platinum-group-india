@@ -1,18 +1,13 @@
 export const TempImage = ({
   asset,
   className = "",
-  imgClass = "",
-  eager = false,
   label = true,
 }) => (
-  <div className={`relative overflow-hidden ${className}`}>
-    <img
-      src={asset.src}
-      alt={asset.alt}
-      loading={eager ? "eager" : "lazy"}
-      decoding="async"
-      className={`h-full w-full object-cover ${imgClass}`}
-    />
+  <div
+    className={`relative overflow-hidden border border-white/5 bg-ink2 ${className}`}
+    role="img"
+    aria-label={asset.alt}
+  >
     {label && (
       <span
         data-testid="temp-asset-tag"

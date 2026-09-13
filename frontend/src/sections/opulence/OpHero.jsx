@@ -89,7 +89,7 @@ export default function OpHero() {
               onClick={() => track("book_site_visit", { placement: "opulence_hero" })}
               className="flex items-center gap-2 bg-gold px-8 py-4 font-mono text-[11px] tracking-[0.3em] text-ink transition-colors duration-300 hover:bg-bone"
             >
-              BOOK A SITE VISIT <ArrowUpRight size={14} />
+              ENQUIRE <ArrowUpRight size={14} />
             </Link>
             <a
               href="tel:+919660223377"

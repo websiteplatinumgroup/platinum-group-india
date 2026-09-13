@@ -33,7 +33,7 @@ export const MobileCTA = () => (
       onClick={() => track("book_site_visit", { placement: "mobile_bar" })}
       className="flex items-center justify-center gap-2 py-4 font-mono text-[11px] tracking-[0.2em] text-gold"
     >
-      BOOK VISIT <ArrowUpRight size={13} />
+      ENQUIRE <ArrowUpRight size={13} />
     </Link>
   </nav>
 );
