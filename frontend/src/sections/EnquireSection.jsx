@@ -56,7 +56,7 @@ export default function EnquireSection() {
         <FadeUp delay={0.2}>
           <div className="border border-white/10 bg-ink2/60 p-7 md:p-10">
             <p className="mb-8 font-mono text-[10px] tracking-[0.35em] text-platinum/50">
-              REQUEST DETAILS — RESPONSE WITHIN ONE WORKING HOUR
+              REQUEST DETAILS
             </p>
             <LeadForm defaultProject="opulence" defaultIntent="sales" source="home" />
           </div>

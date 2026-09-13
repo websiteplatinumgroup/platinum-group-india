@@ -6,7 +6,6 @@ const INTERESTS = [
   { id: "opulence", label: "Platinum Greens Opulence" },
   { id: "greens", label: "Platinum Greens" },
   { id: "upcoming", label: "Upcoming Projects" },
-  { id: "other", label: "Other" },
 ];
 
 const INTENTS = [
