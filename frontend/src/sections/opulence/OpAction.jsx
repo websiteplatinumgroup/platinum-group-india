@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import LeadForm from "../../components/LeadForm";
 import { FadeUp, Mask } from "../../components/Rise";
-import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, SITE_ADDRESS, OFFICE_ADDRESS, track } from "../../lib/config";
+import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, SITE_ADDRESS, SITE_ADDRESS_DURGAPURA, OFFICE_ADDRESS, track } from "../../lib/config";
 
 const SPECS = [
   { k: "STRUCTURE", v: "RCC frame · seismic-zone resistant · Vastu compliant" },
@@ -129,6 +129,9 @@ export default function OpAction() {
                 data-testid="op-action-office-address"
                 className="mt-5 max-w-sm font-mono text-[10px] leading-relaxed tracking-[0.15em] text-platinum/40"
               >
+                SITE — {SITE_ADDRESS_DURGAPURA}
+              </span>
+              <span className="max-w-sm font-mono text-[10px] leading-relaxed tracking-[0.15em] text-platinum/40">
                 CORPORATE OFFICE — {OFFICE_ADDRESS}
               </span>
             </FadeUp>

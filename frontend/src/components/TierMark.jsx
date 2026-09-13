@@ -96,6 +96,44 @@ export const TierMark = ({ className = "h-8 w-10" }) => (
   </svg>
 );
 
+// Scroll-linked build: chevron i draws in as the visitor reaches
+// philosophy i+1, foundation line always present.
+export const TierProgress = ({ active = 0, className = "" }) => (
+  <svg
+    viewBox="92 230 1070 690"
+    className={className}
+    data-testid="tier-progress"
+    role="img"
+    aria-label="Platinum Group emblem building upward"
+  >
+    <defs>{GOLD_GRADIENT}</defs>
+    <path
+      d={FOUNDATION.d}
+      fill="none"
+      stroke={FOUNDATION.stroke}
+      strokeWidth={FOUNDATION.strokeWidth}
+      strokeLinecap="round"
+    />
+    {TIERS.map((t, i) => (
+      <motion.path
+        key={t.apex}
+        d={tierPath(t.apex)}
+        fill="none"
+        stroke="url(#champagneGold)"
+        strokeWidth={t.w}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        initial={false}
+        animate={{
+          pathLength: i <= active ? 1 : 0,
+          opacity: i <= active ? 1 : 0,
+        }}
+        transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+      />
+    ))}
+  </svg>
+);
+
 // The Platinum Ascent: foundation line first, nine tiers build upward,
 // a gold highlight travels up the tallest tier, then the wordmark rises.
 export const TierBuild = ({ className = "" }) => (

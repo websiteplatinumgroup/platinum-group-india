@@ -5,6 +5,7 @@ import {
   useMotionValueEvent,
   useScroll,
 } from "framer-motion";
+import { TierProgress } from "../components/TierMark";
 
 const LEVELS = [
   { n: "01", title: "VISION", line: "Landmarks, not buildings." },
@@ -39,27 +40,9 @@ export default function NineLevels() {
       aria-label="The Nine Philosophies of Platinum Group"
     >
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <div className="mx-auto grid w-full max-w-7xl grid-cols-[auto_1fr] items-center gap-8 px-6 md:grid-cols-[220px_1fr] md:gap-24 md:px-12">
-          <div
-            className="flex h-[300px] w-[110px] flex-col-reverse justify-center gap-2 md:h-[380px] md:w-[200px]"
-            aria-hidden="true"
-          >
-            {LEVELS.map((l, i) => (
-              <div
-                key={l.n}
-                className="h-[8px] transition-all duration-500 md:h-[10px]"
-                style={{
-                  width: `${100 - i * 9.5}%`,
-                  background:
-                    i === active
-                      ? "#C2A059"
-                      : i < active
-                        ? "#D8D8DC"
-                        : "rgba(216,216,220,0.25)",
-                  opacity: i <= active ? 1 : 0.2,
-                }}
-              />
-            ))}
+        <div className="mx-auto grid w-full max-w-7xl grid-cols-[auto_1fr] items-center gap-8 px-6 md:grid-cols-[340px_1fr] md:gap-20 md:px-12">
+          <div className="flex items-center justify-center" aria-hidden="true">
+            <TierProgress active={active} className="w-[170px] -translate-y-4 md:w-[380px] md:-translate-y-8" />
           </div>
           <div className="relative min-h-[280px]">
             <p

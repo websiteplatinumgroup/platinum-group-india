@@ -81,13 +81,6 @@ export default function JaipurRising() {
             {FRONT.map((h, i) => (
               <div key={i} className="flex-1 bg-white/[0.14]" style={{ height: `${h}vh` }} />
             ))}
-            <motion.div
-              style={{ opacity: b3o, left: "46.5%", bottom: "52vh" }}
-              className="absolute flex flex-col items-center"
-            >
-              <span className="h-2 w-2 rounded-full bg-gold" />
-              <span className="h-24 w-px bg-gold/80" />
-            </motion.div>
           </div>
         </motion.div>
 

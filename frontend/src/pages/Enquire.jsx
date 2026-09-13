@@ -5,7 +5,7 @@ import LeadForm from "../components/LeadForm";
 import { TempImage } from "../components/TempImage";
 import { Mask, FadeUp } from "../components/Rise";
 import { ASSETS } from "../lib/assets";
-import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, SITE_ADDRESS, OFFICE_ADDRESS, SITE_MAPS_URL, OFFICE_MAPS_URL, track } from "../lib/config";
+import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, SITE_ADDRESS, SITE_ADDRESS_DURGAPURA, OFFICE_ADDRESS, SITE_MAPS_URL, DURGAPURA_MAPS_URL, OFFICE_MAPS_URL, track } from "../lib/config";
 
 const ROWS = [
   {
@@ -26,7 +26,15 @@ const ROWS = [
   },
   {
     icon: MapPin,
-    label: "SITE ADDRESS",
+    label: "SITE — DURGAPURA",
+    value: SITE_ADDRESS_DURGAPURA,
+    href: DURGAPURA_MAPS_URL,
+    testid: "enquire-site-durgapura-link",
+    event: "cta_click",
+  },
+  {
+    icon: MapPin,
+    label: "SITE — GREENS OPULENCE",
     value: SITE_ADDRESS,
     href: SITE_MAPS_URL,
     testid: "enquire-location-link",

@@ -1,6 +1,6 @@
 import LeadForm from "../components/LeadForm";
 import { FadeUp, Mask } from "../components/Rise";
-import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, SITE_ADDRESS, OFFICE_ADDRESS, track } from "../lib/config";
+import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, SITE_ADDRESS, SITE_ADDRESS_DURGAPURA, OFFICE_ADDRESS, track } from "../lib/config";
 
 export default function EnquireSection() {
   return (
@@ -49,6 +49,7 @@ export default function EnquireSection() {
           </FadeUp>
           <FadeUp delay={0.45} className="mt-10 space-y-3 font-mono text-[10px] leading-relaxed tracking-[0.15em] text-platinum/40">
             <p data-testid="home-enquire-site-address">SITE — {SITE_ADDRESS}</p>
+            <p data-testid="home-enquire-durgapura-address">SITE — {SITE_ADDRESS_DURGAPURA}</p>
             <p data-testid="home-enquire-office-address">CORPORATE OFFICE — {OFFICE_ADDRESS}</p>
           </FadeUp>
         </div>
