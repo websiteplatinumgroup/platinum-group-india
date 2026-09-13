@@ -36,7 +36,7 @@ export default function NineLevels() {
       data-testid="nine-levels"
       className="relative"
       style={{ height: "520vh" }}
-      aria-label="The Nine Levels of Platinum Group"
+      aria-label="The Nine Philosophies of Platinum Group"
     >
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <div className="mx-auto grid w-full max-w-7xl grid-cols-[auto_1fr] items-center gap-8 px-6 md:grid-cols-[220px_1fr] md:gap-24 md:px-12">
@@ -66,7 +66,7 @@ export default function NineLevels() {
               data-testid="nine-levels-progress"
               className="font-mono text-[11px] tracking-[0.35em] text-gold"
             >
-              THE NINE LEVELS — {LEVELS[active].n} / 09
+              THE NINE PHILOSOPHIES — {LEVELS[active].n} / 09
             </p>
             <AnimatePresence mode="wait">
               <motion.div

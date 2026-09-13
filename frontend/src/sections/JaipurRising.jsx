@@ -73,13 +73,13 @@ export default function JaipurRising() {
           style={{ opacity: b1o, y: b1y }}
           className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center text-center font-display text-[11vw] text-bone md:text-8xl"
         >
-          JAIPUR IS RISING.
+          JAIPUR IS RISING
         </motion.h2>
         <motion.h2
           style={{ opacity: b2o, y: b2y }}
           className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center text-center font-editorial text-[11vw] font-light italic text-gold md:text-8xl"
         >
-          SO ARE WE.
+          SO ARE WE
         </motion.h2>
 
         <motion.div style={{ y: yFront, opacity: frontO }} className="absolute inset-x-0 bottom-0" aria-hidden="true">
