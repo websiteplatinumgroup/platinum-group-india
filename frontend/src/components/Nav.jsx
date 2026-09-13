@@ -12,8 +12,8 @@ import {
 } from "../lib/config";
 
 const ITEMS = [
-  { n: "01", label: "GROUP", type: "route", to: "/" },
-  { n: "02", label: "OPULENCE", type: "route", to: "/platinum-greens-opulence" },
+  { n: "01", label: "ABOUT", type: "route", to: "/" },
+  { n: "02", label: "GREENS OPULENCE", type: "route", to: "/platinum-greens-opulence" },
   { n: "03", label: "ENQUIRE", type: "route", to: "/enquire" },
 ];
 

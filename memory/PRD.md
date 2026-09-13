@@ -24,6 +24,8 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 - User reported "unable to upload svg file" → support confirmed SVG uploads ARE supported (≤200MB, ≤5 files, drag-drop/attachment button); offered workarounds (paste SVG markup in chat, or share a download link). Logo SVG still PENDING from user.
 - 2026-07: Credibility band updated per client: 2006 ESTABLISHED IN JAIPUR · 17,00,000+ SQ. FT. COMMERCIAL & RESIDENTIAL UNITS DELIVERED · 7,00,000+ SQ. FT. UNITS UNDER CONSTRUCTION · CREDAI MEMBER — RAJASTHAN (en-IN number formatting + count-up). Verified desktop + mobile.
 - 2026-07: Removed section eyebrow labels ("01 — THE GROUP STORY" on Nine Levels, "02 — PROJECTS" on Projects Portal) per client visual edits. Verified on preview.
+- 2026-07: Nav labels renamed per client: 01 ABOUT (→ home), 02 GREENS OPULENCE (→ flagship page), 03 ENQUIRE. Applies to desktop header links and full-screen menu. Verified desktop + mobile.
+- 2026-07: Hero edits per client: eyebrow line removed, full stops removed from UPWARDS and the subline, first CTA renamed DISCOVER OPULENCE → GREENS OPULENCE. Verified on preview.
 - 2026-07: Nine Levels spacing/symmetry improved — tier stack now vertically centered against chapter text (was bottom-packed), fixed heights, wider stack on desktop. Verified on preview.
 - 2026-07: Desktop header now shows inline nav links (GROUP / OPULENCE / ENQUIRE) + BOOK A VISIT; mobile keeps MENU overlay button only. Verified desktop (links visible, MENU hidden) and mobile 390px (links hidden, MENU visible, sticky CTA bar intact).
 - 2026-07: ABOUT PAGE built, then REMOVED at client request — /about route deleted; menu back to 01 GROUP / 02 OPULENCE / 03 ENQUIRE; /about falls through to home.

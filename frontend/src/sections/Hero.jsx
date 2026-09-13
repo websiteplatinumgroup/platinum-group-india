@@ -48,12 +48,7 @@ export default function Hero() {
       </span>
 
       <div className="relative z-10 w-full px-6 pb-32 md:px-12 md:pb-24">
-        <Mask delay={d}>
-          <span className="font-mono text-[10px] tracking-[0.4em] text-gold md:text-[11px]">
-            PLATINUM GROUP · JAIPUR · EST. 2006
-          </span>
-        </Mask>
-        <h1 className="mt-6">
+        <h1>
           <Mask delay={d + 0.1}>
             <span className="font-display text-[15vw] leading-[0.95] text-bone md:text-[10.5vw]">
               WE BUILD
@@ -61,13 +56,13 @@ export default function Hero() {
           </Mask>
           <Mask delay={d + 0.22}>
             <span className="font-editorial text-[15vw] font-light italic leading-[0.95] text-gold md:text-[10.5vw]">
-              UPWARDS.
+              UPWARDS
             </span>
           </Mask>
         </h1>
         <Mask delay={d + 0.38}>
           <span className="mt-8 block max-w-md font-body text-sm leading-relaxed text-platinum/80 md:text-base">
-            Architecture shaped by ambition.
+            Architecture shaped by ambition
           </span>
         </Mask>
         <Mask delay={d + 0.5}>
@@ -78,7 +73,7 @@ export default function Hero() {
               onClick={() => scrollToId("opulence")}
               className="border border-white/20 px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-bone transition-colors duration-300 hover:border-bone"
             >
-              DISCOVER OPULENCE
+              GREENS OPULENCE
             </button>
             <Link
               to="/enquire?intent=site-visit"
