@@ -11,6 +11,14 @@ export const WA_DEFAULT = waLink(
   "Hi Platinum Group, I'm interested in Platinum Greens Opulence and would like more details."
 );
 
+export const SITE_ADDRESS =
+  "Platinum Greens Opulence, Near Parshwanath Narayan City, Mansarovar Extension, Jaipur, Rajasthan";
+export const OFFICE_ADDRESS =
+  "G-1/269, RIICO Industrial Area, Sitapura, Jaipur, Rajasthan – 302022";
+export const SITE_MAPS_URL =
+  "https://www.google.com/maps/dir/?api=1&destination=26.8102201688762,75.75891828735266";
+export const OFFICE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(OFFICE_ADDRESS)}`;
+
 export const track = (event, data = {}) => {
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({ event, ...data });

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import LeadForm from "../../components/LeadForm";
 import { FadeUp, Mask } from "../../components/Rise";
-import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, track } from "../../lib/config";
+import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, SITE_ADDRESS, OFFICE_ADDRESS, track } from "../../lib/config";
 
 const SPECS = [
   { k: "STRUCTURE", v: "RCC frame · seismic-zone resistant · Vastu compliant" },
@@ -28,8 +28,8 @@ export default function OpAction() {
         </Mask>
         <h3 className="mt-5">
           <Mask delay={0.08}>
-            <span className="block font-display text-5xl leading-tight text-bone md:text-7xl">
-              NEAR ISKCON ROAD,
+            <span className="block font-display text-4xl leading-tight text-bone md:text-6xl">
+              NEAR PARSHWANATH NARAYAN CITY,
             </span>
           </Mask>
           <Mask delay={0.16}>
@@ -39,8 +39,11 @@ export default function OpAction() {
           </Mask>
         </h3>
         <FadeUp delay={0.25}>
-          <p className="mt-6 font-mono text-[11px] tracking-[0.3em] text-platinum/60">
-            26.8102° N, 75.7589° E · JAIPUR, RAJASTHAN
+          <p className="mt-6 max-w-xl font-mono text-[11px] leading-relaxed tracking-[0.15em] text-platinum/60">
+            {SITE_ADDRESS}
+          </p>
+          <p className="mt-3 font-mono text-[10px] tracking-[0.3em] text-platinum/40">
+            26.8102° N, 75.7589° E
           </p>
         </FadeUp>
         <FadeUp delay={0.35} className="mt-10 flex flex-wrap gap-4">
@@ -122,6 +125,12 @@ export default function OpAction() {
               >
                 WHATSAPP — INSTANT RESPONSE
               </a>
+              <span
+                data-testid="op-action-office-address"
+                className="mt-5 max-w-sm font-mono text-[10px] leading-relaxed tracking-[0.15em] text-platinum/40"
+              >
+                CORPORATE OFFICE — {OFFICE_ADDRESS}
+              </span>
             </FadeUp>
           </div>
           <FadeUp delay={0.25}>

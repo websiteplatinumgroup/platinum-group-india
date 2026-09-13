@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import { ArrowUpRight, MapPin, MessageCircle, Phone } from "lucide-react";
+import { ArrowUpRight, Building2, MapPin, MessageCircle, Phone } from "lucide-react";
 import LeadForm from "../components/LeadForm";
 import { TempImage } from "../components/TempImage";
 import { Mask, FadeUp } from "../components/Rise";
 import { ASSETS } from "../lib/assets";
-import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, track } from "../lib/config";
+import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, SITE_ADDRESS, OFFICE_ADDRESS, SITE_MAPS_URL, OFFICE_MAPS_URL, track } from "../lib/config";
 
 const ROWS = [
   {
@@ -27,9 +27,17 @@ const ROWS = [
   {
     icon: MapPin,
     label: "SITE ADDRESS",
-    value: "Mansarovar Extension, Jaipur",
-    href: "https://www.google.com/maps/dir/?api=1&destination=26.8102201688762,75.75891828735266",
+    value: SITE_ADDRESS,
+    href: SITE_MAPS_URL,
     testid: "enquire-location-link",
+    event: "cta_click",
+  },
+  {
+    icon: Building2,
+    label: "CORPORATE OFFICE",
+    value: OFFICE_ADDRESS,
+    href: OFFICE_MAPS_URL,
+    testid: "enquire-office-link",
     event: "cta_click",
   },
 ];
@@ -82,7 +90,7 @@ export default function Enquire() {
                     {r.label}
                   </span>
                 </span>
-                <span className="flex items-center gap-2 font-body text-sm text-bone">
+                <span className="flex max-w-[58%] items-center gap-2 text-right font-body text-sm leading-relaxed text-bone">
                   {r.value}
                   <ArrowUpRight
                     size={14}
