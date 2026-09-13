@@ -41,7 +41,7 @@ export default function NineLevels() {
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <div className="mx-auto grid w-full max-w-7xl grid-cols-[auto_1fr] items-center gap-8 px-6 md:grid-cols-[220px_1fr] md:gap-24 md:px-12">
           <div
-            className="flex h-[44vh] w-[110px] flex-col-reverse justify-start gap-1.5 md:w-[180px]"
+            className="flex h-[300px] w-[110px] flex-col-reverse justify-center gap-2 md:h-[380px] md:w-[200px]"
             aria-hidden="true"
           >
             {LEVELS.map((l, i) => (
