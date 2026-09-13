@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import Hero from "../sections/Hero";
 import Credibility from "../sections/Credibility";
 import NineLevels from "../sections/NineLevels";
-import ProjectsPortal from "../sections/ProjectsPortal";
 import Marquee from "../sections/Marquee";
 import OpulenceFeature from "../sections/OpulenceFeature";
 import JaipurRising from "../sections/JaipurRising";
@@ -29,7 +28,6 @@ export default function Home() {
       <Hero />
       <Credibility />
       <NineLevels />
-      <ProjectsPortal />
       <Marquee />
       <OpulenceFeature />
       <JaipurRising />
