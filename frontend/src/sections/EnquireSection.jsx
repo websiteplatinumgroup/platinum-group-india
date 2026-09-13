@@ -23,7 +23,7 @@ export default function EnquireSection() {
             </Mask>
             <Mask delay={0.16}>
               <span className="block font-editorial text-5xl font-light italic leading-tight text-gold md:text-7xl">
-                PLATINUM
+                US
               </span>
             </Mask>
           </h2>
