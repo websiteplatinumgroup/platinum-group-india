@@ -5,6 +5,7 @@ import Credibility from "../sections/Credibility";
 import NineLevels from "../sections/NineLevels";
 import Marquee from "../sections/Marquee";
 import OpulenceFeature from "../sections/OpulenceFeature";
+import Portfolio from "../sections/Portfolio";
 import EnquireSection from "../sections/EnquireSection";
 import JaipurRising from "../sections/JaipurRising";
 import Finale from "../sections/Finale";
@@ -33,6 +34,7 @@ export default function Home() {
       <NineLevels />
       <Marquee />
       <OpulenceFeature />
+      <Portfolio />
       <Finale />
       <EnquireSection />
       <Footer />
