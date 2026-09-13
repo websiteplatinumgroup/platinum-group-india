@@ -10,12 +10,7 @@ export default function EnquireSection() {
     >
       <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2">
         <div>
-          <Mask>
-            <span className="font-mono text-[10px] tracking-[0.4em] text-gold">
-              ENQUIRE
-            </span>
-          </Mask>
-          <h2 className="mt-6">
+          <h2>
             <Mask delay={0.08}>
               <span className="block font-display text-5xl leading-tight text-bone md:text-7xl">
                 SPEAK WITH

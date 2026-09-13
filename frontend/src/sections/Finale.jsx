@@ -32,8 +32,6 @@ export default function Finale() {
 
       <footer className="mt-28 flex w-full flex-col items-center gap-3 border-t border-white/5 pt-8 font-mono text-[9px] tracking-[0.25em] text-platinum/40 md:flex-row md:justify-between md:text-[10px]">
         <span>© 2026 PLATINUM GROUP · JAIPUR</span>
-        <span data-testid="footer-rera">RERA RAJ/P/2023/2875 · RAJ/P/2021/1631</span>
-        <span>MANSAROVAR EXTENSION · JAIPUR</span>
       </footer>
     </section>
   );
