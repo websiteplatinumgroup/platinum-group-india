@@ -13,13 +13,10 @@ export const WA_DEFAULT = waLink(
 
 export const SITE_ADDRESS =
   "Platinum Greens Opulence, Near Parshwanath Narayan City, Mansarovar Extension, Jaipur, Rajasthan – 302029";
-export const SITE_ADDRESS_DURGAPURA =
-  "3-4, SMS Colony, Maharani Farm, Durgapura, Jaipur";
 export const OFFICE_ADDRESS =
   "G-1 269/270, RIICO Industrial Area, Sitapura, Jaipur, Rajasthan – 302022";
 export const SITE_MAPS_URL =
   "https://www.google.com/maps/dir/?api=1&destination=26.8102201688762,75.75891828735266";
-export const DURGAPURA_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(SITE_ADDRESS_DURGAPURA)}`;
 export const OFFICE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(OFFICE_ADDRESS)}`;
 
 export const track = (event, data = {}) => {

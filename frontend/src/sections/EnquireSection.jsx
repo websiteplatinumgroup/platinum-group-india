@@ -1,6 +1,6 @@
 import LeadForm from "../components/LeadForm";
 import { FadeUp, Mask } from "../components/Rise";
-import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, SITE_ADDRESS, SITE_ADDRESS_DURGAPURA, OFFICE_ADDRESS, track } from "../lib/config";
+import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, SITE_ADDRESS, OFFICE_ADDRESS, track } from "../lib/config";
 
 export default function EnquireSection() {
   return (
@@ -8,9 +8,10 @@ export default function EnquireSection() {
       data-testid="home-enquire"
       className="border-t border-white/5 px-6 py-24 md:px-12 md:py-36"
     >
-      <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2">
-        <div>
-          <h2>
+      <div className="mx-auto grid w-full max-w-7xl gap-14 lg:grid-cols-[1.15fr_1fr] lg:gap-20">
+        <div className="flex min-h-full flex-col justify-between gap-12">
+          <div>
+            <h2>
             <Mask delay={0.08}>
               <span className="block font-display text-5xl leading-tight text-bone md:text-7xl">
                 SPEAK WITH
@@ -27,7 +28,9 @@ export default function EnquireSection() {
               Site visits run daily. One conversation is all it takes.
             </p>
           </FadeUp>
-          <FadeUp delay={0.35} className="mt-10 flex flex-col gap-3 font-mono text-[11px] tracking-[0.25em]">
+          </div>
+          <div>
+          <FadeUp delay={0.35} className="flex flex-col gap-3 border-t border-white/10 pt-8 font-mono text-[11px] tracking-[0.25em]">
             <a
               href={PHONE_TEL}
               data-testid="home-enquire-call"
@@ -47,11 +50,11 @@ export default function EnquireSection() {
               WHATSAPP — INSTANT RESPONSE
             </a>
           </FadeUp>
-          <FadeUp delay={0.45} className="mt-10 space-y-3 font-mono text-[10px] leading-relaxed tracking-[0.15em] text-platinum/40">
+          <FadeUp delay={0.45} className="mt-8 space-y-3 font-mono text-[10px] leading-relaxed tracking-[0.15em] text-platinum/40">
             <p data-testid="home-enquire-site-address">SITE — {SITE_ADDRESS}</p>
-            <p data-testid="home-enquire-durgapura-address">SITE — {SITE_ADDRESS_DURGAPURA}</p>
             <p data-testid="home-enquire-office-address">CORPORATE OFFICE — {OFFICE_ADDRESS}</p>
           </FadeUp>
+          </div>
         </div>
         <FadeUp delay={0.2}>
           <div className="border border-white/10 bg-ink2/60 p-7 md:p-10">
