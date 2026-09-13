@@ -35,9 +35,9 @@ export default function Nav() {
     else window.__lenis?.start();
   }, [open]);
 
-  const go = (item) => {
+  const go = (item, placement = "menu") => {
     setOpen(false);
-    track("cta_click", { placement: "menu", target: item.label });
+    track("cta_click", { placement, target: item.label });
     if (item.type === "route") {
       if (item.to === "/" && pathname === "/") scrollToId("top");
       else navigate(item.to);
@@ -68,6 +68,18 @@ export default function Nav() {
             </span>
           </Link>
           <div className="flex items-center gap-4 md:gap-8">
+            <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
+              {ITEMS.map((item) => (
+                <button
+                  key={item.n}
+                  data-testid={`nav-link-${item.label.toLowerCase()}`}
+                  onClick={() => go(item, "header")}
+                  className="font-mono text-[11px] tracking-[0.3em] text-platinum/70 transition-colors duration-300 hover:text-gold"
+                >
+                  {item.label}
+                </button>
+              ))}
+            </nav>
             <Link
               to="/enquire?intent=site-visit"
               data-testid="nav-book-visit-button"
@@ -79,7 +91,7 @@ export default function Nav() {
             <button
               data-testid="nav-menu-button"
               onClick={() => setOpen(true)}
-              className="font-mono text-[11px] tracking-[0.3em] text-bone transition-colors hover:text-gold"
+              className="font-mono text-[11px] tracking-[0.3em] text-bone transition-colors hover:text-gold md:hidden"
               aria-label="Open menu"
             >
               MENU
