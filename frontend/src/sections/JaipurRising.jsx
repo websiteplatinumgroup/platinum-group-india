@@ -2,21 +2,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { TierMark } from "../components/TierMark";
 
-const BACK = [22, 15, 26, 13, 20, 17, 24, 15, 21, 16, 25, 19, 14, 23];
-const MID = [30, 24, 36, 22, 28, 26, 34, 25, 31, 23, 33, 27, 24, 30];
 const FRONT = [40, 32, 46, 30, 38, 34, 52, 36, 44, 33, 48, 37, 31, 42];
-
-const Row = ({ hts, cls, y }) => (
-  <motion.div
-    style={{ y }}
-    className="absolute inset-x-0 bottom-0 flex items-end gap-1.5 px-2"
-    aria-hidden="true"
-  >
-    {hts.map((h, i) => (
-      <div key={i} className={`flex-1 ${cls}`} style={{ height: `${h}vh` }} />
-    ))}
-  </motion.div>
-);
 
 export default function JaipurRising() {
   const ref = useRef(null);
@@ -25,8 +11,6 @@ export default function JaipurRising() {
     offset: ["start start", "end end"],
   });
 
-  const yBack = useTransform(p, [0, 1], ["60%", "-20%"]);
-  const yMid = useTransform(p, [0, 1], ["90%", "-42%"]);
   const yFront = useTransform(p, [0, 1], ["120%", "-68%"]);
   const glowO = useTransform(p, [0.05, 0.5], [0, 1]);
   const b1o = useTransform(p, [0.08, 0.2, 0.3], [0, 1, 0]);
@@ -59,9 +43,6 @@ export default function JaipurRising() {
             }}
           />
         </motion.div>
-
-        <Row hts={BACK} cls="bg-white/[0.05]" y={yBack} />
-        <Row hts={MID} cls="bg-white/[0.09]" y={yMid} />
 
         <motion.h2
           style={{ opacity: b1o, y: b1y }}

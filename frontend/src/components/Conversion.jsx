@@ -39,21 +39,37 @@ export const MobileCTA = () => (
 );
 
 export const WhatsAppFloat = () => (
-  <motion.a
-    href={WA_DEFAULT}
-    target="_blank"
-    rel="noreferrer"
-    data-testid="whatsapp-float"
-    onClick={() => track("whatsapp_click", { placement: "float" })}
-    className="fixed bottom-6 right-6 z-[70] hidden items-center gap-2.5 border border-eglow/30 bg-ink/80 px-4 py-2.5 backdrop-blur-md transition-colors duration-300 hover:border-eglow/70 md:flex"
+  <motion.div
+    className="fixed bottom-6 right-6 z-[70] hidden items-center gap-2 md:flex"
     initial={{ opacity: 0, y: 24 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 1.4, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-    aria-label="Chat on WhatsApp"
   >
-    <span className="h-1.5 w-1.5 rounded-full bg-eglow" />
-    <span className="font-mono text-[11px] tracking-[0.25em] text-bone">
-      WHATSAPP
-    </span>
-  </motion.a>
+    <a
+      href={PHONE_TEL}
+      data-testid="desktop-call-float"
+      onClick={() => track("call_click", { placement: "float" })}
+      className="flex items-center gap-2.5 border border-gold/40 bg-ink/80 px-4 py-2.5 backdrop-blur-md transition-colors duration-300 hover:border-gold"
+      aria-label="Call sales"
+    >
+      <Phone size={13} className="text-gold" />
+      <span className="font-mono text-[11px] tracking-[0.25em] text-bone">
+        CALL
+      </span>
+    </a>
+    <a
+      href={WA_DEFAULT}
+      target="_blank"
+      rel="noreferrer"
+      data-testid="whatsapp-float"
+      onClick={() => track("whatsapp_click", { placement: "float" })}
+      className="flex items-center gap-2.5 border border-eglow/30 bg-ink/80 px-4 py-2.5 backdrop-blur-md transition-colors duration-300 hover:border-eglow/70"
+      aria-label="Chat on WhatsApp"
+    >
+      <span className="h-1.5 w-1.5 rounded-full bg-eglow" />
+      <span className="font-mono text-[11px] tracking-[0.25em] text-bone">
+        WHATSAPP
+      </span>
+    </a>
+  </motion.div>
 );
