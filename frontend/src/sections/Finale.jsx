@@ -28,7 +28,7 @@ export default function Finale() {
         </Mask>
         <Mask delay={0.2}>
           <span className="block font-editorial text-5xl font-light italic leading-tight text-gold md:text-8xl">
-            IS ALWAYS UP.
+            IS ALWAYS UP
           </span>
         </Mask>
       </h2>

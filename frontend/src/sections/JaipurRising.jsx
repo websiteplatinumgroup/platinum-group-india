@@ -1,9 +1,6 @@
 import { useRef } from "react";
-import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
 import { TierMark } from "../components/TierMark";
-import { track } from "../lib/config";
 
 const BACK = [22, 15, 26, 13, 20, 17, 24, 15, 21, 16, 25, 19, 14, 23];
 const MID = [30, 24, 36, 22, 28, 26, 34, 25, 31, 23, 33, 27, 24, 30];
@@ -49,9 +46,6 @@ export default function JaipurRising() {
       aria-label="Jaipur is rising"
     >
       <div className="sticky top-0 h-screen overflow-hidden">
-        <span className="absolute left-6 top-24 z-20 font-mono text-[10px] tracking-[0.35em] text-platinum/40 md:left-12">
-          03 — JAIPUR
-        </span>
         <motion.div
           style={{ opacity: glowO }}
           className="absolute -bottom-[25%] left-1/2 h-[50vh] w-[70vw] -translate-x-1/2 rounded-full"
@@ -105,14 +99,6 @@ export default function JaipurRising() {
           <p className="font-mono text-[10px] tracking-[0.4em] text-gold">
             THE PINNACLE
           </p>
-          <Link
-            to="/platinum-greens-opulence"
-            data-testid="jaipur-cta"
-            onClick={() => track("cta_click", { placement: "jaipur_rising", target: "opulence" })}
-            className="mt-2 flex items-center gap-2 border border-gold/60 px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-gold transition-colors duration-300 hover:bg-gold hover:text-ink"
-          >
-            EXPLORE OPULENCE <ArrowUpRight size={13} />
-          </Link>
         </motion.div>
       </div>
     </section>
