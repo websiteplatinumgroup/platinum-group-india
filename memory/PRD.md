@@ -27,6 +27,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 - 2026-07: Nav labels renamed per client: 01 ABOUT (→ home), 02 GREENS OPULENCE (→ flagship page), 03 ENQUIRE. Applies to desktop header links and full-screen menu. Verified desktop + mobile.
 - 2026-07: Jaipur Rising section moved directly below Nine Levels per client. New home flow: Hero → Credibility → Nine Levels → Jaipur Rising → Marquee → Opulence Feature → Finale. Order verified programmatically + screenshot.
 - 2026-07: Copy edits per client: "THE NINE LEVELS" → "THE NINE PHILOSOPHIES" (counter + aria-label), full stops removed from JAIPUR IS RISING / SO ARE WE. Verified on preview.
+- 2026-07: Jaipur pinnacle beat simplified per client — removed PLATINUM GREENS OPULENCE headline and MANSAROVAR EXTENSION · JAIPUR line; beat3 is now tier mark + THE PINNACLE + EXPLORE OPULENCE CTA. Verified on preview.
 - 2026-07: Projects Portal section REMOVED from homepage per client visual edit — flow is now Hero → Credibility → Nine Levels → Marquee → Opulence Feature → Jaipur Rising → Finale. Verified no compile errors and clean scroll flow.
 - 2026-07: Hero edits per client: eyebrow line removed, full stops removed from UPWARDS and the subline, first CTA renamed DISCOVER OPULENCE → GREENS OPULENCE. Verified on preview.
 - 2026-07: Nine Levels spacing/symmetry improved — tier stack now vertically centered against chapter text (was bottom-packed), fixed heights, wider stack on desktop. Verified on preview.

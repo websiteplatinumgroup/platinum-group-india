@@ -105,12 +105,6 @@ export default function JaipurRising() {
           <p className="font-mono text-[10px] tracking-[0.4em] text-gold">
             THE PINNACLE
           </p>
-          <h3 className="font-display text-4xl text-bone md:text-6xl">
-            PLATINUM GREENS OPULENCE
-          </h3>
-          <p className="font-mono text-[10px] tracking-[0.3em] text-platinum/60">
-            MANSAROVAR EXTENSION · JAIPUR
-          </p>
           <Link
             to="/platinum-greens-opulence"
             data-testid="jaipur-cta"
