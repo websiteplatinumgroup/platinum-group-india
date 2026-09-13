@@ -28,9 +28,9 @@ export default function Home() {
       <Hero />
       <Credibility />
       <NineLevels />
+      <JaipurRising />
       <Marquee />
       <OpulenceFeature />
-      <JaipurRising />
       <Finale />
     </main>
   );
