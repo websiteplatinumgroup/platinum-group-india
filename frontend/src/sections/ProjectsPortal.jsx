@@ -55,11 +55,6 @@ export default function ProjectsPortal() {
 
   return (
     <section data-testid="projects-portal" className="px-6 py-28 md:px-12 md:py-40">
-      <Mask>
-        <span className="font-mono text-[10px] tracking-[0.35em] text-gold">
-          02 — PROJECTS
-        </span>
-      </Mask>
       <Mask delay={0.1}>
         <h2 className="mt-5 font-display text-4xl text-bone md:text-6xl">
           CHOOSE YOUR ALTITUDE.

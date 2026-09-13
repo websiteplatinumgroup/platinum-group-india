@@ -39,9 +39,6 @@ export default function NineLevels() {
       aria-label="The Nine Levels of Platinum Group"
     >
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <span className="absolute left-6 top-24 font-mono text-[10px] tracking-[0.35em] text-platinum/40 md:left-12">
-          01 — THE GROUP STORY
-        </span>
         <div className="mx-auto grid w-full max-w-7xl grid-cols-[auto_1fr] items-center gap-8 px-6 md:grid-cols-[220px_1fr] md:gap-24 md:px-12">
           <div
             className="flex h-[44vh] w-[110px] flex-col-reverse justify-start gap-1.5 md:w-[180px]"
