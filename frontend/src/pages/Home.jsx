@@ -5,6 +5,7 @@ import Credibility from "../sections/Credibility";
 import NineLevels from "../sections/NineLevels";
 import Marquee from "../sections/Marquee";
 import OpulenceFeature from "../sections/OpulenceFeature";
+import EnquireSection from "../sections/EnquireSection";
 import JaipurRising from "../sections/JaipurRising";
 import Finale from "../sections/Finale";
 import { scrollToId, track } from "../lib/config";
@@ -31,6 +32,7 @@ export default function Home() {
       <JaipurRising />
       <Marquee />
       <OpulenceFeature />
+      <EnquireSection />
       <Finale />
     </main>
   );
