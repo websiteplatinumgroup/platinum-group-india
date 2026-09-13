@@ -39,15 +39,15 @@ export default function NineLevels() {
       style={{ height: "520vh" }}
       aria-label="The Nine Philosophies of Platinum Group"
     >
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <div className="mx-auto grid w-full max-w-7xl grid-cols-[auto_1fr] items-center gap-8 px-6 md:grid-cols-[340px_1fr] md:gap-20 md:px-12">
+      <div className="sticky top-0 flex h-[100svh] items-center justify-center overflow-hidden">
+        <div className="grid w-full max-w-7xl grid-cols-1 items-center justify-items-center gap-8 px-6 lg:grid-cols-[380px_minmax(0,1fr)] lg:justify-items-stretch lg:gap-16 lg:px-12">
           <div className="flex items-center justify-center" aria-hidden="true">
-            <TierProgress active={active} className="w-[170px] -translate-y-4 md:w-[380px] md:-translate-y-8" />
+            <TierProgress active={active} className="w-[140px] sm:w-[180px] lg:w-[360px]" />
           </div>
-          <div className="relative min-h-[280px]">
+          <div className="relative min-h-[210px] w-full text-center lg:min-h-[280px] lg:text-left">
             <p
               data-testid="nine-levels-progress"
-              className="font-mono text-[11px] tracking-[0.35em] text-gold"
+              className="font-mono text-[10px] tracking-[0.35em] text-gold md:text-[11px]"
             >
               THE NINE PHILOSOPHIES — {LEVELS[active].n} / 09
             </p>
@@ -59,10 +59,10 @@ export default function NineLevels() {
                 exit={{ opacity: 0, y: -40 }}
                 transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               >
-                <h2 className="mt-6 font-display text-5xl leading-none text-bone md:text-8xl">
+                <h2 className="mt-5 font-display text-4xl leading-none text-bone sm:text-5xl lg:text-6xl xl:text-7xl">
                   {LEVELS[active].title}
                 </h2>
-                <p className="mt-6 max-w-md font-editorial text-base italic text-platinum/80 md:text-xl">
+                <p className="mx-auto mt-5 max-w-md font-editorial text-base italic text-platinum/80 lg:mx-0 md:text-xl">
                   {LEVELS[active].line}
                 </p>
               </motion.div>
