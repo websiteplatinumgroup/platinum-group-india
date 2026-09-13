@@ -8,6 +8,7 @@ import OpulenceFeature from "../sections/OpulenceFeature";
 import EnquireSection from "../sections/EnquireSection";
 import JaipurRising from "../sections/JaipurRising";
 import Finale from "../sections/Finale";
+import Footer from "../sections/Footer";
 import { scrollToId, track } from "../lib/config";
 
 export default function Home() {
@@ -27,13 +28,14 @@ export default function Home() {
   return (
     <main className="pb-16 md:pb-0">
       <Hero />
+      <JaipurRising />
       <Credibility />
       <NineLevels />
-      <JaipurRising />
       <Marquee />
       <OpulenceFeature />
-      <EnquireSection />
       <Finale />
+      <EnquireSection />
+      <Footer />
     </main>
   );
 }

@@ -29,10 +29,6 @@ export default function Finale() {
           </span>
         </Mask>
       </h2>
-
-      <footer className="mt-28 flex w-full flex-col items-center gap-3 border-t border-white/5 pt-8 font-mono text-[9px] tracking-[0.25em] text-platinum/40 md:flex-row md:justify-between md:text-[10px]">
-        <span>© 2026 PLATINUM GROUP · JAIPUR</span>
-      </footer>
     </section>
   );
 }
