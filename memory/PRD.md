@@ -74,3 +74,10 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 - Env: EMERGENT_EMAIL_KEY, EMAIL_FROM_NAME=Platinum Group, LEADS_NOTIFY_EMAIL in /app/backend/.env.
 - Verified: test lead → DB saved (201) + email 202 Accepted, id logged.
 - Future: Sell.do CRM webhook integration (user said "later"). Admin leads portal optional. Hero video pending user asset. Ads conversion tracking in dataLayer (P1).
+
+---
+## Update: 2026-09-14 — Auto-Reply + Hero/Opulence Visual Edits (DONE)
+- Auto-reply thank-you email: enquirers with an email address now instantly receive a branded "Thank you" email with a DOWNLOAD BROCHURE link (broker-safe: link not attachment; reply-to = leads@platinumgroupindia.com). Env: EMAIL_REPLY_TO, PUBLIC_APP_URL in backend/.env.
+- Hero: added DOWNLOAD BROCHURE button (hero-brochure-button) in CTA row.
+- OpulenceFeature: section vertical padding reduced (py-32/md:py-48 → py-20/md:py-24) so it fits screens (~869px tall now).
+- Verified: test lead → team notify email + auto-reply both accepted (202); smoke screenshot OK.

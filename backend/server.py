@@ -29,6 +29,8 @@ EMAIL_BASE_URL = "https://integrations.emergentagent.com"
 EMAIL_KEY = os.environ["EMERGENT_EMAIL_KEY"]
 EMAIL_FROM_NAME = os.environ["EMAIL_FROM_NAME"]
 LEADS_NOTIFY_EMAIL = os.environ["LEADS_NOTIFY_EMAIL"]
+EMAIL_REPLY_TO = os.environ.get("EMAIL_REPLY_TO")
+PUBLIC_APP_URL = os.environ["PUBLIC_APP_URL"].rstrip("/")
 
 _SHORTENERS = ("bit.ly", "tinyurl.com", "t.co", "is.gd", "cutt.ly", "goo.gl", "rebrand.ly")
 _CRED_ASK = ("reply with your password", "reply with the code", "send your password", "cvv",
@@ -103,9 +105,11 @@ def _assert_safe_email(subject: str, html: str) -> None:
                 raise ValueError(f"Anchor text {m.group(1)!r} ≠ real link host {real!r} (G3)")
 
 
-async def send_email(*, to: str, subject: str, html: str) -> None:
+async def send_email(*, to: str, subject: str, html: str, reply_to: Optional[str] = None) -> None:
     _assert_safe_email(subject, html)
     payload = {"to": [to], "subject": subject, "html": html, "from_name": EMAIL_FROM_NAME}
+    if reply_to or EMAIL_REPLY_TO:
+        payload["contact_email"] = reply_to or EMAIL_REPLY_TO
     try:
         async with httpx.AsyncClient(timeout=30) as client:
             resp = await client.post(
@@ -146,8 +150,37 @@ async def notify_lead_email(doc: dict) -> None:
             '</td></tr></table>'
         )
         await send_email(to=LEADS_NOTIFY_EMAIL, subject=subject, html=html)
+        await send_lead_autoreply(doc)
     except Exception as e:
         logging.getLogger(__name__).error("notify_lead_email failed: %s", str(e))
+
+
+async def send_lead_autoreply(doc: dict) -> None:
+    recipient = doc.get("email")
+    if not recipient:
+        return
+    brochure_url = f"{PUBLIC_APP_URL}/brochure/platinum-greens-opulence-brochure.pdf"
+    first_name = escape(str(doc.get("name", "there")).split()[0])
+    subject = "Thank you for your enquiry — Platinum Group"
+    html = (
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td '
+        'style="padding:32px 24px;font-family:Arial,sans-serif;background:#ffffff">'
+        '<p style="margin:0 0 4px;font-size:11px;letter-spacing:3px;color:#b08d3f">PLATINUM GROUP</p>'
+        f'<h2 style="margin:0 0 16px;color:#111;font-weight:600">Thank you, {first_name}.</h2>'
+        '<p style="margin:0 0 16px;color:#333;font-size:14px;line-height:1.6">'
+        'We have received your enquiry for Platinum Greens Opulence. Our team will reach '
+        'out to you shortly on your mobile number.</p>'
+        '<p style="margin:0 0 24px;color:#333;font-size:14px;line-height:1.6">'
+        'Meanwhile, you can download the official e-brochure here:</p>'
+        f'<a href="{brochure_url}" '
+        'style="display:inline-block;background:#b08d3f;color:#ffffff;text-decoration:none;'
+        'font-size:12px;letter-spacing:2px;padding:14px 28px">DOWNLOAD BROCHURE</a>'
+        '<p style="margin:32px 0 0;font-size:12px;color:#888;line-height:1.6">'
+        f'Sent by {escape(EMAIL_FROM_NAME)}. Simply reply to this email if you have any questions. '
+        'We never ask for your password or payment details by email.</p>'
+        '</td></tr></table>'
+    )
+    await send_email(to=recipient, subject=subject, html=html)
 
 app = FastAPI()
 api_router = APIRouter(prefix="/api")

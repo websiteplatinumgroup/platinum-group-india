@@ -43,7 +43,7 @@ export default function OpulenceFeature() {
       <div className="absolute inset-0 bg-ink/60" />
       <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-ink to-transparent" />
 
-      <div className="relative z-10 px-6 py-32 md:px-12 md:py-48">
+      <div className="relative z-10 px-6 py-20 md:px-12 md:py-24">
         <h2>
           <Mask delay={0.08}>
             <span className="block font-display text-[12vw] leading-[0.95] text-bone md:text-[8.5vw]">

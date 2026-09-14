@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { ASSETS } from "../lib/assets";
 import { Mask } from "../components/Rise";
-import { scrollToId, track } from "../lib/config";
+import { scrollToId, track, tryBrochureDownload } from "../lib/config";
 
 export default function Hero() {
   const ref = useRef(null);
@@ -65,6 +65,13 @@ export default function Hero() {
               className="border border-ink/25 px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-ink transition-colors duration-300 hover:border-ink"
             >
               GREENS OPULENCE
+            </button>
+            <button
+              data-testid="hero-brochure-button"
+              onClick={() => tryBrochureDownload("hero")}
+              className="border border-ink/25 px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-ink transition-colors duration-300 hover:border-gold hover:text-gold"
+            >
+              DOWNLOAD BROCHURE
             </button>
             <Link
               to="/enquire?intent=site-visit"
