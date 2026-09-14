@@ -4,7 +4,7 @@ import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { ASSETS } from "../lib/assets";
 import { Mask } from "../components/Rise";
-import { track } from "../lib/config";
+import { track, tryBrochureDownload } from "../lib/config";
 
 const CHIPS = [
   { t: "3 & 4 BHK ULTRA-PREMIUM RESIDENCES", cls: "text-bone/90" },
@@ -95,14 +95,13 @@ export default function OpulenceFeature() {
             >
               REQUEST DETAILS <ArrowUpRight size={14} />
             </Link>
-            <Link
-              to="/enquire?project=opulence&intent=brochure"
+            <button
               data-testid="opulence-cta-brochure"
-              onClick={() => track("brochure_request", { placement: "opulence_feature", project: "opulence" })}
+              onClick={() => tryBrochureDownload("opulence_feature")}
               className="border border-white/25 px-8 py-4 font-mono text-[11px] tracking-[0.3em] text-bone transition-colors duration-300 hover:border-gold hover:text-gold"
             >
               DOWNLOAD BROCHURE
-            </Link>
+            </button>
             <Link
               to="/platinum-greens-opulence"
               data-testid="opulence-cta-experience"

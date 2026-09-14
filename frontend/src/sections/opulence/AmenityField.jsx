@@ -7,6 +7,7 @@ import {
 } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Mask, FadeUp } from "../../components/Rise";
+import { tryBrochureDownload } from "../../lib/config";
 
 const u = (id, w = 900) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=60`;
@@ -147,13 +148,13 @@ export default function AmenityField() {
       </motion.div>
 
       <FadeUp className="mt-10 px-6 md:px-12">
-        <a
-          href="/enquire?project=opulence&intent=brochure"
+        <button
           data-testid="amenity-cta-brochure"
+          onClick={() => tryBrochureDownload("amenity_field")}
           className="inline-flex items-center gap-2 border border-gold/60 px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-gold transition-colors duration-300 hover:bg-gold hover:text-ink"
         >
-          REQUEST THE FULL BROCHURE <ArrowUpRight size={13} />
-        </a>
+          DOWNLOAD THE FULL BROCHURE <ArrowUpRight size={13} />
+        </button>
       </FadeUp>
     </section>
   );
