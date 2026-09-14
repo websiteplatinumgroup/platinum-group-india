@@ -96,8 +96,8 @@ export default function Portfolio() {
                         data-testid="portfolio-image-logo"
                         className="w-full"
                       />
-                      <span className="bg-ink/70 px-0.5 py-px text-center font-mono text-[4.5px] leading-relaxed tracking-[0.08em] text-bone md:text-[5px]">
-                        {p.rera}<br />RERA.RAJASTHAN.GOV.IN
+                      <span className="w-full bg-ink/70 px-0.5 py-px text-center font-mono text-[4.5px] leading-relaxed tracking-[0.08em] text-bone md:text-[5px]">
+                        {p.rera} RERA.RAJASTHAN.GOV.IN
                       </span>
                     </div>
                   </div>
