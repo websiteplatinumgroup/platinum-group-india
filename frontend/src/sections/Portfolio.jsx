@@ -15,7 +15,7 @@ const ONGOING = [
     alt: "Platinum Greens Opulence — elevation render",
     need: "opulence-facade-day.jpg",
     alt: "Platinum Greens Opulence facade (asset needed)",
-    to: "/enquire?project=opulence&intent=sales",
+    to: "/opulence",
     testid: "portfolio-opulence",
   },
   {

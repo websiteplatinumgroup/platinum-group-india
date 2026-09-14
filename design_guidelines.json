@@ -1,0 +1,202 @@
+{
+  "project_name": "Platinum Greens Opulence Flagship Page",
+  "route_path": "/opulence",
+  "app_type": "luxury real-estate sales landing page",
+  "visual_direction": {
+    "concept": "Deep Emerald & Dark Platinum Opulence",
+    "differentiation_from_home": "While the Home page uses warm bone hero transitioning into near-black (#070708) with warm gold (#C2A059) accents, the Opulence page uses a dramatic botanical midnight aesthetic: deep dark emerald background tinting (#061410 & #070708), subtle emerald-glow micro-accents (#1DB98B / #0C3B2E), brushed platinum highlights (#D8D8DC), and high-contrast sales floating triggers. It evokes high-end architectural botanical sanctuaries.",
+    "background_palette": {
+      "ink_base": "#070708",
+      "emerald_tinted_ink": "#061410",
+      "surface_card": "#0A1B16",
+      "surface_card_border": "rgba(29, 185, 139, 0.18)"
+    },
+    "accent_palette": {
+      "gold_primary": "#C2A059",
+      "emerald_glow": "#1DB98B",
+      "deep_emerald": "#0C3B2E",
+      "platinum": "#D8D8DC"
+    }
+  },
+  "typography": {
+    "headline_font": "Cinzel, serif (font-display)",
+    "editorial_italic": "Fraunces, serif (font-editorial italic)",
+    "body_font": "Archivo, sans-serif (font-body)",
+    "micro_label": "IBM Plex Mono, monospace (font-mono uppercase tracking-[0.25em])",
+    "h1_hero_scale": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none font-display",
+    "h2_section_scale": "text-2xl sm:text-3xl lg:text-4xl font-display tracking-tight text-bone",
+    "subheading_scale": "text-lg sm:text-xl font-editorial italic text-gold"
+  },
+  "brand_assets": {
+    "group_logo": "/brand/platinum-logo.svg",
+    "wordmark": "/brand/platinum-wordmark.webp",
+    "hero_render": "/brand/greens-elevation.webp",
+    "main_elevation": "/brand/elevation.webp",
+    "brochure_pdf": "/brochure/platinum-greens-opulence-brochure.pdf"
+  },
+  "gallery_5_photos": [
+    {
+      "id": "ext-dusk",
+      "title": "Architectural Facade at Dusk",
+      "url": "/brand/greens-elevation.webp",
+      "span": "col-span-12 lg:col-span-7 row-span-2",
+      "badge": "Main Elevation"
+    },
+    {
+      "id": "pool-indoor",
+      "title": "112 FT Temperature-Controlled Indoor Pool",
+      "url": "https://images.unsplash.com/photo-1776363497229-616cc7a541fe?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBhcGFydG1lbnQlMjBidWlsZGluZyUyMGV4dGVyaW9yJTIwZHVzayUyMGludGVyaW9yJTIwcG9vbCUyMGxvdW5nZXxlbnwwfHx8fDE3ODkzODI3MjZ8MA&ixlib=rb-4.1.0&q=85",
+      "span": "col-span-12 sm:col-span-6 lg:col-span-5 row-span-1",
+      "badge": "112 FT Pool"
+    },
+    {
+      "id": "grand-entrance",
+      "title": "Grand Double-Height Entrance Lobby",
+      "url": "https://images.unsplash.com/photo-1606917454663-343e58811bb1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBhcGFydG1lbnQlMjBidWlsZGluZyUyMGV4dGVyaW9yJTIwZHVzayUyMGludGVyaW9yJTIwcG9vbCUyMGxvdW5nZXxlbnwwfHx8fDE3ODkzODI3MjZ8MA&ixlib=rb-4.1.0&q=85",
+      "span": "col-span-12 sm:col-span-6 lg:col-span-5 row-span-1",
+      "badge": "Grand Lobby"
+    },
+    {
+      "id": "open-greenery",
+      "title": "70% Landscaped Open Spaces & Walking Trails",
+      "url": "/brand/elevation.webp",
+      "span": "col-span-12 sm:col-span-6 lg:col-span-6 row-span-1",
+      "badge": "70% Open Space"
+    },
+    {
+      "id": "luxury-lounge",
+      "title": "Private Residence Club & Sky Lounge",
+      "url": "https://images.unsplash.com/photo-1651804279600-1f8184c1ca7c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBhcGFydG1lbnQlMjBidWlsZGluZyUyMGV4dGVyaW9yJTIwZHVzayUyMGludGVyaW9yJTIwcG9vbCUyMGxvdW5nZXxlbnwwfHx8fDE3ODkzODI3MjZ8MA&ixlib=rb-4.1.0&q=85",
+      "span": "col-span-12 sm:col-span-6 lg:col-span-6 row-span-1",
+      "badge": "Opulence Lounge"
+    }
+  ],
+  "hero_key_stats": [
+    {"value": "50+", "label": "Luxury Amenities", "desc": "Curated across 8 specialized lifestyle zones"},
+    {"value": "70%", "label": "Open Space", "desc": "Lush botanical gardens, trails & water features"},
+    {"value": "112 FT", "label": "Indoor Pool", "desc": "Temperature-controlled covered lap pool"}
+  ],
+  "price_anchor": {
+    "label": "Exclusive Residences Starting From",
+    "price": "₹1.41 Cr",
+    "suffix": "onwards",
+    "cta_text": "Schedule Private Preview"
+  },
+  "amenities_categories": [
+    {
+      "id": "arrival-social",
+      "category": "Arrival & Social",
+      "items": ["Grand Entrance Lobby", "Luxury Waiting Lounge", "World-Class Lobby", "Society Office", "Banquet Hall"]
+    },
+    {
+      "id": "entertainment",
+      "category": "Entertainment",
+      "items": ["Movie Theatre", "Indoor Games", "Billiards", "Table Tennis"]
+    },
+    {
+      "id": "fitness-wellness",
+      "category": "Fitness & Wellness",
+      "items": ["Gymnasium", "Yoga Corner", "Meditation & Aerobics Area", "Covered Swimming Pool"]
+    },
+    {
+      "id": "sports",
+      "category": "Sports",
+      "items": ["Basketball", "Skating", "Cricket Net", "Squash", "Tennis", "Pickleball", "Indoor Badminton"]
+    },
+    {
+      "id": "children",
+      "category": "Children",
+      "items": ["Kids Play Area", "Toddler Play Area"]
+    },
+    {
+      "id": "work-convenience",
+      "category": "Work & Convenience",
+      "items": ["Co-Working Space", "Study Room", "Guest Rooms", "Commercial / Department Store"]
+    },
+    {
+      "id": "community-spiritual",
+      "category": "Community & Spiritual",
+      "items": ["Hindu Temple", "Digambar Jain Temple", "Senior Citizen Area", "Landscaped Areas", "Walking / Playing Area"]
+    },
+    {
+      "id": "infrastructure-safety",
+      "category": "Infrastructure & Safety",
+      "items": ["24/7 Security", "100% Power Backup", "Water Recycling", "Modern Firefighting", "EV Charging"]
+    }
+  ],
+  "specifications_accordion": [
+    {
+      "id": "structure",
+      "header": "Structure",
+      "details": "Earthquake resistant RCC framed structure built with M25/M30 grade concrete as per IS code standards."
+    },
+    {
+      "id": "electricity",
+      "header": "Electricity",
+      "details": "3-Phase concealed copper wiring (Finolex/Havells) with modular switches (Schneider/Legrand). 100% DG power backup."
+    },
+    {
+      "id": "toilets",
+      "header": "Toilets",
+      "details": "Premium CP fittings (Kohler/Grohe) and sanitary ware (Duravit/Roca). Anti-skid vitrified tiles with glass shower partitions."
+    },
+    {
+      "id": "lifts",
+      "header": "Lifts",
+      "details": "High-speed automatic passenger & service elevators (Otis/Schindler) with ARD emergency landing and luxury cab interiors."
+    },
+    {
+      "id": "doors-windows",
+      "header": "Doors / Windows",
+      "details": "8 ft high teak wood main door frame with veneered shutter. Heavy-duty powder-coated UPVC/aluminum sliding acoustic windows."
+    },
+    {
+      "id": "flooring",
+      "header": "Flooring",
+      "details": "Imported Italian marble in living, dining & foyer. Engineered wooden flooring in master suite. Vitrified tiles in other bedrooms."
+    },
+    {
+      "id": "paint",
+      "header": "Paint",
+      "details": "Internal walls finished with royal acrylic emulsion over smooth POP punning. Weatherproof exterior texture paint."
+    },
+    {
+      "id": "kitchen",
+      "header": "Kitchen",
+      "details": "Modular kitchen ready provision with granite counter, stainless steel double sink, chimney outlet & dedicated water purifier point."
+    },
+    {
+      "id": "water-supply",
+      "header": "Water Supply",
+      "details": "24x7 treated water supply through central RO plant, rainwater harvesting reservoirs & dual plumbing system."
+    },
+    {
+      "id": "common-amenities",
+      "header": "Common Amenities",
+      "details": "High-speed Wi-Fi corridors, automated boom barriers, biometric lobby entry, EV charging stations & solar lighting."
+    }
+  ],
+  "sales_cta_strategy": {
+    "persistent_floating_bar": {
+      "mobile_sticky_bottom": ["Call Sales (+91 98290XXXXX)", "Book Site Visit", "WhatsApp"],
+      "desktop_sticky_anchor": "Floating right/bottom glass strip with Price ₹1.41 Cr*, Brochure PDF Download, Schedule Visit & Quick Enquiry trigger"
+    },
+    "modals": {
+      "enquire_dialog": "Shadcn Dialog custom styled with emerald/gold borders for Site Visit booking & Instant Callback",
+      "brochure_direct_download": "Triggers immediate PDF download + optional contact modal"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Create page component at /app/frontend/src/pages/Opulence.jsx",
+    "Register route '/opulence' in /app/frontend/src/App.js with Suspense fallback",
+    "Add 'Opulence' link to Nav (/app/frontend/src/components/Nav.jsx) with a golden 'Flagship' badge",
+    "Ensure all interactive buttons, inputs, accordions, and cards have data-testid attributes (e.g., data-testid='opulence-hero-enquire-btn', data-testid='opulence-spec-accordion-structure')",
+    "Use Framer Motion for section entrances and Lenis for smooth scroll",
+    "Ensure total dark mode compatibility with emerald-tinted accents and high contrast readable text"
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "data_testid_requirement": "MANDATORY: Every button, link, accordion header, tab, input, and floating trigger MUST have a kebab-case data-testid.",
+    "hover_states": "All buttons must have explicit text and background colors on hover. Never leave text color implicit.",
+    "accessibility": "Ensure high APCA contrast. Headings in gold (#C2A059) or platinum (#D8D8DC) over dark ink (#070708 / #061410)."
+  }
+}

@@ -1,0 +1,37 @@
+export const OP_STATS = [
+  { value: "50+", label: "LUXURY AMENITIES", desc: "Across 8 curated lifestyle zones" },
+  { value: "70%", label: "OPEN SPACE", desc: "Landscaped greens & walking trails" },
+  { value: "112 FT", label: "INDOOR POOL", desc: "Covered temperature-controlled" },
+];
+
+export const OP_GALLERY = [
+  { src: "/opulence/elevation.webp", badge: "MAIN ELEVATION", title: "Architectural Facade", cls: "md:col-span-7 md:row-span-2" },
+  { src: "/opulence/pool.webp", badge: "112 FT INDOOR POOL", title: "Covered Swimming Pool", cls: "md:col-span-5" },
+  { src: "/opulence/lobby.webp", badge: "GRAND LOBBY", title: "Double-Height Entrance", cls: "md:col-span-5" },
+  { src: "/opulence/aerial.webp", badge: "70% OPEN SPACE", title: "Aerial Master View", cls: "md:col-span-6" },
+  { src: "/opulence/banquet.webp", badge: "BANQUET & LOUNGE", title: "Celebration Hall", cls: "md:col-span-6" },
+];
+
+export const OP_AMENITIES = [
+  { id: "arrival-social", cat: "Arrival & Social", items: ["Grand Entrance Lobby", "Luxury Waiting Lounge", "World-Class Lobby", "Society Office", "Banquet Hall"] },
+  { id: "entertainment", cat: "Entertainment", items: ["Movie Theatre", "Indoor Games", "Billiards", "Table Tennis"] },
+  { id: "fitness-wellness", cat: "Fitness & Wellness", items: ["Fully Equipped Gymnasium", "Yoga Corner", "Meditation & Aerobics Area", "Covered Swimming Pool"] },
+  { id: "sports", cat: "Sports", items: ["Basketball Court", "Skating Area", "Cricket Net", "Squash Court", "Tennis Court", "Pickleball Courts", "Indoor Badminton Court"] },
+  { id: "children", cat: "Children", items: ["Kids Play Area", "Toddler Play Area"] },
+  { id: "work-convenience", cat: "Work & Convenience", items: ["Co-Working Space", "Study Room", "Guest Rooms", "Commercial / Department Store"] },
+  { id: "community-spiritual", cat: "Community & Spiritual", items: ["Dedicated Hindu Temple", "Dedicated Digambar Jain Temple", "Senior Citizen Area", "Landscaped Areas", "Walking / Playing Area"] },
+  { id: "infrastructure-safety", cat: "Infrastructure & Safety", items: ["24/7 Security", "100% Power Backup", "Water Recycling System", "Modern Firefighting System", "EV Charging Station"] },
+];
+
+export const OP_SPECS = [
+  { id: "structure", header: "Structure", items: ["R.C.C. Frame Structure as per IS codes", "Vastu Compliant Construction", "Seismic Zone Earthquake Resistant Structure", "Well Designed Lobbies with Beautiful Flooring", "Water Recycling System", "Advance/Modern Firefighting System", "Water Harvesting System", "Security System Managed by Well-Trained Personnel", "CCTV Surveillance for Entire Area"] },
+  { id: "electricity", header: "Electricity", items: ["Adequate Number of Electric Points with Concealed Conduits", "Modular Switches for Power & Lighting", "100% Power Backup for Common Areas & Flats", "Tube Light & Fan in Each Room & Lobby"] },
+  { id: "toilets", header: "Toilets", items: ["High Class/Good Quality Ceramic Wares", "European WC with Seat Cover & Flush Tank/Flush Valve (Duravit or equivalent)", "Premium Brand CP Fitting with Shower (Hansgrohe, Schell or equivalent)", "Designer Ceramic Tile upto Door Height", "No Dark Toilets", "Easy to Maintain Shafts, Plumbing and Sanitary System"] },
+  { id: "lifts", header: "Lifts", items: ["High Speed Big Size Lifts in Each Block", "Automatic Lifts", "One Stretcher Lift in Each Block"] },
+  { id: "doors-windows", header: "Doors / Windows", items: ["Wooden Doors & Door Frames with Good Quality Fitting & Polish"] },
+  { id: "flooring", header: "Flooring", items: ["Vitrified Tiles (Kajaria/Johnson/Orient or equivalent)", "Anti Skid Tiles in Bathroom"] },
+  { id: "paint", header: "Paint", items: ["Good Quality Paint for Interior", "Water Proof Texture Paint for Exterior"] },
+  { id: "kitchen", header: "Kitchen", items: ["Good Quality Branded Sink with Provision for Water Purifier", "Good Quality Countertop", "Ceramic Tiles Dado upt 2 feet height"] },
+  { id: "water-supply", header: "Water Supply", items: ["Underground/Overhead Storage Tanks of Suitable Capacity", "Borewell for Supply of Water"] },
+  { id: "common-amenities", header: "Common Amenities", items: ["Project Approved by J.D.A. & R.E.R.A. Registered", "Garden with Beautiful Landscaping", "70% Open Area", "100% Power Backup for Common Areas & Flats", "Rain Water Harvesting System", "World Class Waiting Lounge & Entrance Lobby", "Children Play Area"] },
+];

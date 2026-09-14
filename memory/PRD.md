@@ -91,3 +91,11 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 - Deleted pages/Opulence.jsx and sections/opulence/ (OpHero, Movement, AmenityField, FloorPlans, OpAction). Route /platinum-greens-opulence removed (falls back to Home).
 - Nav "GREENS OPULENCE" now scrolls to home #opulence feature section; Portfolio Opulence card and removed "ENTER THE FULL EXPERIENCE" CTA repoint to enquiry.
 - NEXT UP (user intent): a brand-new Greens Opulence page will be designed from scratch — await user direction on structure/content.
+
+---
+## Update: 2026-09-14 — New Greens Opulence Flagship Page (DONE)
+- New route /opulence with distinct "botanical midnight" visual identity (deep emerald #061410 base, eglow accents) vs home's bone/near-black.
+- Sections: Hero (real elevation render, logo+wordmark chip, stats 50+/70%/112 FT, ₹1.41 Cr chip, Book Site Visit + Brochure CTAs) → 5-photo bento gallery (real renders extracted from brochure PDF: elevation, pool, lobby, aerial, banquet at /public/opulence/*.webp) → 50+ Amenities (8 user-supplied categories, verbatim) → Specifications accordion (10 categories, headers only, tap to reveal — verbatim text from user's brochure screenshots) → Sales CTA band (Schedule Private Preview, Brochure, Call, WhatsApp) → Footer.
+- Nav item 02 back to route /opulence; Portfolio Opulence card and home "ENTER THE FULL EXPERIENCE" CTA link to /opulence.
+- data.js holds all amenity/spec content at sections/opulence/data.js.
+- Verified: all sections render, accordion expands with correct content, hero CTAs navigate to /enquire with project+intent preselected. Design blueprint at /app/design_guidelines.json (stock photo URLs from agent NOT used; real brochure renders used instead).
