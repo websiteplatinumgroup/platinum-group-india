@@ -10,8 +10,7 @@ const INTERESTS = [
 
 const INTENTS = [
   { id: "site-visit", label: "Book a Site Visit" },
-  { id: "brochure", label: "Receive Brochure" },
-  { id: "price", label: "Get Price Details" },
+  { id: "brochure", label: "Download Brochure" },
   { id: "floor-plan", label: "Request Floor Plans" },
   { id: "sales", label: "Speak to Sales" },
 ];

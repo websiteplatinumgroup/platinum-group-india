@@ -9,7 +9,7 @@ import { track } from "../lib/config";
 const CHIPS = [
   { t: "3 & 4 BHK ULTRA-PREMIUM RESIDENCES", cls: "text-bone/90" },
   { t: "₹1.41 CR ONWARDS", cls: "text-gold" },
-  { t: "FIT-OUT STARTED", cls: "text-eglow", dot: true },
+  { t: "FIT-OUT STARTED", cls: "text-eglow" },
 ];
 
 export default function OpulenceFeature() {
@@ -80,7 +80,6 @@ export default function OpulenceFeature() {
                 key={c.t}
                 className={`flex items-center gap-2 border border-white/15 px-4 py-2 font-mono text-[10px] tracking-[0.2em] ${c.cls}`}
               >
-                {c.dot && <span className="h-1.5 w-1.5 rounded-full bg-eglow" />}
                 {c.t}
               </span>
             ))}
@@ -97,12 +96,12 @@ export default function OpulenceFeature() {
               REQUEST DETAILS <ArrowUpRight size={14} />
             </Link>
             <Link
-              to="/enquire?project=opulence&intent=price"
-              data-testid="opulence-cta-price"
-              onClick={() => track("cta_click", { placement: "opulence_feature", target: "price_details" })}
+              to="/enquire?project=opulence&intent=brochure"
+              data-testid="opulence-cta-brochure"
+              onClick={() => track("brochure_request", { placement: "opulence_feature", project: "opulence" })}
               className="border border-white/25 px-8 py-4 font-mono text-[11px] tracking-[0.3em] text-bone transition-colors duration-300 hover:border-gold hover:text-gold"
             >
-              GET PRICE DETAILS
+              DOWNLOAD BROCHURE
             </Link>
             <Link
               to="/platinum-greens-opulence"

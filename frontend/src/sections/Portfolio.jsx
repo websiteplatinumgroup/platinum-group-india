@@ -18,7 +18,7 @@ const ONGOING = [
   {
     name: "PLATINUM GREENS",
     loc: "MANSAROVAR EXTENSION · JAIPUR",
-    facts: "3 & 4 BHK residences & penthouses · ₹65 Lakh onwards",
+    facts: "2, 3 & 4 BHK residences · ₹70 Lakh onwards",
     status: "POSSESSION STARTED",
     live: false,
     need: "greens-hero.jpg",
