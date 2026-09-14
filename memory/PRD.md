@@ -111,3 +111,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-14 — Hero Instant Jump Button (DONE)
 - Hero "GREENS OPULENCE" button now jumps instantly (no slow glide) to the #opulence flagship section on home. scrollToId accepts optional immediate flag. Verified: click lands with section aligned at top.
+
+---
+## Update: 2026-09-14 — QR Overlay Shrunk (DONE)
+- Portfolio RERA QR + text reduced to minimal size (w-9/md:w-11, 4.5-5px text) — subtle compliance mark visible only up close, per user request.
