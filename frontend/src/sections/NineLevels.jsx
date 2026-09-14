@@ -141,17 +141,48 @@ export default function NineLevels() {
             <AnimatePresence mode="wait">
               <motion.div
                 key={active}
-                initial={{ opacity: 0, y: 60 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -40 }}
-                transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                initial="hidden"
+                animate="show"
+                exit="exit"
+                variants={{
+                  hidden: {},
+                  show: { transition: { staggerChildren: 0.09 } },
+                  exit: {
+                    opacity: 0,
+                    y: -28,
+                    transition: { duration: 0.28, ease: "easeIn" },
+                  },
+                }}
               >
-                <h2 className="mt-5 font-display text-4xl leading-none text-bone sm:text-5xl lg:text-7xl xl:text-8xl">
-                  {LEVELS[active].title}
-                </h2>
-                <p className="mx-auto mt-5 max-w-md font-editorial text-base italic text-platinum/80 md:text-xl">
-                  {LEVELS[active].line}
-                </p>
+                <div className="mt-5 overflow-hidden">
+                  <motion.h2
+                    variants={{
+                      hidden: { y: "112%" },
+                      show: {
+                        y: "0%",
+                        transition: { duration: 0.85, ease: [0.22, 1, 0.36, 1] },
+                      },
+                    }}
+                    className="font-display text-4xl leading-none text-bone will-change-transform sm:text-5xl lg:text-7xl xl:text-8xl"
+                  >
+                    {LEVELS[active].title}
+                  </motion.h2>
+                </div>
+                <div className="overflow-hidden">
+                  <motion.p
+                    variants={{
+                      hidden: { opacity: 0, y: 26 },
+                      show: {
+                        opacity: 1,
+                        y: 0,
+                        transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
+                      },
+                    }}
+                    className="mx-auto mt-5 max-w-md font-editorial text-base italic text-platinum/80 md:text-xl"
+                  >
+                    {LEVELS[active].line}
+                  </motion.p>
+                </div>
               </motion.div>
             </AnimatePresence>
           </div>

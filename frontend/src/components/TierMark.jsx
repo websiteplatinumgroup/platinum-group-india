@@ -151,7 +151,7 @@ export const TierProgress = ({ active = 0, className = "" }) => (
           pathLength: i <= active ? 1 : 0,
           opacity: i <= active ? 1 : 0,
         }}
-        transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       />
     ))}
   </svg>
