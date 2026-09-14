@@ -66,3 +66,11 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 - P0: Replace temp imagery as assets arrive (phase1-plan.md §10 list).
 - P1: Platinum Greens page, Legacy horizontal timeline (5 delivered projects — need years/facts from client), Upcoming page (Coming Soon), About page.
 - P2: Analytics ID wiring (hooks ready), JSON-LD, sitemap, performance hardening.
+
+---
+## Update: 2026-09-14 — Lead Email Notifications (DONE)
+- User question answered: enquiries go to MongoDB `leads` collection via POST /api/leads.
+- Added instant email notification via Emergent-managed Resend integration: every new lead emails **leads@platinumgroupindia.com** (non-blocking background task; lead capture never fails if email fails).
+- Env: EMERGENT_EMAIL_KEY, EMAIL_FROM_NAME=Platinum Group, LEADS_NOTIFY_EMAIL in /app/backend/.env.
+- Verified: test lead → DB saved (201) + email 202 Accepted, id logged.
+- Future: Sell.do CRM webhook integration (user said "later"). Admin leads portal optional. Hero video pending user asset. Ads conversion tracking in dataLayer (P1).
