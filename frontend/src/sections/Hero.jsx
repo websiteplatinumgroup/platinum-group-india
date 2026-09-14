@@ -30,16 +30,7 @@ export default function Hero() {
       data-testid="hero"
       className="relative flex min-h-[100svh] items-end overflow-hidden"
     >
-      <motion.div className="absolute inset-0" style={{ y, scale }}>
-        <img
-          src={ASSETS.hero.src}
-          alt={ASSETS.hero.alt}
-          fetchPriority="high"
-          decoding="async"
-          className="h-full w-full object-cover opacity-60"
-        />
-      </motion.div>
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-ink/40" />
+      <motion.div className="absolute inset-0 bg-bone" style={{ y, scale }} />
       <span
         data-testid="temp-asset-tag"
         className="absolute right-6 top-24 z-10 border border-eglow/40 bg-ink/85 px-2 py-1 font-mono text-[9px] tracking-[0.2em] text-eglow"
@@ -50,7 +41,7 @@ export default function Hero() {
       <div className="relative z-10 w-full px-6 pb-32 md:px-12 md:pb-24">
         <h1>
           <Mask delay={d + 0.1}>
-            <span className="font-display text-[15vw] leading-[0.95] text-bone md:text-[10.5vw]">
+            <span className="font-display text-[15vw] leading-[0.95] text-ink md:text-[10.5vw]">
               WE BUILD
             </span>
           </Mask>
@@ -61,7 +52,7 @@ export default function Hero() {
           </Mask>
         </h1>
         <Mask delay={d + 0.38}>
-          <span className="mt-8 block max-w-md font-body text-sm leading-relaxed text-platinum/80 md:text-base">
+          <span className="mt-8 block max-w-md font-body text-sm leading-relaxed text-ink/60 md:text-base">
             Architecture shaped by ambition
           </span>
         </Mask>
@@ -71,7 +62,7 @@ export default function Hero() {
               data-testid="hero-discover-button"
               data-cursor="EXPLORE"
               onClick={() => scrollToId("opulence")}
-              className="border border-white/20 px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-bone transition-colors duration-300 hover:border-bone"
+              className="border border-ink/25 px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-ink transition-colors duration-300 hover:border-ink"
             >
               GREENS OPULENCE
             </button>

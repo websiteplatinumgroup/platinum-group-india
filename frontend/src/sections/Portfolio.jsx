@@ -74,7 +74,6 @@ export default function Portfolio() {
                       p.live ? "border-eglow/40 text-eglow" : "border-gold/50 text-gold"
                     }`}
                   >
-                    {p.live && <span className="h-1.5 w-1.5 rounded-full bg-eglow" />}
                     {p.status}
                   </span>
                   <h3 className="mt-5 font-display text-2xl text-bone transition-colors duration-300 group-hover:text-gold md:text-3xl">

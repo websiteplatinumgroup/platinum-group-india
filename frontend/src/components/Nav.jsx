@@ -22,6 +22,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const { pathname } = useLocation();
+  const light = pathname === "/" && !scrolled;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -63,7 +64,10 @@ export default function Nav() {
             aria-label="Platinum Group home"
           >
             <TierMark className="h-8 w-10" />
-            <Wordmark className="h-5 w-auto md:h-7" />
+            <Wordmark
+              tone={light ? "#070708" : "#D8D8DC"}
+              className="h-5 w-auto transition-all duration-500 md:h-7"
+            />
           </Link>
           <div className="flex items-center gap-4 md:gap-8">
             <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
@@ -82,7 +86,11 @@ export default function Nav() {
                     key={item.n}
                     data-testid={`nav-link-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
                     onClick={() => go(item, "header")}
-                    className="font-mono text-[11px] tracking-[0.3em] text-platinum/70 transition-colors duration-300 hover:text-gold"
+                    className={`font-mono text-[11px] tracking-[0.3em] transition-colors duration-300 ${
+                      light
+                        ? "text-ink/60 hover:text-ink"
+                        : "text-platinum/70 hover:text-gold"
+                    }`}
                   >
                     {item.label}
                   </button>
@@ -92,7 +100,9 @@ export default function Nav() {
             <button
               data-testid="nav-menu-button"
               onClick={() => setOpen(true)}
-              className="font-mono text-[11px] tracking-[0.3em] text-bone transition-colors hover:text-gold md:hidden"
+              className={`font-mono text-[11px] tracking-[0.3em] transition-colors md:hidden ${
+                light ? "text-ink hover:text-gold" : "text-bone hover:text-gold"
+              }`}
               aria-label="Open menu"
             >
               MENU
