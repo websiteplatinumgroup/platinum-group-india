@@ -45,9 +45,9 @@ export const track = (event, data = {}) => {
   window.dataLayer.push({ event, ...data });
 };
 
-export const scrollToId = (id) => {
+export const scrollToId = (id, immediate = false) => {
   const el = document.getElementById(id);
   if (!el) return;
-  if (window.__lenis) window.__lenis.scrollTo(el, { duration: 1.4 });
-  else el.scrollIntoView({ behavior: "smooth" });
+  if (window.__lenis) window.__lenis.scrollTo(el, { duration: 1.4, immediate });
+  else el.scrollIntoView({ behavior: immediate ? "auto" : "smooth" });
 };

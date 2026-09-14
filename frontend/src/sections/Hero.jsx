@@ -61,7 +61,7 @@ export default function Hero() {
             <button
               data-testid="hero-discover-button"
               data-cursor="EXPLORE"
-              onClick={() => scrollToId("opulence")}
+              onClick={() => scrollToId("opulence", true)}
               className="border border-ink/25 px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-ink transition-colors duration-300 hover:border-ink"
             >
               GREENS OPULENCE

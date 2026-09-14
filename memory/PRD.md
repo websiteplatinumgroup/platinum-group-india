@@ -107,3 +107,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-14 — Per-Project RERA QR (DONE)
 - Portfolio overlays now per-project, data-driven (qr + rera fields in ONGOING list): Opulence = rera-qr.png + RERA/RAJ/P/2023/2875; Greens = rera-qr-greens.png + RERA/RAJ/P/2021/1631. QR size reduced (w-16/md:w-20). Verified both render with correct images.
+
+---
+## Update: 2026-09-14 — Hero Instant Jump Button (DONE)
+- Hero "GREENS OPULENCE" button now jumps instantly (no slow glide) to the #opulence flagship section on home. scrollToId accepts optional immediate flag. Verified: click lands with section aligned at top.
