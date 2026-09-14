@@ -96,6 +96,29 @@ export const TierMark = ({ className = "h-8 w-10" }) => (
   </svg>
 );
 
+// The brand wordmark exactly as supplied in the approved logo artwork.
+export const Wordmark = ({ className = "h-5 w-auto" }) => (
+  <svg
+    viewBox="200 905 854 125"
+    className={className}
+    role="img"
+    aria-label="Platinum Group"
+  >
+    <g
+      fill="#7F8A8F"
+      stroke="#7F8A8F"
+      strokeWidth="2.07"
+      strokeLinejoin="round"
+      paintOrder="stroke"
+      transform="translate(0 -30.906679851669)"
+    >
+      {WORDMARK_PATHS.map((d, i) => (
+        <path key={i} d={d} />
+      ))}
+    </g>
+  </svg>
+);
+
 // Scroll-linked build: chevron i draws in as the visitor reaches
 // philosophy i+1, foundation line always present.
 export const TierProgress = ({ active = 0, className = "" }) => (

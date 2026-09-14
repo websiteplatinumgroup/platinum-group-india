@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, X } from "lucide-react";
-import { TierMark } from "./TierMark";
+import { TierMark, Wordmark } from "./TierMark";
 import {
   PHONE_DISPLAY,
   PHONE_TEL,
@@ -63,9 +63,7 @@ export default function Nav() {
             aria-label="Platinum Group home"
           >
             <TierMark className="h-7 w-9" />
-            <span className="font-display text-sm tracking-[0.35em] text-bone">
-              PLATINUM GROUP
-            </span>
+            <Wordmark className="h-4 w-auto md:h-[18px]" />
           </Link>
           <div className="flex items-center gap-4 md:gap-8">
             <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
