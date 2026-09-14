@@ -107,7 +107,7 @@ export const Wordmark = ({ className = "h-5 w-auto", tone = "#D8D8DC" }) => (
     <g
       fill={tone}
       stroke={tone}
-      strokeWidth="2.07"
+      strokeWidth="3.4"
       strokeLinejoin="round"
       paintOrder="stroke"
       transform="translate(0 -30.906679851669)"

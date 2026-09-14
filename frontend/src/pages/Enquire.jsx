@@ -2,9 +2,7 @@ import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { ArrowUpRight, Building2, MapPin, MessageCircle, Phone } from "lucide-react";
 import LeadForm from "../components/LeadForm";
-import { TempImage } from "../components/TempImage";
 import { Mask, FadeUp } from "../components/Rise";
-import { ASSETS } from "../lib/assets";
 import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, SITE_ADDRESS, OFFICE_ADDRESS, SITE_MAPS_URL, OFFICE_MAPS_URL, track } from "../lib/config";
 
 const ROWS = [
@@ -99,9 +97,6 @@ export default function Enquire() {
                 </span>
               </a>
             ))}
-          </FadeUp>
-          <FadeUp delay={0.4} className="mt-12">
-            <TempImage asset={ASSETS.enquire} className="h-64 w-full md:h-80" />
           </FadeUp>
         </div>
 

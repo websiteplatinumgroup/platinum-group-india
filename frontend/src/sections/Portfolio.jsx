@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import { TempImage } from "../components/TempImage";
 import { FadeUp, Mask } from "../components/Rise";
 import { track } from "../lib/config";
 
@@ -69,10 +68,6 @@ export default function Portfolio() {
                 onClick={() => track("cta_click", { placement: "portfolio", target: p.name })}
                 className="group block h-full bg-ink2"
               >
-                <TempImage
-                  asset={{ src: "", need: p.need, alt: p.alt }}
-                  className="aspect-[16/9] w-full"
-                />
                 <div className="p-7 md:p-9">
                   <span
                     className={`flex w-fit items-center gap-2 border px-3 py-1.5 font-mono text-[9px] tracking-[0.25em] ${

@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { TierBuild } from "./TierMark";
 
 export default function Ascent() {
   const reduced = useReducedMotion();
+  const { pathname } = useLocation();
   const [show, setShow] = useState(() => {
+    if (pathname !== "/") return false;
     try {
       return !sessionStorage.getItem("pg-ascent");
     } catch {

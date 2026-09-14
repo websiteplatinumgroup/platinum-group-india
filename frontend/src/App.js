@@ -1,12 +1,13 @@
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Lenis from "lenis";
 import Ascent from "@/components/Ascent";
 import Nav from "@/components/Nav";
 import { MobileCTA, WhatsAppFloat } from "@/components/Conversion";
-import Home from "@/pages/Home";
-import Enquire from "@/pages/Enquire";
-import Opulence from "@/pages/Opulence";
+
+const Home = lazy(() => import("@/pages/Home"));
+const Enquire = lazy(() => import("@/pages/Enquire"));
+const Opulence = lazy(() => import("@/pages/Opulence"));
 
 const ScrollManager = () => {
   const { pathname } = useLocation();
@@ -40,12 +41,14 @@ function App() {
       <ScrollManager />
       <Ascent />
       <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/platinum-greens-opulence" element={<Opulence />} />
-        <Route path="/enquire" element={<Enquire />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
+      <Suspense fallback={null}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/platinum-greens-opulence" element={<Opulence />} />
+          <Route path="/enquire" element={<Enquire />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </Suspense>
       <MobileCTA />
       <WhatsAppFloat />
     </BrowserRouter>

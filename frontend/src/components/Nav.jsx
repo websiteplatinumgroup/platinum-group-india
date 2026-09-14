@@ -62,8 +62,8 @@ export default function Nav() {
             className="flex items-center gap-3"
             aria-label="Platinum Group home"
           >
-            <TierMark className="h-7 w-9" />
-            <Wordmark className="h-[18px] w-auto md:h-6" />
+            <TierMark className="h-8 w-10" />
+            <Wordmark className="h-5 w-auto md:h-7" />
           </Link>
           <div className="flex items-center gap-4 md:gap-8">
             <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
