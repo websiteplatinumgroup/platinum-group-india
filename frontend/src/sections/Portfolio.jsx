@@ -83,14 +83,19 @@ export default function Portfolio() {
                       decoding="async"
                       className={`h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03] ${p.pos || ""}`}
                     />
-                    <img
-                      src="/brand/platinum-wordmark.webp"
-                      alt="Platinum Group"
-                      loading="lazy"
-                      decoding="async"
-                      data-testid="portfolio-image-logo"
-                      className="absolute right-4 top-4 z-10 w-32 rounded-sm bg-ink/55 px-3 py-2 opacity-95 backdrop-blur-sm md:w-44"
-                    />
+                    <div className="absolute right-4 top-4 z-10 flex w-24 flex-col items-center gap-1.5 md:w-28">
+                      <img
+                        src="/brand/rera-qr.png"
+                        alt="RERA QR — Platinum Greens Opulence"
+                        loading="lazy"
+                        decoding="async"
+                        data-testid="portfolio-image-logo"
+                        className="w-full"
+                      />
+                      <span className="bg-ink/70 px-1.5 py-0.5 text-center font-mono text-[7px] leading-relaxed tracking-[0.12em] text-bone md:text-[8px]">
+                        RERA/RAJ/P/2023/2875<br />RERA.RAJASTHAN.GOV.IN
+                      </span>
+                    </div>
                   </div>
                 )}
                 <div className="p-7 md:p-9">

@@ -99,3 +99,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 - Nav item 02 back to route /opulence; Portfolio Opulence card and home "ENTER THE FULL EXPERIENCE" CTA link to /opulence.
 - data.js holds all amenity/spec content at sections/opulence/data.js.
 - Verified: all sections render, accordion expands with correct content, hero CTAs navigate to /enquire with project+intent preselected. Design blueprint at /app/design_guidelines.json (stock photo URLs from agent NOT used; real brochure renders used instead).
+
+---
+## Update: 2026-09-14 — Portfolio RERA QR Overlay (DONE)
+- Replaced wordmark overlay on Portfolio project images with user's RERA QR (saved /public/brand/rera-qr.png) + text "RERA/RAJ/P/2023/2875 · RERA.RAJASTHAN.GOV.IN", no backdrop box on QR. Verified via screenshot.
