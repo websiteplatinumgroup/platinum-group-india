@@ -103,3 +103,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-14 — Portfolio RERA QR Overlay (DONE)
 - Replaced wordmark overlay on Portfolio project images with user's RERA QR (saved /public/brand/rera-qr.png) + text "RERA/RAJ/P/2023/2875 · RERA.RAJASTHAN.GOV.IN", no backdrop box on QR. Verified via screenshot.
+
+---
+## Update: 2026-09-14 — Per-Project RERA QR (DONE)
+- Portfolio overlays now per-project, data-driven (qr + rera fields in ONGOING list): Opulence = rera-qr.png + RERA/RAJ/P/2023/2875; Greens = rera-qr-greens.png + RERA/RAJ/P/2021/1631. QR size reduced (w-16/md:w-20). Verified both render with correct images.

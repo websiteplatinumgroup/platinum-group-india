@@ -17,6 +17,8 @@ const ONGOING = [
     alt: "Platinum Greens Opulence facade (asset needed)",
     to: "/opulence",
     testid: "portfolio-opulence",
+    qr: "/brand/rera-qr.png",
+    rera: "RERA/RAJ/P/2023/2875",
   },
   {
     name: "PLATINUM GREENS",
@@ -31,6 +33,8 @@ const ONGOING = [
     alt: "Platinum Greens residences (asset needed)",
     to: "/enquire?project=greens&intent=sales",
     testid: "portfolio-greens",
+    qr: "/brand/rera-qr-greens.png",
+    rera: "RERA/RAJ/P/2021/1631",
   },
 ];
 
@@ -83,17 +87,17 @@ export default function Portfolio() {
                       decoding="async"
                       className={`h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03] ${p.pos || ""}`}
                     />
-                    <div className="absolute right-4 top-4 z-10 flex w-24 flex-col items-center gap-1.5 md:w-28">
+                    <div className="absolute right-4 top-4 z-10 flex w-16 flex-col items-center gap-1 md:w-20">
                       <img
-                        src="/brand/rera-qr.png"
-                        alt="RERA QR — Platinum Greens Opulence"
+                        src={p.qr}
+                        alt={`RERA QR — ${p.name}`}
                         loading="lazy"
                         decoding="async"
                         data-testid="portfolio-image-logo"
                         className="w-full"
                       />
-                      <span className="bg-ink/70 px-1.5 py-0.5 text-center font-mono text-[7px] leading-relaxed tracking-[0.12em] text-bone md:text-[8px]">
-                        RERA/RAJ/P/2023/2875<br />RERA.RAJASTHAN.GOV.IN
+                      <span className="bg-ink/70 px-1 py-0.5 text-center font-mono text-[6px] leading-relaxed tracking-[0.12em] text-bone md:text-[7px]">
+                        {p.rera}<br />RERA.RAJASTHAN.GOV.IN
                       </span>
                     </div>
                   </div>
