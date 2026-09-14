@@ -87,18 +87,18 @@ export default function Portfolio() {
                       decoding="async"
                       className={`h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03] ${p.pos || ""}`}
                     />
-                    <div className="absolute right-3 top-3 z-10 flex w-9 flex-col items-center gap-0.5 md:w-11">
+                    <div className="absolute right-3 top-3 z-10 flex items-center gap-1.5">
+                      <span className="bg-ink/70 px-1 py-0.5 text-right font-mono text-[4.5px] leading-relaxed tracking-[0.08em] text-bone md:text-[5px]">
+                        {p.rera}<br />RERA.RAJASTHAN.GOV.IN
+                      </span>
                       <img
                         src={p.qr}
                         alt={`RERA QR — ${p.name}`}
                         loading="lazy"
                         decoding="async"
                         data-testid="portfolio-image-logo"
-                        className="w-full"
+                        className="w-9 md:w-11"
                       />
-                      <span className="w-full bg-ink/70 px-0.5 py-px text-center font-mono text-[4.5px] leading-relaxed tracking-[0.08em] text-bone md:text-[5px]">
-                        {p.rera} RERA.RAJASTHAN.GOV.IN
-                      </span>
                     </div>
                   </div>
                 )}
