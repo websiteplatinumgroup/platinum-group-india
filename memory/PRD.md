@@ -115,3 +115,11 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-14 — QR Overlay Shrunk (DONE)
 - Portfolio RERA QR + text reduced to minimal size (w-9/md:w-11, 4.5-5px text) — subtle compliance mark visible only up close, per user request.
+
+---
+## Update: 2026-09-14 — AI Cinematic Hero Video (DONE)
+- Generated 30s looping lifestyle film with Sora 2 (via Emergent universal key): 3 clips (12s garden walk+swings, 12s sports/cycling/pool, 8s clubhouse/courtyard/return walk) with repeated verbatim character description for family consistency; stitched with ffmpeg crossfades + final-1s↔opening-1s loop blend for seamless looping.
+- Script: /app/backend/scripts/generate_hero_video.py (clips cached in /app/backend/tmp_video/, re-run safe).
+- Assets: /public/brand/hero-loop.mp4 (H.264, 8.8MB), hero-loop.webm (VP9 fallback, 5MB), hero-poster.jpg. Hero.jsx plays dual-source muted autoplay loop video with bg-bone/35 overlay for text legibility; TEMP ASSET tag removed.
+- NOTE: sora-2 supports only 1280x720/720x1280 (not 1792x1024). Headless test browser lacks H.264 — webm fallback covers verification.
+- Video is generic/no branding, safe for reuse across projects per user spec.

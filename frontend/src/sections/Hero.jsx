@@ -2,7 +2,6 @@ import { useMemo, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import { ASSETS } from "../lib/assets";
 import { Mask } from "../components/Rise";
 import { scrollToId, track, tryBrochureDownload } from "../lib/config";
 
@@ -30,13 +29,22 @@ export default function Hero() {
       data-testid="hero"
       className="relative flex min-h-[100svh] items-end overflow-hidden"
     >
-      <motion.div className="absolute inset-0 bg-bone" style={{ y, scale }} />
-      <span
-        data-testid="temp-asset-tag"
-        className="absolute right-6 top-24 z-10 border border-eglow/40 bg-ink/85 px-2 py-1 font-mono text-[9px] tracking-[0.2em] text-eglow"
-      >
-        TEMP ASSET · {ASSETS.hero.need}
-      </span>
+      <motion.div className="absolute inset-0" style={{ y, scale }}>
+        <video
+          data-testid="hero-video"
+          className="h-full w-full object-cover"
+          poster="/brand/hero-poster.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+        >
+          <source src="/brand/hero-loop.mp4" type="video/mp4" />
+          <source src="/brand/hero-loop.webm" type="video/webm" />
+        </video>
+        <div className="absolute inset-0 bg-bone/35" />
+      </motion.div>
 
       <div className="relative z-10 w-full px-6 pb-32 md:px-12 md:pb-24">
         <h1>
