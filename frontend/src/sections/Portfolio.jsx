@@ -83,6 +83,14 @@ export default function Portfolio() {
                       decoding="async"
                       className={`h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03] ${p.pos || ""}`}
                     />
+                    <img
+                      src="/brand/platinum-wordmark.webp"
+                      alt="Platinum Group"
+                      loading="lazy"
+                      decoding="async"
+                      data-testid="portfolio-image-logo"
+                      className="absolute right-4 top-4 z-10 w-32 rounded-sm bg-ink/55 px-3 py-2 opacity-95 backdrop-blur-sm md:w-44"
+                    />
                   </div>
                 )}
                 <div className="p-7 md:p-9">

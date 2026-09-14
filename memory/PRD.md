@@ -81,3 +81,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 - Hero: added DOWNLOAD BROCHURE button (hero-brochure-button) in CTA row.
 - OpulenceFeature: section vertical padding reduced (py-32/md:py-48 → py-20/md:py-24) so it fits screens (~869px tall now).
 - Verified: test lead → team notify email + auto-reply both accepted (202); smoke screenshot OK.
+
+---
+## Update: 2026-09-14 — Portfolio Image Logo Overlay (DONE)
+- Added Platinum Group wordmark (PlatinumGroup_Wordmark_Original_Transparent.webp, saved to /public/brand/platinum-wordmark.webp) as overlay on top-right corner of Portfolio project images, with dark glass backdrop for legibility. Verified via screenshot.
