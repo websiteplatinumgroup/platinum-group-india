@@ -13,7 +13,7 @@ import {
 
 const ITEMS = [
   { n: "01", label: "HOME", type: "route", to: "/" },
-  { n: "02", label: "GREENS OPULENCE", type: "route", to: "/platinum-greens-opulence" },
+  { n: "02", label: "GREENS OPULENCE", type: "scroll", to: "opulence" },
   { n: "03", label: "ENQUIRE", type: "route", to: "/enquire" },
 ];
 

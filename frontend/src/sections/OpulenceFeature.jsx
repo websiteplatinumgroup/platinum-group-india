@@ -95,14 +95,6 @@ export default function OpulenceFeature() {
             >
               DOWNLOAD BROCHURE
             </button>
-            <Link
-              to="/platinum-greens-opulence"
-              data-testid="opulence-cta-experience"
-              onClick={() => track("cta_click", { placement: "opulence_feature", target: "full_experience" })}
-              className="flex items-center gap-2 font-mono text-[11px] tracking-[0.3em] text-platinum/70 underline-offset-8 transition-colors duration-300 hover:text-gold hover:underline"
-            >
-              ENTER THE FULL EXPERIENCE <ArrowUpRight size={13} />
-            </Link>
           </span>
         </Mask>
       </div>

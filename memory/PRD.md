@@ -85,3 +85,9 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-14 — Portfolio Image Logo Overlay (DONE)
 - Added Platinum Group wordmark (PlatinumGroup_Wordmark_Original_Transparent.webp, saved to /public/brand/platinum-wordmark.webp) as overlay on top-right corner of Portfolio project images, with dark glass backdrop for legibility. Verified via screenshot.
+
+---
+## Update: 2026-09-14 — Opulence Dedicated Page Removed (DONE)
+- Deleted pages/Opulence.jsx and sections/opulence/ (OpHero, Movement, AmenityField, FloorPlans, OpAction). Route /platinum-greens-opulence removed (falls back to Home).
+- Nav "GREENS OPULENCE" now scrolls to home #opulence feature section; Portfolio Opulence card and removed "ENTER THE FULL EXPERIENCE" CTA repoint to enquiry.
+- NEXT UP (user intent): a brand-new Greens Opulence page will be designed from scratch — await user direction on structure/content.
