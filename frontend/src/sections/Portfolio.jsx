@@ -11,6 +11,7 @@ const ONGOING = [
     status: "FIT-OUT STARTED",
     live: true,
     img: "/brand/elevation.webp",
+    pos: "object-center",
     alt: "Platinum Greens Opulence — elevation render",
     need: "opulence-facade-day.jpg",
     alt: "Platinum Greens Opulence facade (asset needed)",
@@ -23,6 +24,9 @@ const ONGOING = [
     facts: "2, 3 & 4 BHK residences · ₹70 Lakh onwards",
     status: "POSSESSION STARTED",
     live: false,
+    img: "/brand/elevation.webp",
+    pos: "object-right",
+    alt: "Platinum Greens residences, Mansarovar Extension",
     need: "greens-hero.jpg",
     alt: "Platinum Greens residences (asset needed)",
     to: "/enquire?project=greens&intent=sales",
@@ -77,7 +81,7 @@ export default function Portfolio() {
                       alt={p.alt}
                       loading="lazy"
                       decoding="async"
-                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                      className={`h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03] ${p.pos || ""}`}
                     />
                   </div>
                 )}

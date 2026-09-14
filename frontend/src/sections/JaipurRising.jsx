@@ -89,9 +89,6 @@ export default function JaipurRising() {
           className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-5 px-6 text-center"
         >
           <TierMark className="h-10 w-14" />
-          <p className="font-mono text-[10px] tracking-[0.4em] text-gold">
-            THE PINNACLE
-          </p>
         </motion.div>
       </div>
     </section>
