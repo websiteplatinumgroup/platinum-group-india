@@ -96,8 +96,8 @@ export const TierMark = ({ className = "h-8 w-10" }) => (
   </svg>
 );
 
-// The brand wordmark exactly as supplied in the approved logo artwork.
-export const Wordmark = ({ className = "h-5 w-auto" }) => (
+// The brand wordmark, tuned luminous platinum for legibility on the dark UI.
+export const Wordmark = ({ className = "h-5 w-auto", tone = "#D8D8DC" }) => (
   <svg
     viewBox="200 905 854 125"
     className={className}
@@ -105,8 +105,8 @@ export const Wordmark = ({ className = "h-5 w-auto" }) => (
     aria-label="Platinum Group"
   >
     <g
-      fill="#7F8A8F"
-      stroke="#7F8A8F"
+      fill={tone}
+      stroke={tone}
       strokeWidth="2.07"
       strokeLinejoin="round"
       paintOrder="stroke"
