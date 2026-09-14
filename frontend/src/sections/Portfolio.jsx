@@ -10,6 +10,8 @@ const ONGOING = [
     facts: "3 & 4 BHK ultra-premium residences · ₹1.41 Cr onwards",
     status: "FIT-OUT STARTED",
     live: true,
+    img: "/brand/elevation.webp",
+    alt: "Platinum Greens Opulence — elevation render",
     need: "opulence-facade-day.jpg",
     alt: "Platinum Greens Opulence facade (asset needed)",
     to: "/platinum-greens-opulence",
@@ -68,6 +70,17 @@ export default function Portfolio() {
                 onClick={() => track("cta_click", { placement: "portfolio", target: p.name })}
                 className="group block h-full bg-ink2"
               >
+                {p.img && (
+                  <div className="relative aspect-[16/9] w-full overflow-hidden">
+                    <img
+                      src={p.img}
+                      alt={p.alt}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                    />
+                  </div>
+                )}
                 <div className="p-7 md:p-9">
                   <span
                     className={`flex w-fit items-center gap-2 border px-3 py-1.5 font-mono text-[9px] tracking-[0.25em] ${

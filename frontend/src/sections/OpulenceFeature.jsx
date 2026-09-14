@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import { ASSETS } from "../lib/assets";
 import { Mask } from "../components/Rise";
 import { track, tryBrochureDownload } from "../lib/config";
 
@@ -34,8 +33,8 @@ export default function OpulenceFeature() {
     >
       <motion.div className="absolute -inset-y-[10%] inset-x-0" style={{ y }}>
         <img
-          src={ASSETS.opulenceFeature.src}
-          alt={ASSETS.opulenceFeature.alt}
+          src="/brand/elevation.webp"
+          alt="Platinum Greens Opulence — elevation render"
           loading="lazy"
           decoding="async"
           className="h-full w-full object-cover"
@@ -43,12 +42,6 @@ export default function OpulenceFeature() {
       </motion.div>
       <div className="absolute inset-0 bg-ink/60" />
       <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-ink to-transparent" />
-      <span
-        data-testid="temp-asset-tag"
-        className="absolute right-6 top-6 z-10 border border-eglow/40 bg-ink/85 px-2 py-1 font-mono text-[9px] tracking-[0.2em] text-eglow"
-      >
-        TEMP ASSET · {ASSETS.opulenceFeature.need}
-      </span>
 
       <div className="relative z-10 px-6 py-32 md:px-12 md:py-48">
         <h2>
