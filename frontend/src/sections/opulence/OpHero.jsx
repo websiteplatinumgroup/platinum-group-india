@@ -42,11 +42,6 @@ export default function OpHero() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 1.5, delay: 0.35, ease: EASE }}
         />
-        <Mask delay={0.75}>
-          <span className="mb-4 block font-mono text-[9px] tracking-[0.35em] text-platinum/80 [text-shadow:0_1px_10px_rgba(6,20,16,1)] md:text-[10px]">
-            RERA/RAJ/P/2023/2875 · RERA.RAJASTHAN.GOV.IN
-          </span>
-        </Mask>
         <Mask delay={0.9}>
           <img
             src="/brand/opulence-wordmark.png"
@@ -54,6 +49,11 @@ export default function OpHero() {
             data-testid="opulence-hero-wordmark"
             className="mt-4 w-72 md:w-[30rem]"
           />
+        </Mask>
+        <Mask delay={1.0}>
+          <span className="mt-3 block font-mono text-[9px] tracking-[0.35em] text-platinum/80 [text-shadow:0_1px_10px_rgba(6,20,16,1)] md:text-[10px]">
+            RERA/RAJ/P/2023/2875
+          </span>
         </Mask>
         <Mask delay={1.05}>
           <span className="mt-6 block text-center font-body text-sm leading-relaxed text-platinum [text-shadow:0_1px_12px_rgba(6,20,16,0.9)] md:text-base">

@@ -164,3 +164,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Aerial Hero Backdrop + RERA Text Line (DONE)
 - Hero background replaced with user's aerial bird's-eye render, dusky-graded (/public/opulence/hero-aerial.webp). RERA QR chip removed from hero; RERA now a mono text line above the wordmark ("RERA/RAJ/P/2023/2875 · RERA.RAJASTHAN.GOV.IN") with text shadow. QR remains in Portfolio overlays.
+
+---
+## Update: 2026-09-15 — Aerial V2 + RERA Below Wordmark (DONE)
+- Hero bg swapped to user's sharper aerial render (4FEBF16A.PNG), dusky-graded → hero-aerial.webp. RERA line moved below wordmark, now number only (RERA/RAJ/P/2023/2875).
