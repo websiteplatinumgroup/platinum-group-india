@@ -14,9 +14,9 @@ export const OP_GALLERY = [
 
 export const OP_AMENITIES = [
   { id: "arrival-social", cat: "Arrival & Social", items: ["Grand Entrance Lobby", "Luxury Waiting Lounge", "World-Class Lobby", "Society Office", "Banquet Hall"] },
-  { id: "entertainment", cat: "Entertainment", items: ["Movie Theatre", "Indoor Games", "Billiards", "Table Tennis"] },
   { id: "fitness-wellness", cat: "Fitness & Wellness", items: ["Fully Equipped Gymnasium", "Yoga Corner", "Meditation & Aerobics Area", "Covered Swimming Pool"] },
   { id: "sports", cat: "Sports", items: ["Basketball Court", "Skating Area", "Cricket Net", "Squash Court", "Tennis Court", "Pickleball Courts", "Indoor Badminton Court"] },
+  { id: "entertainment", cat: "Entertainment", items: ["Movie Theatre", "Indoor Games", "Billiards", "Table Tennis"] },
   { id: "children", cat: "Children", items: ["Kids Play Area", "Toddler Play Area"] },
   { id: "work-convenience", cat: "Work & Convenience", items: ["Co-Working Space", "Study Room", "Guest Rooms", "Commercial / Department Store"] },
   { id: "community-spiritual", cat: "Community & Spiritual", items: ["Dedicated Hindu Temple", "Dedicated Digambar Jain Temple", "Senior Citizen Area", "Landscaped Areas", "Walking / Playing Area"] },
