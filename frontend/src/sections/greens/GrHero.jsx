@@ -16,9 +16,11 @@ export default function GrHero() {
   return (
     <section ref={ref} data-testid="greens-hero" className="relative flex min-h-[100svh] flex-col overflow-hidden">
       <motion.div className="absolute inset-0" style={{ y: yBg }}>
-        <img src="/greens/hero.webp" alt="Platinum Greens residences" className="h-full w-full object-cover" />
+        <img src="/greens/hero.webp" alt="Platinum Greens residences" className="hidden h-full w-full object-cover md:block" />
+        <img src="/greens/hero-mobile.webp" alt="Platinum Greens residences" className="h-full w-full object-cover md:hidden" />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-t from-[#061410] via-[#061410]/60 to-[#061410]/45" />
+      <div className="absolute inset-0 bg-[#061410]/45 md:hidden" />
       <div className="absolute inset-0 bg-emerald/25 mix-blend-multiply" />
 
       <motion.div

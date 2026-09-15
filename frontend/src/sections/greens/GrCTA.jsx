@@ -7,7 +7,7 @@ export default function GrCTA() {
   return (
     <section data-testid="greens-cta" className="relative overflow-hidden border-t border-white/5 bg-emerald px-6 py-24 md:px-12 md:py-32">
       <Mask>
-        <span className="font-mono text-[10px] tracking-[0.4em] text-eglow">READY TO MOVE</span>
+        <span className="font-mono text-[10px] tracking-[0.4em] text-eglow">ready to move</span>
       </Mask>
       <Mask delay={0.1}>
         <h2 className="mt-5 max-w-3xl font-display text-4xl leading-[1.05] text-bone md:text-6xl">

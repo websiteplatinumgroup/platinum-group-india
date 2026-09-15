@@ -11,7 +11,6 @@ const HIGHLIGHTS = [
 export default function GrHighlights() {
   return (
     <section data-testid="greens-highlights" className="relative overflow-hidden border-t border-white/5 px-6 py-24 md:px-12 md:py-28">
-      <img src="/brand/opulence-symbol.png" alt="" aria-hidden="true" className="pointer-events-none absolute -left-16 top-8 h-72 opacity-[0.05] md:h-96" />
       <Mask>
         <span className="font-mono text-[10px] tracking-[0.4em] text-eglow">WHY GREENS</span>
       </Mask>
