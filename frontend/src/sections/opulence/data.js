@@ -25,13 +25,13 @@ export const OP_AMENITIES = [
 
 export const OP_SPECS = [
   { id: "structure", header: "Structure", items: ["R.C.C. Frame Structure as per IS codes", "Vastu Compliant Construction", "Seismic Zone Earthquake Resistant Structure", "Well Designed Lobbies with Beautiful Flooring", "Water Recycling System", "Advance/Modern Firefighting System", "Water Harvesting System", "Security System Managed by Well-Trained Personnel", "CCTV Surveillance for Entire Area"] },
-  { id: "electricity", header: "Electricity", items: ["Adequate Number of Electric Points with Concealed Conduits", "Modular Switches for Power & Lighting", "100% Power Backup for Common Areas & Flats", "Tube Light & Fan in Each Room & Lobby"] },
-  { id: "toilets", header: "Toilets", items: ["High Class/Good Quality Ceramic Wares", "European WC with Seat Cover & Flush Tank/Flush Valve (Duravit or equivalent)", "Premium Brand CP Fitting with Shower (Hansgrohe, Schell or equivalent)", "Designer Ceramic Tile upto Door Height", "No Dark Toilets", "Easy to Maintain Shafts, Plumbing and Sanitary System"] },
-  { id: "lifts", header: "Lifts", items: ["High Speed Big Size Lifts in Each Block", "Automatic Lifts", "One Stretcher Lift in Each Block"] },
-  { id: "doors-windows", header: "Doors / Windows", items: ["Wooden Doors & Door Frames with Good Quality Fitting & Polish"] },
   { id: "flooring", header: "Flooring", items: ["Vitrified Tiles (Kajaria/Johnson/Orient or equivalent)", "Anti Skid Tiles in Bathroom"] },
-  { id: "paint", header: "Paint", items: ["Good Quality Paint for Interior", "Water Proof Texture Paint for Exterior"] },
+  { id: "doors-windows", header: "Doors & Windows", items: ["Wooden Doors & Door Frames with Good Quality Fitting & Polish"] },
   { id: "kitchen", header: "Kitchen", items: ["Good Quality Branded Sink with Provision for Water Purifier", "Good Quality Countertop", "Ceramic Tiles Dado upt 2 feet height"] },
-  { id: "water-supply", header: "Water Supply", items: ["Underground/Overhead Storage Tanks of Suitable Capacity", "Borewell for Supply of Water"] },
-  { id: "common-amenities", header: "Common Amenities", items: ["Project Approved by J.D.A. & R.E.R.A. Registered", "Garden with Beautiful Landscaping", "70% Open Area", "100% Power Backup for Common Areas & Flats", "Rain Water Harvesting System", "World Class Waiting Lounge & Entrance Lobby", "Children Play Area"] },
+  { id: "toilets", header: "Toilets / Bathrooms", items: ["High Class/Good Quality Ceramic Wares", "European WC with Seat Cover & Flush Tank/Flush Valve (Duravit or equivalent)", "Premium Brand CP Fitting with Shower (Hansgrohe, Schell or equivalent)", "Designer Ceramic Tile upto Door Height", "No Dark Toilets", "Easy to Maintain Shafts, Plumbing and Sanitary System"] },
+  { id: "paint", header: "Paint & Wall Finishes", items: ["Good Quality Paint for Interior", "Water Proof Texture Paint for Exterior"] },
+  { id: "electrical", header: "Electrical", items: ["Adequate Number of Electric Points with Concealed Conduits", "Modular Switches for Power & Lighting", "100% Power Backup for Common Areas & Flats", "Tube Light & Fan in Each Room & Lobby"] },
+  { id: "water-supply", header: "Water Supply & Plumbing", items: ["Underground/Overhead Storage Tanks of Suitable Capacity", "Borewell for Supply of Water"] },
+  { id: "lifts", header: "Lifts", items: ["High Speed Big Size Lifts in Each Block", "Automatic Lifts", "One Stretcher Lift in Each Block"] },
+  { id: "common-amenities", header: "Common Areas & Services", items: ["Project Approved by J.D.A. & R.E.R.A. Registered", "Garden with Beautiful Landscaping", "70% Open Area", "100% Power Backup for Common Areas & Flats", "Rain Water Harvesting System", "World Class Waiting Lounge & Entrance Lobby", "Children Play Area"] },
 ];
