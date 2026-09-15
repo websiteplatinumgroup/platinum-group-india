@@ -31,6 +31,28 @@ export default function Hero() {
     >
       <motion.div className="absolute inset-0 bg-black" style={{ y, scale }} />
 
+      {/* drifting brand glow */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+        <motion.div
+          className="absolute left-1/2 top-1/2 h-[70vmin] w-[70vmin] rounded-full blur-3xl"
+          style={{ background: "radial-gradient(circle, rgba(194,160,89,0.14) 0%, transparent 65%)" }}
+          animate={{ x: ["-60%", "-30%", "-60%"], y: ["-55%", "-40%", "-55%"] }}
+          transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div
+          className="absolute left-1/2 top-1/2 h-[80vmin] w-[80vmin] rounded-full blur-3xl"
+          style={{ background: "radial-gradient(circle, rgba(29,185,139,0.11) 0%, transparent 65%)" }}
+          animate={{ x: ["-45%", "-70%", "-45%"], y: ["-35%", "-60%", "-35%"] }}
+          transition={{ duration: 28, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div
+          className="absolute left-1/2 top-1/2 h-[55vmin] w-[55vmin] rounded-full blur-3xl"
+          style={{ background: "radial-gradient(circle, rgba(216,216,220,0.07) 0%, transparent 60%)" }}
+          animate={{ x: ["-55%", "-40%", "-55%"], y: ["-45%", "-30%", "-45%"] }}
+          transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
+        />
+      </div>
+
       <div className="relative z-10 flex w-full flex-col items-center px-6 pb-32 text-center md:px-12 md:pb-24">
         <h1>
           <Mask delay={d + 0.1}>

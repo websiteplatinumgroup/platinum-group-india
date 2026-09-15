@@ -216,3 +216,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Solid Black Hero + New Copy (DONE)
 - Hero background now solid black (image removed). New headline "WHERE VISION / TAKES FORM" (bone + gold italic) and subline "THOUGHTFUL ARCHITECTURE · EXCEPTIONAL LIVING · ENDURING VALUE" (center dots, mono tracked). hero-abstract.webp kept in /public/brand/ if user wants it back.
+
+---
+## Update: 2026-09-15 — Hero Drifting Glow (DONE)
+- Three blurred radial glows (gold/emerald/platinum) drift slowly behind the hero headline on the black background (18-28s infinite loops, opacity 0.07-0.14). Verified drift between frames.
