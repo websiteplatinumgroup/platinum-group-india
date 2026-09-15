@@ -31,10 +31,10 @@ export default function Hero() {
     >
       <motion.div className="absolute inset-0 bg-ink" style={{ y, scale }}>
         <motion.img
-          src="/brand/hero-lineart.webp"
-          alt="Platinum Group residences — architectural line art"
+          src="/brand/hero-abstract.webp"
+          alt="Platinum Group — emerald and gold light over black"
           data-testid="hero-image"
-          className="h-full w-full object-contain"
+          className="h-full w-full object-cover"
           initial={{ scale: 1 }}
           animate={{ scale: [1, 1.07, 1] }}
           transition={{ duration: 26, repeat: Infinity, ease: "easeInOut" }}

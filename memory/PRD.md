@@ -204,3 +204,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Hero Centered + HD Drama (DONE)
 - Hero content (headline, subtitle, CTAs) centered. Line-art upscaled 2x (3344×1882) with sharpen+contrast; added slow Ken Burns breathing zoom (26s infinite) + radial vignette for drama. Verified visually.
+
+---
+## Update: 2026-09-15 — Abstract Brand Hero Background (DONE)
+- Line-art removed. AI-generated (Gemini Nano Banana, universal key) abstract hero: pure black with emerald + gold silk-light wisps (/public/brand/hero-abstract.webp), full-bleed object-cover with breathing zoom + vignette. Centered typography retained.
