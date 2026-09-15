@@ -22,7 +22,7 @@ export default function OpGallery() {
               loading="lazy"
               decoding="async"
               data-testid={`opulence-gallery-img-${i}`}
-              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+              className={`h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04] ${g.pos || ""}`}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#061410]/85 via-transparent to-transparent" />
             <span className="absolute left-4 top-4 border border-eglow/40 bg-[#061410]/80 px-3 py-1.5 font-mono text-[9px] tracking-[0.25em] text-eglow backdrop-blur-sm">

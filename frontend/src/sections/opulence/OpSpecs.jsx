@@ -18,12 +18,6 @@ export default function OpSpecs() {
           SPECIFICATIONS, <span className="font-editorial font-light italic text-gold">in detail</span>
         </h2>
       </Mask>
-      <Mask delay={0.18}>
-        <span className="mt-5 block max-w-md font-body text-sm text-platinum/60">
-          Touch a header to reveal the full specification.
-        </span>
-      </Mask>
-
       <div className="mt-14 max-w-4xl">
         {OP_SPECS.map((s, i) => {
           const isOpen = open === s.id;

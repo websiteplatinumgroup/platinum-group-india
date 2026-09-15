@@ -21,19 +21,7 @@ export default function OpHero() {
       <div className="absolute inset-0 bg-emerald/20 mix-blend-multiply" />
 
       <div className="relative z-10 px-6 pb-14 pt-32 md:px-12">
-        <h1>
-          <Mask delay={0.2}>
-            <span className="block">
-              <img
-                src="/brand/opulence-logo.png"
-                alt="Platinum Greens Opulence"
-                data-testid="opulence-hero-logo"
-                className="w-48 md:w-72 lg:w-80"
-              />
-            </span>
-          </Mask>
-        </h1>
-        <Mask delay={0.4}>
+        <Mask delay={0.3}>
           <span className="mt-6 block max-w-lg font-body text-sm leading-relaxed text-platinum [text-shadow:0_1px_12px_rgba(6,20,16,0.9)] md:text-base">
             3 &amp; 4 BHK ultra-premium residences · Mansarovar Extension, Jaipur
           </span>

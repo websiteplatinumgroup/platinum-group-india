@@ -15,11 +15,6 @@ export default function OpAmenities() {
             </h2>
           </Mask>
         </div>
-        <Mask delay={0.2}>
-          <span className="max-w-xs font-body text-sm leading-relaxed text-platinum/60">
-            Eight curated lifestyle zones — from a 112 ft indoor pool to dedicated temples.
-          </span>
-        </Mask>
       </div>
 
       <div className="mt-14 grid gap-px border border-white/5 bg-white/5 sm:grid-cols-2 lg:grid-cols-4">

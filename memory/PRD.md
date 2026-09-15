@@ -144,3 +144,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Gym & Kids Photos Upgraded (DONE)
 - Replaced gallery gym and kids play images with user's upgraded versions (gym 2.webp, C32A78A7 kids photo), graded with the same dusky cinematic recipe, saved over gallery-gym.webp / gallery-kids.webp.
+
+---
+## Update: 2026-09-15 — Opulence Page Polish Batch (DONE)
+- OpHero: logo image removed (clean hero: subtitle + CTAs + stats). OpGallery: lounge image anchored object-top so ceiling is fully visible (per-item pos field). OpAmenities: removed side description. OpSpecs: removed hint text. OpCTA: "opulence" in heading now highlighted with gold underline + glow.
