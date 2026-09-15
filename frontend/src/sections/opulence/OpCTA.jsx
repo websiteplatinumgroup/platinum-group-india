@@ -6,7 +6,6 @@ import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, track, tryBrochureDownload } from
 export default function OpCTA() {
   return (
     <section data-testid="opulence-cta" className="relative overflow-hidden border-t border-white/5 bg-emerald px-6 py-24 md:px-12 md:py-32">
-      <img src="/brand/opulence-symbol.png" alt="" aria-hidden="true" className="pointer-events-none absolute -right-20 -top-16 h-96 opacity-[0.07] md:h-[34rem]" />
       <Mask>
         <span className="font-mono text-[10px] tracking-[0.4em] text-eglow">PRIVATE PREVIEW</span>
       </Mask>

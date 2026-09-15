@@ -6,13 +6,12 @@ import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, track, tryBrochureDownload } from
 export default function GrCTA() {
   return (
     <section data-testid="greens-cta" className="relative overflow-hidden border-t border-white/5 bg-emerald px-6 py-24 md:px-12 md:py-32">
-      <img src="/brand/opulence-symbol.png" alt="" aria-hidden="true" className="pointer-events-none absolute -right-20 -top-16 h-96 opacity-[0.07] md:h-[34rem]" />
       <Mask>
         <span className="font-mono text-[10px] tracking-[0.4em] text-eglow">READY TO MOVE</span>
       </Mask>
       <Mask delay={0.1}>
-        <h2 className="mt-5 max-w-3xl font-display text-4xl leading-[1.02] text-bone md:text-6xl">
-          COME HOME TO <span className="border-b-2 border-gold font-editorial font-light italic text-gold">greens</span>
+        <h2 className="mt-5 max-w-3xl font-display text-4xl leading-[1.05] text-bone md:text-6xl">
+          COME HOME TO <span className="text-gold">GREENS</span>
         </h2>
       </Mask>
       <Mask delay={0.2}>
