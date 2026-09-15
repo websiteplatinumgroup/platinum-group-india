@@ -12,7 +12,7 @@ export default function OpCTA() {
       </Mask>
       <Mask delay={0.1}>
         <h2 className="mt-5 max-w-3xl font-display text-4xl leading-[1.02] text-bone md:text-6xl">
-          OWN YOUR LEVEL OF <span className="border-b-2 border-gold font-editorial font-light italic text-gold [text-shadow:0_0_30px_rgba(194,160,89,0.45)]">opulence</span>
+          OWN YOUR LEVEL OF <span className="border-b-2 border-gold font-editorial font-light italic text-gold">opulence</span>
         </h2>
       </Mask>
       <Mask delay={0.2}>

@@ -97,7 +97,7 @@ export default function OpHero() {
         />
       </motion.div>
 
-      <div className="relative z-10 mx-6 mb-10 grid gap-px border border-white/10 bg-white/5 backdrop-blur-sm sm:grid-cols-3 md:mx-12">
+      <div className="relative z-10 mx-6 mb-10 grid gap-px bg-white/5 backdrop-blur-sm sm:grid-cols-3 md:mx-12">
         {OP_STATS.map((s, i) => (
           <Mask key={s.label} delay={1.25 + i * 0.1}>
             <span className="block bg-[#061410]/80 p-6" data-testid={`opulence-stat-${i}`}>

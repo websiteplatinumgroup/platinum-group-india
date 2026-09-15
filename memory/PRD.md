@@ -154,3 +154,9 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 - User supplied official logo symbol (leaf) + wordmark; processed to transparent PNGs (grey text recolored platinum, stray red pixel removed): /public/brand/opulence-symbol.png + opulence-wordmark.png.
 - OpHero redesigned as centered monument: glowing rising leaf (emerald drop-shadow + gold radial aura, parallax opposite to bg) above large wordmark, centered subtitle + CTAs, stats strip bottom. RERA chip (number + site QR, rera-qr.png, RERA/RAJ/P/2023/2875) in hero right.
 - Leaf symbol added as faint watermark in Gallery, Amenities, Specs, CTA sections.
+
+---
+## Update: 2026-09-15 — Hero Logo V2 + Gallery Gym Swap (DONE)
+- Hero symbol replaced with user's clean-stem v2 (platinum_greens_opulence_clean_stem_v2_transparent.webp, used as-is). Wordmark re-processed retaining ORIGINAL platinum grey colours (no recolor). Grey border line above hero stats strip removed.
+- Gallery gym image replaced with new user photo (C6B0AECC.PNG) with matching dusky grade.
+- OpCTA: removed glow shadow from highlighted "opulence" (kept gold underline).
