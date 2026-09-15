@@ -232,3 +232,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Responsive Feature Image + Lowercase Greens (DONE)
 - Home Opulence flagship: desktop uses elevation.webp, mobile uses portrait hero-mobile.webp (feature-bg.webp no longer used). GrCTA heading now fully lowercase "come home to greens" (greens in gold italic).
+
+---
+## Update: 2026-09-15 — Enquire Desktop Spacing (DONE)
+- Tightened desktop layout: max-w-6xl, balanced gaps, md:text-6xl heading, tighter contact rows, form aligned with left column (no lg:pt offset). Both columns now fit in viewport.
