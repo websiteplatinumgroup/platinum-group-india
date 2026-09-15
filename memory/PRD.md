@@ -208,3 +208,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Abstract Brand Hero Background (DONE)
 - Line-art removed. AI-generated (Gemini Nano Banana, universal key) abstract hero: pure black with emerald + gold silk-light wisps (/public/brand/hero-abstract.webp), full-bleed object-cover with breathing zoom + vignette. Centered typography retained.
+
+---
+## Update: 2026-09-15 — Nine Philosophies Reordered (DONE)
+- New order: Vision, Design, Architecture, Engineering, Craftsmanship, Commitment ("Promises kept, in concrete and in word."), Lifestyle, Legacy, Platinum. COMMUNITY replaced by COMMITMENT. Verified: LIFESTYLE now steps at 07/09.

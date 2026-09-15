@@ -13,8 +13,8 @@ const LEVELS = [
   { n: "03", title: "ARCHITECTURE", line: "Form that earns its height." },
   { n: "04", title: "ENGINEERING", line: "Precision beneath the polish." },
   { n: "05", title: "CRAFTSMANSHIP", line: "Detail as discipline." },
-  { n: "06", title: "LIFESTYLE", line: "Fifty amenities. One standard." },
-  { n: "07", title: "COMMUNITY", line: "Built for generations, not quarters." },
+  { n: "06", title: "COMMITMENT", line: "Promises kept, in concrete and in word." },
+  { n: "07", title: "LIFESTYLE", line: "Fifty amenities. One standard." },
   { n: "08", title: "LEGACY", line: "Every level builds the next." },
   { n: "09", title: "PLATINUM", line: "The next level is always up." },
 ];
