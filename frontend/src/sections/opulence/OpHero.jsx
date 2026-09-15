@@ -21,19 +21,15 @@ export default function OpHero() {
       <div className="absolute inset-0 bg-emerald/20 mix-blend-multiply" />
 
       <div className="relative z-10 px-6 pb-14 pt-32 md:px-12">
-        <Mask delay={0.05}>
-          <span className="flex w-fit items-center gap-4 border border-white/10 bg-[#061410]/70 px-5 py-3 backdrop-blur-md">
-            <img src="/brand/platinum-logo.svg" alt="Platinum Group mark" className="h-8 w-8 md:h-10 md:w-10" />
-            <img src="/brand/platinum-wordmark.webp" alt="Platinum Group" className="h-5 opacity-95 md:h-6" />
-          </span>
-        </Mask>
-        <h1 className="mt-8">
-          <Mask delay={0.15}>
-            <span className="block font-mono text-[11px] tracking-[0.45em] text-eglow [text-shadow:0_1px_14px_rgba(6,20,16,0.95)]">PLATINUM GREENS PRESENTS</span>
-          </Mask>
-          <Mask delay={0.25}>
-            <span className="mt-3 block font-editorial text-[14vw] font-light italic leading-[0.95] text-bone md:text-[8vw]">
-              Opulence
+        <h1>
+          <Mask delay={0.2}>
+            <span className="block">
+              <img
+                src="/brand/opulence-logo.png"
+                alt="Platinum Greens Opulence"
+                data-testid="opulence-hero-logo"
+                className="w-48 md:w-72 lg:w-80"
+              />
             </span>
           </Mask>
         </h1>
@@ -44,6 +40,16 @@ export default function OpHero() {
         </Mask>
         <Mask delay={0.5}>
           <span className="mt-8 flex flex-wrap items-center gap-4">
+            <span data-testid="opulence-hero-price" className="border border-gold/50 px-5 py-3.5 font-mono text-[11px] tracking-[0.25em] text-gold">
+              ₹1.41 CR ONWARDS
+            </span>
+            <button
+              data-testid="opulence-hero-brochure-btn"
+              onClick={() => tryBrochureDownload("opulence_hero")}
+              className="border border-platinum/40 px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-bone transition-colors duration-300 hover:border-eglow hover:text-eglow"
+            >
+              DOWNLOAD BROCHURE
+            </button>
             <Link
               to="/enquire?project=opulence&intent=site-visit"
               data-testid="opulence-hero-visit-btn"
@@ -52,16 +58,6 @@ export default function OpHero() {
             >
               BOOK SITE VISIT <ArrowUpRight size={13} />
             </Link>
-            <button
-              data-testid="opulence-hero-brochure-btn"
-              onClick={() => tryBrochureDownload("opulence_hero")}
-              className="border border-platinum/40 px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-bone transition-colors duration-300 hover:border-eglow hover:text-eglow"
-            >
-              DOWNLOAD BROCHURE
-            </button>
-            <span data-testid="opulence-hero-price" className="border border-gold/50 px-5 py-3.5 font-mono text-[11px] tracking-[0.25em] text-gold">
-              ₹1.41 CR ONWARDS
-            </span>
           </span>
         </Mask>
 

@@ -123,3 +123,8 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 - Assets: /public/brand/hero-loop.mp4 (H.264, 8.8MB), hero-loop.webm (VP9 fallback, 5MB), hero-poster.jpg. Hero.jsx plays dual-source muted autoplay loop video with bg-bone/35 overlay for text legibility; TEMP ASSET tag removed.
 - NOTE: sora-2 supports only 1280x720/720x1280 (not 1792x1024). Headless test browser lacks H.264 — webm fallback covers verification.
 - Video is generic/no branding, safe for reuse across projects per user spec.
+
+---
+## Update: 2026-09-15 — OpHero Refinements (DONE)
+- Removed group logo chip and "PLATINUM GREENS PRESENTS" label; replaced "Opulence" text heading with official logo (user-attached platinum-greens-opulence_primary-vertical_white.png → white-keyed transparent /public/brand/opulence-logo.png).
+- Hero CTAs reordered: price chip → Download Brochure → Book Site Visit. Hero stats reordered: 70% Open Space → 50+ Amenities → 112 FT Indoor Pool (data.js OP_STATS).

@@ -1,6 +1,6 @@
 export const OP_STATS = [
-  { value: "50+", label: "LUXURY AMENITIES", desc: "Across 8 curated lifestyle zones" },
   { value: "70%", label: "OPEN SPACE", desc: "Landscaped greens & walking trails" },
+  { value: "50+", label: "LUXURY AMENITIES", desc: "Across 8 curated lifestyle zones" },
   { value: "112 FT", label: "INDOOR POOL", desc: "Covered temperature-controlled" },
 ];
 
