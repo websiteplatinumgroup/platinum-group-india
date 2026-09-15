@@ -24,7 +24,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const { pathname } = useLocation();
-  const light = pathname === "/" && !scrolled;
+  const light = false;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);

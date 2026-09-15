@@ -29,27 +29,21 @@ export default function Hero() {
       data-testid="hero"
       className="relative flex min-h-[100svh] items-end overflow-hidden"
     >
-      <motion.div className="absolute inset-0" style={{ y, scale }}>
-        <video
-          data-testid="hero-video"
-          className="h-full w-full object-cover"
-          poster="/brand/hero-poster.jpg"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-        >
-          <source src="/brand/hero-loop.mp4" type="video/mp4" />
-          <source src="/brand/hero-loop.webm" type="video/webm" />
-        </video>
-        <div className="absolute inset-0 bg-bone/35" />
+      <motion.div className="absolute inset-0 bg-ink" style={{ y, scale }}>
+        <img
+          src="/brand/hero-lineart.webp"
+          alt="Platinum Group residences — architectural line art"
+          data-testid="hero-image"
+          className="h-full w-full object-contain"
+        />
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink/80 to-transparent" />
+        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-ink/85 to-transparent" />
       </motion.div>
 
       <div className="relative z-10 w-full px-6 pb-32 md:px-12 md:pb-24">
         <h1>
           <Mask delay={d + 0.1}>
-            <span className="font-display text-[15vw] leading-[0.95] text-ink md:text-[10.5vw]">
+            <span className="font-display text-[15vw] leading-[0.95] text-bone md:text-[10.5vw]">
               WE BUILD
             </span>
           </Mask>
@@ -60,7 +54,7 @@ export default function Hero() {
           </Mask>
         </h1>
         <Mask delay={d + 0.38}>
-          <span className="mt-8 block max-w-md font-body text-sm leading-relaxed text-ink/60 md:text-base">
+          <span className="mt-8 block max-w-md font-body text-sm leading-relaxed text-platinum/70 md:text-base">
             Architecture shaped by ambition
           </span>
         </Mask>
@@ -70,14 +64,14 @@ export default function Hero() {
               data-testid="hero-discover-button"
               data-cursor="EXPLORE"
               onClick={() => scrollToId("opulence", true)}
-              className="border border-ink/25 px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-ink transition-colors duration-300 hover:border-ink"
+              className="border border-bone/40 px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-bone transition-colors duration-300 hover:border-bone"
             >
               GREENS OPULENCE
             </button>
             <button
               data-testid="hero-brochure-button"
               onClick={() => tryBrochureDownload("hero")}
-              className="border border-ink/25 px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-ink transition-colors duration-300 hover:border-gold hover:text-gold"
+              className="border border-bone/40 px-7 py-3.5 font-mono text-[11px] tracking-[0.3em] text-bone transition-colors duration-300 hover:border-gold hover:text-gold"
             >
               DOWNLOAD BROCHURE
             </button>

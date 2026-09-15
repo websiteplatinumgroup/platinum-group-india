@@ -187,3 +187,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 - Nav: HOME / GREENS (/greens) / GREENS OPULENCE (/opulence) / PROJECTS (scrolls to home #portfolio, Portfolio section got id="portfolio") / ENQUIRE (gold button, /enquire). Mobile menu uses same items.
 - Fixed cross-page PROJECTS scroll: Home hash effect now re-asserts scroll at 300/1200/2600ms so lazy media doesn't break landing position. Verified aligned.
 - OpSpecs leaf watermark removed (all section watermarks now gone; leaf remains in hero + GrHighlights).
+
+---
+## Update: 2026-09-15 — Home Hero Line-Art (DONE)
+- Home hero video replaced with user's black architectural line-art image (/public/brand/hero-lineart.webp). Hero text flipped to light-on-dark (bone/gold), bottom + top gradient scrims added, nav forced to dark styling (light=false). Parallax retained. Hero video files remain in /public/brand/ unused (hero-loop.mp4/webm, hero-poster.jpg) if user wants video back.
