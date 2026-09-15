@@ -196,3 +196,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ## Update: 2026-09-15 — Hero Line-Art Placement Fix (DONE, testing_agent verified)
 - Hero image changed to object-contain on bg-ink — full artwork visible (tower tips not cropped), black blends seamlessly. Verified by testing_agent (iteration_1.json, 100% frontend pass).
 - User informed: ideal hero art dimensions 2560×1440 (16:9) or 3840×2160, key content in central 80%.
+
+---
+## Update: 2026-09-15 — Hero Line-Art V2 (DONE)
+- Swapped hero artwork to user's wider line-art composition (B71D185F...PNG → hero-lineart.webp). Full frame coverage with edge-to-edge towers, object-contain retained (no crop). Verified visually.
