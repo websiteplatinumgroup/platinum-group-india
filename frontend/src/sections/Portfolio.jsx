@@ -31,7 +31,7 @@ const ONGOING = [
     alt: "Platinum Greens elevation render, Mansarovar Extension",
     need: "greens-hero.jpg",
     alt: "Platinum Greens residences (asset needed)",
-    to: "/enquire?project=greens&intent=sales",
+    to: "/greens",
     testid: "portfolio-greens",
     qr: "/brand/rera-qr-greens.png",
     rera: "RERA/RAJ/P/2021/1631",

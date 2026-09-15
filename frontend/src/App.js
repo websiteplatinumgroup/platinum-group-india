@@ -8,6 +8,7 @@ import { MobileCTA, WhatsAppFloat } from "@/components/Conversion";
 const Home = lazy(() => import("@/pages/Home"));
 const Enquire = lazy(() => import("@/pages/Enquire"));
 const Opulence = lazy(() => import("@/pages/Opulence"));
+const Greens = lazy(() => import("@/pages/Greens"));
 
 const ScrollManager = () => {
   const { pathname } = useLocation();
@@ -45,6 +46,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/opulence" element={<Opulence />} />
+          <Route path="/greens" element={<Greens />} />
           <Route path="/enquire" element={<Enquire />} />
           <Route path="*" element={<Home />} />
         </Routes>
