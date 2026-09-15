@@ -140,3 +140,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Real Amenity Photos in Gallery (DONE)
 - Opulence gallery now uses 5 real user-attached photos (lounge, indoor pool, billiards/games room, gym, kids play) graded with a consistent cinematic dusky look (S-curve contrast, amber highlights/teal shadows, filmic fade, vignette) at /public/opulence/gallery-*.webp. Lounge is the large feature tile; badges: GRAND LOUNGE, INDOOR POOL, GAMES ROOM, GYMNASIUM, KIDS PLAY. Old brochure-crop images (elevation/lobby/aerial/banquet/pool) remain in folder unused.
+
+---
+## Update: 2026-09-15 — Gym & Kids Photos Upgraded (DONE)
+- Replaced gallery gym and kids play images with user's upgraded versions (gym 2.webp, C32A78A7 kids photo), graded with the same dusky cinematic recipe, saved over gallery-gym.webp / gallery-kids.webp.
