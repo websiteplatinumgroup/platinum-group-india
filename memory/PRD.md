@@ -173,3 +173,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ## Update: 2026-09-15 — Platinum Greens Page (DONE)
 - New short page /greens: same monument hero as Opulence (leaf symbol + derived "PLATINUM GREENS"-only wordmark /public/brand/greens-wordmark.png, dusky-graded real photo /public/greens/hero.webp), RERA/RAJ/P/2021/1631, POSSESSION STARTED, ₹70 Lakh onwards, price/brochure/visit CTAs, one-line note strip. Then enquiry section (LeadForm project=greens) + dark Google map + brochure/call/WhatsApp. Footer.
 - Nav now: HOME / GREENS / GREENS OPULENCE / ENQUIRE. Portfolio Greens card links to /greens.
+
+---
+## Update: 2026-09-15 — Greens Highlights Section (DONE)
+- GrHero: bottom note strip removed. New GrHighlights section between hero and CTA: "FIVE REASONS, one address" editorial list (Ready To Move / ₹70 Lakh Onwards / The Greens Address / Green By Design / Approved & Assured) with attractive one-liners, leaf watermark.

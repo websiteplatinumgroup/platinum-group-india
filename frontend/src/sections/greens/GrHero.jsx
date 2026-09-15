@@ -29,7 +29,7 @@ export default function GrHero() {
         transition={{ duration: 1.8, delay: 0.9, ease: EASE }}
       />
 
-      <motion.div className="relative z-10 flex flex-1 flex-col items-center justify-center px-6 pt-28" style={{ y: yLeaf }}>
+      <motion.div className="relative z-10 flex flex-1 flex-col items-center justify-center px-6 pb-20 pt-28" style={{ y: yLeaf }}>
         <motion.img
           src="/brand/opulence-symbol.png"
           alt="Platinum Greens leaf emblem"
@@ -85,14 +85,6 @@ export default function GrHero() {
           </span>
         </Mask>
       </motion.div>
-
-      <div className="relative z-10 mx-6 mb-10 md:mx-12">
-        <Mask delay={1.35}>
-          <span className="block bg-[#061410]/80 p-5 text-center font-body text-xs leading-relaxed text-platinum/70 backdrop-blur-sm md:text-sm">
-            Ready-to-move homes beside Platinum Greens Opulence — same address, same landscape, its own quiet rhythm.
-          </span>
-        </Mask>
-      </div>
     </section>
   );
 }
