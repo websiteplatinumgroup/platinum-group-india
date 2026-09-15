@@ -9,7 +9,8 @@ export default function OpSpecs() {
   const [open, setOpen] = useState(null);
 
   return (
-    <section data-testid="opulence-specs" className="border-t border-white/5 px-6 py-24 md:px-12 md:py-32">
+    <section data-testid="opulence-specs" className="relative overflow-hidden border-t border-white/5 px-6 py-24 md:px-12 md:py-32">
+      <img src="/brand/opulence-symbol.png" alt="" aria-hidden="true" className="pointer-events-none absolute -right-14 top-1/3 h-80 opacity-[0.05] md:h-[28rem]" />
       <Mask>
         <span className="font-mono text-[10px] tracking-[0.4em] text-eglow">BUILT TO LAST</span>
       </Mask>

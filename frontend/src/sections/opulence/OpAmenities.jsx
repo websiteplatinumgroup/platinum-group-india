@@ -3,7 +3,8 @@ import { OP_AMENITIES } from "./data";
 
 export default function OpAmenities() {
   return (
-    <section data-testid="opulence-amenities" className="border-t border-white/5 bg-[#081a14] px-6 py-24 md:px-12 md:py-32">
+    <section data-testid="opulence-amenities" className="relative overflow-hidden border-t border-white/5 bg-[#081a14] px-6 py-24 md:px-12 md:py-32">
+      <img src="/brand/opulence-symbol.png" alt="" aria-hidden="true" className="pointer-events-none absolute -left-16 bottom-0 h-80 opacity-[0.06] md:h-[30rem]" />
       <div className="flex flex-wrap items-end justify-between gap-6">
         <div>
           <Mask>

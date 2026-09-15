@@ -148,3 +148,9 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Opulence Page Polish Batch (DONE)
 - OpHero: logo image removed (clean hero: subtitle + CTAs + stats). OpGallery: lounge image anchored object-top so ceiling is fully visible (per-item pos field). OpAmenities: removed side description. OpSpecs: removed hint text. OpCTA: "opulence" in heading now highlighted with gold underline + glow.
+
+---
+## Update: 2026-09-15 — Opulence Brand Monument Hero (DONE)
+- User supplied official logo symbol (leaf) + wordmark; processed to transparent PNGs (grey text recolored platinum, stray red pixel removed): /public/brand/opulence-symbol.png + opulence-wordmark.png.
+- OpHero redesigned as centered monument: glowing rising leaf (emerald drop-shadow + gold radial aura, parallax opposite to bg) above large wordmark, centered subtitle + CTAs, stats strip bottom. RERA chip (number + site QR, rera-qr.png, RERA/RAJ/P/2023/2875) in hero right.
+- Leaf symbol added as faint watermark in Gallery, Amenities, Specs, CTA sections.
