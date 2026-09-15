@@ -1,7 +1,7 @@
 import { ArrowUpRight, MapPin, Phone } from "lucide-react";
 import { FadeUp, Mask } from "../../components/Rise";
 import LeadForm from "../../components/LeadForm";
-import { PHONE_DISPLAY, PHONE_TEL, SITE_MAPS_URL, WA_DEFAULT, track, tryBrochureDownload } from "../../lib/config";
+import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, track, tryBrochureDownload } from "../../lib/config";
 
 export default function OpCTA() {
   return (
@@ -29,26 +29,28 @@ export default function OpCTA() {
 
         <div>
           <FadeUp delay={0.1}>
-            <a
-              href={SITE_MAPS_URL}
-              target="_blank"
-              rel="noreferrer"
+            <div
               data-testid="opulence-cta-map"
-              onClick={() => track("map_click", { placement: "opulence_cta" })}
-              className="group relative block overflow-hidden border border-white/10"
+              className="group relative overflow-hidden border border-white/10"
             >
-              <img
-                src="/opulence/location-map.webp"
-                alt="Platinum Greens Opulence location plan — Mansarovar Extension, Jaipur"
+              <iframe
+                title="Platinum Greens Opulence site location map"
+                src="https://maps.google.com/maps?q=26.8102201688762,75.75891828735266&z=16&output=embed"
                 loading="lazy"
-                decoding="async"
-                className="w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="aspect-[4/3] w-full border-0 grayscale-[0.2] invert-[0.92] hue-rotate-180 contrast-[0.9] md:aspect-[16/10]"
               />
-              <span className="absolute inset-0 bg-ink/0 transition-colors duration-500 group-hover:bg-ink/25" />
-              <span className="absolute bottom-4 left-4 flex items-center gap-2 border border-eglow/50 bg-[#061410]/85 px-4 py-2.5 font-mono text-[10px] tracking-[0.25em] text-eglow backdrop-blur-sm">
+              <a
+                href="https://maps.app.goo.gl/dodhKdoTiL9Fatyh7"
+                target="_blank"
+                rel="noreferrer"
+                data-testid="opulence-cta-map-open"
+                onClick={() => track("map_click", { placement: "opulence_cta" })}
+                className="absolute bottom-4 left-4 flex items-center gap-2 border border-eglow/50 bg-[#061410]/85 px-4 py-2.5 font-mono text-[10px] tracking-[0.25em] text-eglow backdrop-blur-sm transition-colors duration-300 hover:bg-eglow hover:text-ink"
+              >
                 <MapPin size={13} /> OPEN SITE LOCATION ON GOOGLE MAPS <ArrowUpRight size={12} />
-              </span>
-            </a>
+              </a>
+            </div>
             <p className="mt-4 font-body text-xs leading-relaxed text-platinum/60">
               Platinum Greens Opulence, Near Parshwanath Narayan City, Mansarovar Extension, Jaipur
             </p>

@@ -132,3 +132,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — OpCTA Enquiry Form + Location Map (DONE)
 - Closing section on /opulence now embeds the full LeadForm (source=opulence_page, site-visit preselected) beside the official brochure Location Plan (/public/opulence/location-map.webp). Clicking the map opens Google Maps directions to the site (SITE_MAPS_URL coords). Brochure/Call/WhatsApp CTAs retained under the map.
+
+---
+## Update: 2026-09-15 — Live Dark Google Maps Embed (DONE)
+- Replaced static location plan image with interactive Google Maps iframe embed (site coords, dark-styled via CSS invert/hue-rotate filter to match emerald theme). "Open site location" button links to user's exact URL: https://maps.app.goo.gl/dodhKdoTiL9Fatyh7
