@@ -244,3 +244,8 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 - BUGS 21+22 FIXED (verified): Mask now supports mount (animate-on-mount) — applied to Home/Opulence/Greens heroes; delays tightened (all hero content within ~0.7s window); brand logos converted PNG→webp (symbol 445KB→133KB) so logos/text/buttons appear together perfectly. Nine Philosophies scroll-stepping verified smooth.
 - Verified by testing_agent iteration_2.json: 13/13 groups pass, lead form submit → REQUEST RECEIVED, cookie consent persists, all nav/footer links OK, meta distinct per route, mobile heroes OK.
 - Analytics: PostHog (platform) + dataLayer events via track() (GTM-ready). Alt text audited OK. No broken internal links. Performance: lazy images, webp assets, lazy routes.
+
+---
+## Update: 2026-09-15 — Performance Fix + Footer Edits (DONE, testing_agent verified 100%)
+- LAG BUG FIXED: hero glow blobs were blur-3xl (64px filter) on huge elements — replaced with filter-free radial-gradient blobs + will-change-transform; hero bg layer also will-change-transform. Measured: intro ~57.6fps, full-page scroll ~48.6fps, no stalls (iteration_3.json).
+- Footer bottom line now just "© 2026 PLATINUM GROUP". Mobile bar ENQUIRE → plain /enquire.

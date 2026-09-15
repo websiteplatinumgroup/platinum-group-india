@@ -1,0 +1,18 @@
+{
+  "summary": "Performance bug-fix verification + regressions. Fresh-session Ascent intro plays and hero reveals crisply (~57.6 fps over 5s, only 3 long-frames >50ms). Programmatic full-page scroll through hero → JaipurRising → Credibility → Nine Philosophies produced ~48.6 fps with 11 long-frames across 3.7s of continuous scrolling (no stalls, no frozen segments) — the filter-free radial-gradient glow blobs (3 present, will-change-transform) are visibly rendered behind the headline and drift over time. Footer bottom line reads exactly '© 2026 PLATINUM GROUP' (no JAIPUR / RERA); all 6 footer links (HOME/GREENS/GREENS OPULENCE/ENQUIRE/PRIVACY/TERMS) present and navigable. Mobile (390x844) data-testid='mobile-cta-visit' has href='/enquire' and click lands on plain /enquire URL. Zero console errors on /, /opulence, /greens, /enquire.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Hero.jsx glow implementation is now GPU-friendly: uses only transform (x/y) animations with will-change-transform and no filter/blur — good fix. 3 radial-gradient blobs are cheap to composite.",
+    "Hero.jsx background scale+y useTransform still causes layout re-paints on the black background layer during scroll; if further perf tuning is needed, consider setting willChange: 'transform' on that motion.div too (minor).",
+    "Consider prefers-reduced-motion guard for the infinite drifting blobs and hero parallax (a11y polish, not a blocker)."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped)", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Perf sampling used requestAnimationFrame counting to measure fps and long-frames (>50ms) during intro and during programmatic scroll. Results are well within 'smooth' thresholds. To reproduce fresh intro: navigate then sessionStorage.clear() and reload; to skip, set sessionStorage 'pg-ascent'='1'. Footer/mobile CTA data-testids: site-footer, mobile-cta-visit."
+}

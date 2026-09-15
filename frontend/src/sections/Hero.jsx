@@ -29,7 +29,7 @@ export default function Hero() {
       data-testid="hero"
       className="relative flex min-h-[100svh] items-end overflow-hidden"
     >
-      <motion.div className="absolute inset-0 bg-black" style={{ y, scale }} />
+      <motion.div className="absolute inset-0 bg-black will-change-transform" style={{ y, scale }} />
 
       {/* drifting brand glow */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
