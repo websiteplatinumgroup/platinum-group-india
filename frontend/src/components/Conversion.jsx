@@ -28,7 +28,7 @@ export const MobileCTA = () => (
       <MessageCircle size={14} /> WHATSAPP
     </a>
     <Link
-      to="/enquire?intent=site-visit"
+      to="/enquire"
       data-testid="mobile-cta-visit"
       onClick={() => track("book_site_visit", { placement: "mobile_bar" })}
       className="flex items-center justify-center gap-2 py-4 font-mono text-[11px] tracking-[0.2em] text-gold"

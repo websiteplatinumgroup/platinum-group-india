@@ -14,7 +14,7 @@ export default function Footer() {
         <Link to="/privacy" data-testid="footer-privacy-link" className="transition-colors hover:text-gold">PRIVACY</Link>
         <Link to="/terms" data-testid="footer-terms-link" className="transition-colors hover:text-gold">TERMS</Link>
       </span>
-      <span>© 2026 PLATINUM GROUP · JAIPUR · RERA/RAJ/P/2023/2875 · RERA/RAJ/P/2021/1631</span>
+      <span>© 2026 PLATINUM GROUP</span>
     </footer>
   );
 }
