@@ -191,3 +191,8 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Home Hero Line-Art (DONE)
 - Home hero video replaced with user's black architectural line-art image (/public/brand/hero-lineart.webp). Hero text flipped to light-on-dark (bone/gold), bottom + top gradient scrims added, nav forced to dark styling (light=false). Parallax retained. Hero video files remain in /public/brand/ unused (hero-loop.mp4/webm, hero-poster.jpg) if user wants video back.
+
+---
+## Update: 2026-09-15 — Hero Line-Art Placement Fix (DONE, testing_agent verified)
+- Hero image changed to object-contain on bg-ink — full artwork visible (tower tips not cropped), black blends seamlessly. Verified by testing_agent (iteration_1.json, 100% frontend pass).
+- User informed: ideal hero art dimensions 2560×1440 (16:9) or 3840×2160, key content in central 80%.
