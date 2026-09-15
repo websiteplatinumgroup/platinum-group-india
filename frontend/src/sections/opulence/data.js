@@ -5,11 +5,11 @@ export const OP_STATS = [
 ];
 
 export const OP_GALLERY = [
-  { src: "/opulence/elevation.webp", badge: "MAIN ELEVATION", title: "Architectural Facade", cls: "md:col-span-7 md:row-span-2" },
-  { src: "/opulence/pool.webp", badge: "112 FT INDOOR POOL", title: "Covered Swimming Pool", cls: "md:col-span-5" },
-  { src: "/opulence/lobby.webp", badge: "GRAND LOBBY", title: "Double-Height Entrance", cls: "md:col-span-5" },
-  { src: "/opulence/aerial.webp", badge: "70% OPEN SPACE", title: "Aerial Master View", cls: "md:col-span-6" },
-  { src: "/opulence/banquet.webp", badge: "BANQUET & LOUNGE", title: "Celebration Hall", cls: "md:col-span-6" },
+  { src: "/opulence/gallery-lounge.webp", badge: "GRAND LOUNGE", title: "The Residents' Lounge", cls: "md:col-span-7 md:row-span-2" },
+  { src: "/opulence/gallery-pool.webp", badge: "INDOOR POOL", title: "Covered Swimming Pool", cls: "md:col-span-5" },
+  { src: "/opulence/gallery-games.webp", badge: "GAMES ROOM", title: "Billiards & Card Lounge", cls: "md:col-span-5" },
+  { src: "/opulence/gallery-gym.webp", badge: "GYMNASIUM", title: "Fully Equipped Fitness Studio", cls: "md:col-span-6" },
+  { src: "/opulence/gallery-kids.webp", badge: "KIDS PLAY", title: "Children's Play Gardens", cls: "md:col-span-6" },
 ];
 
 export const OP_AMENITIES = [

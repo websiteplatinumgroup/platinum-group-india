@@ -136,3 +136,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Live Dark Google Maps Embed (DONE)
 - Replaced static location plan image with interactive Google Maps iframe embed (site coords, dark-styled via CSS invert/hue-rotate filter to match emerald theme). "Open site location" button links to user's exact URL: https://maps.app.goo.gl/dodhKdoTiL9Fatyh7
+
+---
+## Update: 2026-09-15 — Real Amenity Photos in Gallery (DONE)
+- Opulence gallery now uses 5 real user-attached photos (lounge, indoor pool, billiards/games room, gym, kids play) graded with a consistent cinematic dusky look (S-curve contrast, amber highlights/teal shadows, filmic fade, vignette) at /public/opulence/gallery-*.webp. Lounge is the large feature tile; badges: GRAND LOUNGE, INDOOR POOL, GAMES ROOM, GYMNASIUM, KIDS PLAY. Old brochure-crop images (elevation/lobby/aerial/banquet/pool) remain in folder unused.
