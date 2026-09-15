@@ -29,37 +29,24 @@ export default function Hero() {
       data-testid="hero"
       className="relative flex min-h-[100svh] items-end overflow-hidden"
     >
-      <motion.div className="absolute inset-0 bg-ink" style={{ y, scale }}>
-        <motion.img
-          src="/brand/hero-abstract.webp"
-          alt="Platinum Group — emerald and gold light over black"
-          data-testid="hero-image"
-          className="h-full w-full object-cover"
-          initial={{ scale: 1 }}
-          animate={{ scale: [1, 1.07, 1] }}
-          transition={{ duration: 26, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 90% 70% at 50% 45%, transparent 40%, rgba(7,7,8,0.55) 100%)" }} />
-        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink/80 to-transparent" />
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-ink/85 to-transparent" />
-      </motion.div>
+      <motion.div className="absolute inset-0 bg-black" style={{ y, scale }} />
 
       <div className="relative z-10 flex w-full flex-col items-center px-6 pb-32 text-center md:px-12 md:pb-24">
         <h1>
           <Mask delay={d + 0.1}>
-            <span className="font-display text-[15vw] leading-[0.95] text-bone md:text-[10.5vw]">
-              WE BUILD
+            <span className="font-display text-[11vw] leading-[1.02] text-bone md:text-[6.5vw]">
+              WHERE VISION
             </span>
           </Mask>
           <Mask delay={d + 0.22}>
-            <span className="font-editorial text-[15vw] font-light italic leading-[0.95] text-gold md:text-[10.5vw]">
-              UPWARDS
+            <span className="font-editorial text-[11vw] font-light italic leading-[1.02] text-gold md:text-[6.5vw]">
+              TAKES FORM
             </span>
           </Mask>
         </h1>
         <Mask delay={d + 0.38}>
-          <span className="mt-8 block max-w-md font-body text-sm leading-relaxed text-platinum/70 md:text-base">
-            Architecture shaped by ambition
+          <span className="mt-8 block max-w-3xl font-mono text-[10px] tracking-[0.3em] text-platinum/70 md:text-xs">
+            THOUGHTFUL ARCHITECTURE · EXCEPTIONAL LIVING · ENDURING VALUE
           </span>
         </Mask>
         <Mask delay={d + 0.5}>

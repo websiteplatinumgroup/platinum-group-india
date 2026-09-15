@@ -212,3 +212,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Nine Philosophies Reordered (DONE)
 - New order: Vision, Design, Architecture, Engineering, Craftsmanship, Commitment ("Promises kept, in concrete and in word."), Lifestyle, Legacy, Platinum. COMMUNITY replaced by COMMITMENT. Verified: LIFESTYLE now steps at 07/09.
+
+---
+## Update: 2026-09-15 — Solid Black Hero + New Copy (DONE)
+- Hero background now solid black (image removed). New headline "WHERE VISION / TAKES FORM" (bone + gold italic) and subline "THOUGHTFUL ARCHITECTURE · EXCEPTIONAL LIVING · ENDURING VALUE" (center dots, mono tracked). hero-abstract.webp kept in /public/brand/ if user wants it back.
