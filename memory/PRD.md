@@ -236,3 +236,11 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Enquire Desktop Spacing (DONE)
 - Tightened desktop layout: max-w-6xl, balanced gaps, md:text-6xl heading, tighter contact rows, form aligned with left column (no lg:pt offset). Both columns now fit in viewport.
+
+---
+## Update: 2026-09-15 — Production Readiness Checklist, All 22 Items (DONE, testing_agent verified 100%)
+- New pages: /privacy, /terms, custom branded /404 ("This level hasn't been built yet."). FAQ accordion (6 Q&As) on /enquire. CookieConsent banner (Accept/Decline, localStorage pg-cookie-consent, dataLayer event). Footer now has nav + PRIVACY/TERMS links + RERA numbers.
+- SEO: /robots.txt, /sitemap.xml, og/twitter/canonical per-page via lib/seo.js useSeo hook, /og-image.jpg (1200x630), favicon svg, per-page titles+descriptions on all routes.
+- BUGS 21+22 FIXED (verified): Mask now supports mount (animate-on-mount) — applied to Home/Opulence/Greens heroes; delays tightened (all hero content within ~0.7s window); brand logos converted PNG→webp (symbol 445KB→133KB) so logos/text/buttons appear together perfectly. Nine Philosophies scroll-stepping verified smooth.
+- Verified by testing_agent iteration_2.json: 13/13 groups pass, lead form submit → REQUEST RECEIVED, cookie consent persists, all nav/footer links OK, meta distinct per route, mobile heroes OK.
+- Analytics: PostHog (platform) + dataLayer events via track() (GTM-ready). Alt text audited OK. No broken internal links. Performance: lazy images, webp assets, lazy routes.
