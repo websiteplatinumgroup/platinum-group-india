@@ -17,7 +17,7 @@ export default function OpHero() {
   return (
     <section ref={ref} data-testid="opulence-hero" className="relative flex min-h-[100svh] flex-col overflow-hidden">
       <motion.div className="absolute inset-0" style={{ y: yBg }}>
-        <img src="/opulence/elevation.webp" alt="Platinum Greens Opulence elevation" className="h-full w-full object-cover" />
+        <img src="/opulence/hero-aerial.webp" alt="Platinum Greens Opulence aerial view" className="h-full w-full object-cover" />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-t from-[#061410] via-[#061410]/60 to-[#061410]/45" />
       <div className="absolute inset-0 bg-emerald/25 mix-blend-multiply" />
@@ -42,6 +42,11 @@ export default function OpHero() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 1.5, delay: 0.35, ease: EASE }}
         />
+        <Mask delay={0.75}>
+          <span className="mb-4 block font-mono text-[9px] tracking-[0.35em] text-platinum/80 [text-shadow:0_1px_10px_rgba(6,20,16,1)] md:text-[10px]">
+            RERA/RAJ/P/2023/2875 · RERA.RAJASTHAN.GOV.IN
+          </span>
+        </Mask>
         <Mask delay={0.9}>
           <img
             src="/brand/opulence-wordmark.png"
@@ -77,24 +82,6 @@ export default function OpHero() {
             </Link>
           </span>
         </Mask>
-      </motion.div>
-
-      {/* RERA compliance chip */}
-      <motion.div
-        data-testid="opulence-hero-rera"
-        className="absolute bottom-56 right-6 z-10 flex items-center gap-2.5 md:bottom-64 md:right-12"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.5 }}
-      >
-        <span className="bg-ink/70 px-2 py-1 text-right font-mono text-[7px] leading-relaxed tracking-[0.14em] text-bone md:text-[8px]">
-          RERA/RAJ/P/2023/2875<br />RERA.RAJASTHAN.GOV.IN
-        </span>
-        <img
-          src="/brand/rera-qr.png"
-          alt="RERA QR — Platinum Greens Opulence"
-          className="w-12 md:w-14"
-        />
       </motion.div>
 
       <div className="relative z-10 mx-6 mb-10 grid gap-px bg-white/5 backdrop-blur-sm sm:grid-cols-3 md:mx-12">

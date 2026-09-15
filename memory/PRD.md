@@ -160,3 +160,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 - Hero symbol replaced with user's clean-stem v2 (platinum_greens_opulence_clean_stem_v2_transparent.webp, used as-is). Wordmark re-processed retaining ORIGINAL platinum grey colours (no recolor). Grey border line above hero stats strip removed.
 - Gallery gym image replaced with new user photo (C6B0AECC.PNG) with matching dusky grade.
 - OpCTA: removed glow shadow from highlighted "opulence" (kept gold underline).
+
+---
+## Update: 2026-09-15 — Aerial Hero Backdrop + RERA Text Line (DONE)
+- Hero background replaced with user's aerial bird's-eye render, dusky-graded (/public/opulence/hero-aerial.webp). RERA QR chip removed from hero; RERA now a mono text line above the wordmark ("RERA/RAJ/P/2023/2875 · RERA.RAJASTHAN.GOV.IN") with text shadow. QR remains in Portfolio overlays.
