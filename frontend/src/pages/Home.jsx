@@ -11,6 +11,7 @@ import JaipurRising from "../sections/JaipurRising";
 import Finale from "../sections/Finale";
 import Footer from "../sections/Footer";
 import { scrollToId, track } from "../lib/config";
+import { useSeo } from "../lib/seo";
 
 export default function Home() {
   const { hash } = useLocation();
@@ -28,6 +29,13 @@ export default function Home() {
     );
     return () => timers.forEach(clearTimeout);
   }, [hash]);
+
+  useSeo({
+    title: "Platinum Group — Ultra-Premium Residences in Jaipur",
+    description:
+      "Platinum Greens Opulence — 3 & 4 BHK ultra-premium residences in Mansarovar Extension, Jaipur. 50+ amenities, 70% open space, 112 ft indoor pool. ₹1.41 Cr onwards.",
+    path: "/",
+  });
 
   return (
     <main className="pb-16 md:pb-0">

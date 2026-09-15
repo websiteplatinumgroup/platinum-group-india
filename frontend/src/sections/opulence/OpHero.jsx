@@ -30,39 +30,39 @@ export default function OpHero() {
         style={{ background: "radial-gradient(circle, rgba(194,160,89,0.28) 0%, rgba(29,185,139,0.12) 45%, transparent 70%)" }}
         initial={{ opacity: 0, scale: 0.7 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.8, delay: 0.9, ease: EASE }}
+        transition={{ duration: 1.6, delay: 0.4, ease: EASE }}
       />
 
       {/* monumental leaf + wordmark */}
       <motion.div className="relative z-10 flex flex-1 flex-col items-center justify-center px-6 pt-28" style={{ y: yLeaf }}>
         <motion.img
-          src="/brand/opulence-symbol.png"
+          src="/brand/opulence-symbol.webp"
           alt="Platinum Greens Opulence leaf emblem"
           data-testid="opulence-hero-symbol"
           className="h-40 drop-shadow-[0_0_28px_rgba(29,185,139,0.35)] md:h-60 lg:h-72"
           initial={{ opacity: 0, y: 90, scale: 0.82 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 1.5, delay: 0.35, ease: EASE }}
+          transition={{ duration: 1.3, delay: 0.15, ease: EASE }}
         />
-        <Mask delay={0.9}>
+        <Mask mount delay={0.3}>
           <img
-            src="/brand/opulence-wordmark.png"
+            src="/brand/opulence-wordmark.webp"
             alt="Platinum Greens Opulence"
             data-testid="opulence-hero-wordmark"
             className="mt-4 w-72 md:w-[30rem]"
           />
         </Mask>
-        <Mask delay={1.0}>
+        <Mask mount delay={0.38}>
           <span className="mt-3 block font-mono text-[9px] tracking-[0.35em] text-platinum/80 [text-shadow:0_1px_10px_rgba(6,20,16,1)] md:text-[10px]">
             RERA/RAJ/P/2023/2875
           </span>
         </Mask>
-        <Mask delay={1.05}>
+        <Mask mount delay={0.45}>
           <span className="mt-6 block text-center font-body text-sm leading-relaxed text-platinum [text-shadow:0_1px_12px_rgba(6,20,16,0.9)] md:text-base">
             3 &amp; 4 BHK ultra-premium residences · Mansarovar Extension, Jaipur
           </span>
         </Mask>
-        <Mask delay={1.15}>
+        <Mask mount delay={0.52}>
           <span className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <span data-testid="opulence-hero-price" className="border border-gold/50 px-5 py-3.5 font-mono text-[11px] tracking-[0.25em] text-gold">
               ₹1.41 CR ONWARDS
@@ -88,7 +88,7 @@ export default function OpHero() {
 
       <div className="relative z-10 mx-6 mb-10 grid gap-px bg-white/5 backdrop-blur-sm sm:grid-cols-3 md:mx-12">
         {OP_STATS.map((s, i) => (
-          <Mask key={s.label} delay={1.25 + i * 0.1}>
+          <Mask key={s.label} mount delay={0.6 + i * 0.08}>
             <span className="block bg-[#061410]/80 p-6" data-testid={`opulence-stat-${i}`}>
               <span className="block font-display text-3xl text-eglow md:text-4xl">{s.value}</span>
               <span className="mt-2 block font-mono text-[10px] tracking-[0.3em] text-bone">{s.label}</span>

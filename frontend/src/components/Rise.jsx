@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 
 const EASE = [0.22, 1, 0.36, 1];
 
-export const Mask = ({ children, delay = 0, className = "" }) => (
+export const Mask = ({ children, delay = 0, mount = false, className = "" }) => (
   <motion.span
     className={`block overflow-hidden ${className}`}
     initial="hidden"
-    whileInView="show"
-    viewport={{ once: true, margin: "-8% 0px" }}
+    {...(mount
+      ? { animate: "show" }
+      : { whileInView: "show", viewport: { once: true, margin: "-8% 0px" } })}
   >
     <motion.span
       className="block will-change-transform"

@@ -55,23 +55,23 @@ export default function Hero() {
 
       <div className="relative z-10 flex w-full flex-col items-center px-6 pb-32 text-center md:px-12 md:pb-24">
         <h1>
-          <Mask delay={d + 0.1}>
+          <Mask mount delay={d + 0.1}>
             <span className="font-display text-[11vw] leading-[1.02] text-bone md:text-[6.5vw]">
               WHERE VISION
             </span>
           </Mask>
-          <Mask delay={d + 0.22}>
+          <Mask mount delay={d + 0.22}>
             <span className="font-editorial text-[11vw] font-light italic leading-[1.02] text-gold md:text-[6.5vw]">
               TAKES FORM
             </span>
           </Mask>
         </h1>
-        <Mask delay={d + 0.38}>
+        <Mask mount delay={d + 0.38}>
           <span className="mt-8 block max-w-3xl font-mono text-[10px] tracking-[0.3em] text-platinum/70 md:text-xs">
             THOUGHTFUL ARCHITECTURE · EXCEPTIONAL LIVING · ENDURING VALUE
           </span>
         </Mask>
-        <Mask delay={d + 0.5}>
+        <Mask mount delay={d + 0.5}>
           <span className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <button
               data-testid="hero-discover-button"

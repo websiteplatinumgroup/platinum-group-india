@@ -2,7 +2,9 @@ import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { ArrowUpRight, Building2, MapPin, MessageCircle, Phone } from "lucide-react";
 import LeadForm from "../components/LeadForm";
+import { Faq } from "../components/Faq";
 import { Mask, FadeUp } from "../components/Rise";
+import { useSeo } from "../lib/seo";
 import { PHONE_DISPLAY, PHONE_TEL, WA_DEFAULT, SITE_ADDRESS, OFFICE_ADDRESS, SITE_MAPS_URL, OFFICE_MAPS_URL, track } from "../lib/config";
 
 const ROWS = [
@@ -47,8 +49,14 @@ export default function Enquire() {
 
   useEffect(() => {
     track("page_view", { page: "enquire", project, intent });
-    document.title = "Enquire — Platinum Group, Jaipur";
   }, [project, intent]);
+
+  useSeo({
+    title: "Enquire — Platinum Group, Jaipur",
+    description:
+      "Enquire about Platinum Greens Opulence and Platinum Greens, Mansarovar Extension, Jaipur. Call +91 96602 23377 or request details, brochures and site visits.",
+    path: "/enquire",
+  });
 
   return (
     <main className="min-h-screen px-6 pb-32 pt-32 md:px-12">
@@ -114,6 +122,8 @@ export default function Enquire() {
           </div>
         </FadeUp>
       </div>
+
+      <Faq />
     </main>
   );
 }

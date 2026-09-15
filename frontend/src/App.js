@@ -9,6 +9,10 @@ const Home = lazy(() => import("@/pages/Home"));
 const Enquire = lazy(() => import("@/pages/Enquire"));
 const Opulence = lazy(() => import("@/pages/Opulence"));
 const Greens = lazy(() => import("@/pages/Greens"));
+const Privacy = lazy(() => import("@/pages/Privacy"));
+const Terms = lazy(() => import("@/pages/Terms"));
+const NotFound = lazy(() => import("@/pages/NotFound"));
+import CookieConsent from "@/components/CookieConsent";
 
 const ScrollManager = () => {
   const { pathname } = useLocation();
@@ -48,9 +52,12 @@ function App() {
           <Route path="/opulence" element={<Opulence />} />
           <Route path="/greens" element={<Greens />} />
           <Route path="/enquire" element={<Enquire />} />
-          <Route path="*" element={<Home />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
+      <CookieConsent />
       <MobileCTA />
       <WhatsAppFloat />
     </BrowserRouter>
