@@ -128,3 +128,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ## Update: 2026-09-15 — OpHero Refinements (DONE)
 - Removed group logo chip and "PLATINUM GREENS PRESENTS" label; replaced "Opulence" text heading with official logo (user-attached platinum-greens-opulence_primary-vertical_white.png → white-keyed transparent /public/brand/opulence-logo.png).
 - Hero CTAs reordered: price chip → Download Brochure → Book Site Visit. Hero stats reordered: 70% Open Space → 50+ Amenities → 112 FT Indoor Pool (data.js OP_STATS).
+
+---
+## Update: 2026-09-15 — OpCTA Enquiry Form + Location Map (DONE)
+- Closing section on /opulence now embeds the full LeadForm (source=opulence_page, site-visit preselected) beside the official brochure Location Plan (/public/opulence/location-map.webp). Clicking the map opens Google Maps directions to the site (SITE_MAPS_URL coords). Brochure/Call/WhatsApp CTAs retained under the map.
