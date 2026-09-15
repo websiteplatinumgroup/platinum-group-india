@@ -26,20 +26,6 @@ export default function GrHighlights() {
         </span>
       </Mask>
 
-      <div className="mt-14 grid gap-px bg-white/5 sm:grid-cols-3">
-        {[
-          { value: "70%", label: "OPEN SPACE", line: "More sky than structure — the campus breathes so you can too." },
-          { value: "50+", label: "AMENITIES", line: "From sunrise yoga to evening billiards, every hour finds its place." },
-          { value: "112 FT", label: "INDOOR POOL", line: "A covered, all-season stretch of blue — rain or shine, swim on." },
-        ].map((s, i) => (
-          <FadeUp key={s.label} delay={i * 0.1} className="bg-[#061410] p-7">
-            <span className="block font-display text-4xl text-eglow md:text-5xl" data-testid={`greens-stat-${i}`}>{s.value}</span>
-            <span className="mt-2 block font-mono text-[10px] tracking-[0.3em] text-bone">{s.label}</span>
-            <span className="mt-3 block font-body text-sm leading-relaxed text-platinum/70">{s.line}</span>
-          </FadeUp>
-        ))}
-      </div>
-
       <div className="mt-14 space-y-px">
         {HIGHLIGHTS.map((h, i) => (
           <FadeUp key={h.n} delay={i * 0.06} className="group grid grid-cols-[auto_1fr] items-baseline gap-6 border-b border-white/10 py-6 transition-colors duration-300 first:border-t hover:bg-white/[0.02] md:grid-cols-[80px_320px_1fr] md:gap-10 md:px-4">
@@ -50,6 +36,20 @@ export default function GrHighlights() {
             <p className="col-span-2 mt-1 font-body text-sm leading-relaxed text-platinum/65 md:col-span-1 md:mt-0">
               {h.line}
             </p>
+          </FadeUp>
+        ))}
+      </div>
+
+      <div className="mt-14 grid gap-px bg-white/5 sm:grid-cols-3">
+        {[
+          { value: "70%", label: "OPEN SPACE", line: "More sky than structure — the campus breathes so you can too." },
+          { value: "50+", label: "AMENITIES", line: "From sunrise yoga to evening billiards, every hour finds its place." },
+          { value: "112 FT", label: "INDOOR POOL", line: "A covered, all-season stretch of blue — rain or shine, swim on." },
+        ].map((s, i) => (
+          <FadeUp key={s.label} delay={i * 0.1} className="bg-[#061410] p-7">
+            <span className="block font-display text-4xl text-eglow md:text-5xl" data-testid={`greens-stat-${i}`}>{s.value}</span>
+            <span className="mt-2 block font-mono text-[10px] tracking-[0.3em] text-bone">{s.label}</span>
+            <span className="mt-3 block font-body text-sm leading-relaxed text-platinum/70">{s.line}</span>
           </FadeUp>
         ))}
       </div>
