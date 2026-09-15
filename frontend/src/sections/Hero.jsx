@@ -30,17 +30,21 @@ export default function Hero() {
       className="relative flex min-h-[100svh] items-end overflow-hidden"
     >
       <motion.div className="absolute inset-0 bg-ink" style={{ y, scale }}>
-        <img
+        <motion.img
           src="/brand/hero-lineart.webp"
           alt="Platinum Group residences — architectural line art"
           data-testid="hero-image"
           className="h-full w-full object-contain"
+          initial={{ scale: 1 }}
+          animate={{ scale: [1, 1.07, 1] }}
+          transition={{ duration: 26, repeat: Infinity, ease: "easeInOut" }}
         />
+        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 90% 70% at 50% 45%, transparent 40%, rgba(7,7,8,0.55) 100%)" }} />
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink/80 to-transparent" />
         <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-ink/85 to-transparent" />
       </motion.div>
 
-      <div className="relative z-10 w-full px-6 pb-32 md:px-12 md:pb-24">
+      <div className="relative z-10 flex w-full flex-col items-center px-6 pb-32 text-center md:px-12 md:pb-24">
         <h1>
           <Mask delay={d + 0.1}>
             <span className="font-display text-[15vw] leading-[0.95] text-bone md:text-[10.5vw]">
@@ -59,7 +63,7 @@ export default function Hero() {
           </span>
         </Mask>
         <Mask delay={d + 0.5}>
-          <span className="mt-10 flex flex-wrap items-center gap-4">
+          <span className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <button
               data-testid="hero-discover-button"
               data-cursor="EXPLORE"

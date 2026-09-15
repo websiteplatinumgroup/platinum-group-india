@@ -200,3 +200,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Hero Line-Art V2 (DONE)
 - Swapped hero artwork to user's wider line-art composition (B71D185F...PNG → hero-lineart.webp). Full frame coverage with edge-to-edge towers, object-contain retained (no crop). Verified visually.
+
+---
+## Update: 2026-09-15 — Hero Centered + HD Drama (DONE)
+- Hero content (headline, subtitle, CTAs) centered. Line-art upscaled 2x (3344×1882) with sharpen+contrast; added slow Ken Burns breathing zoom (26s infinite) + radial vignette for drama. Verified visually.
