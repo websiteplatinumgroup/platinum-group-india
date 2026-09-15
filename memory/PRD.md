@@ -177,3 +177,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Greens Highlights Section (DONE)
 - GrHero: bottom note strip removed. New GrHighlights section between hero and CTA: "FIVE REASONS, one address" editorial list (Ready To Move / ₹70 Lakh Onwards / The Greens Address / Green By Design / Approved & Assured) with attractive one-liners, leaf watermark.
+
+---
+## Update: 2026-09-15 — Greens Stats Boxes + CTA Heading (DONE)
+- GrHighlights: added 3 stat boxes (70% Open Space / 50+ Amenities / 112 FT Indoor Pool) with attractive one-liners above the five reasons list. GrCTA heading changed to "COME HOME TO greens".

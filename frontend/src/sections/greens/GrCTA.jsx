@@ -12,7 +12,7 @@ export default function GrCTA() {
       </Mask>
       <Mask delay={0.1}>
         <h2 className="mt-5 max-w-3xl font-display text-4xl leading-[1.02] text-bone md:text-6xl">
-          STEP INTO <span className="border-b-2 border-gold font-editorial font-light italic text-gold">greens</span>
+          COME HOME TO <span className="border-b-2 border-gold font-editorial font-light italic text-gold">greens</span>
         </h2>
       </Mask>
       <Mask delay={0.2}>
