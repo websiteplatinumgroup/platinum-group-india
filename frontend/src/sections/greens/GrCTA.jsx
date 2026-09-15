@@ -10,8 +10,8 @@ export default function GrCTA() {
         <span className="font-mono text-[10px] tracking-[0.4em] text-eglow">ready to move</span>
       </Mask>
       <Mask delay={0.1}>
-        <h2 className="mt-5 max-w-3xl font-display text-4xl leading-[1.05] text-bone md:text-6xl">
-          COME HOME TO <span className="text-gold">GREENS</span>
+        <h2 className="mt-5 max-w-3xl font-display text-4xl lowercase leading-[1.05] text-bone md:text-6xl">
+          come home to <span className="font-editorial font-light italic text-gold">greens</span>
         </h2>
       </Mask>
       <Mask delay={0.2}>

@@ -228,3 +228,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Opulence Mobile Hero + Feature BG (DONE)
 - New portrait render (CA0553CD) dusky-graded: mobile hero on /opulence (hero-mobile.webp) + landscape crop for home Opulence flagship section background (feature-bg.webp, replaces /brand/elevation.webp). OpGallery leaf removed; lounge tile renamed SAMPLE FLAT / "Sample Flat".
+
+---
+## Update: 2026-09-15 — Responsive Feature Image + Lowercase Greens (DONE)
+- Home Opulence flagship: desktop uses elevation.webp, mobile uses portrait hero-mobile.webp (feature-bg.webp no longer used). GrCTA heading now fully lowercase "come home to greens" (greens in gold italic).

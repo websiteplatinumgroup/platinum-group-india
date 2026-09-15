@@ -33,11 +33,18 @@ export default function OpulenceFeature() {
     >
       <motion.div className="absolute -inset-y-[10%] inset-x-0" style={{ y }}>
         <img
-          src="/opulence/feature-bg.webp"
+          src="/brand/elevation.webp"
           alt="Platinum Greens Opulence — elevation render"
           loading="lazy"
           decoding="async"
-          className="h-full w-full object-cover"
+          className="hidden h-full w-full object-cover md:block"
+        />
+        <img
+          src="/opulence/hero-mobile.webp"
+          alt="Platinum Greens Opulence — residences"
+          loading="lazy"
+          decoding="async"
+          className="h-full w-full object-cover md:hidden"
         />
       </motion.div>
       <div className="absolute inset-0 bg-ink/60" />
