@@ -181,3 +181,9 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Greens Stats Boxes + CTA Heading (DONE)
 - GrHighlights: added 3 stat boxes (70% Open Space / 50+ Amenities / 112 FT Indoor Pool) with attractive one-liners above the five reasons list. GrCTA heading changed to "COME HOME TO greens".
+
+---
+## Update: 2026-09-15 — Nav Final Structure (DONE)
+- Nav: HOME / GREENS (/greens) / GREENS OPULENCE (/opulence) / PROJECTS (scrolls to home #portfolio, Portfolio section got id="portfolio") / ENQUIRE (gold button, /enquire). Mobile menu uses same items.
+- Fixed cross-page PROJECTS scroll: Home hash effect now re-asserts scroll at 300/1200/2600ms so lazy media doesn't break landing position. Verified aligned.
+- OpSpecs leaf watermark removed (all section watermarks now gone; leaf remains in hero + GrHighlights).

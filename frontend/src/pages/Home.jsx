@@ -22,8 +22,11 @@ export default function Home() {
 
   useEffect(() => {
     if (!hash) return;
-    const t = setTimeout(() => scrollToId(hash.slice(1)), 200);
-    return () => clearTimeout(t);
+    // re-assert the target as lazy media settles the page height
+    const timers = [300, 1200, 2600].map((t) =>
+      setTimeout(() => scrollToId(hash.slice(1)), t)
+    );
+    return () => timers.forEach(clearTimeout);
   }, [hash]);
 
   return (

@@ -51,6 +51,7 @@ const COMPLETED = [
 export default function Portfolio() {
   return (
     <section
+      id="portfolio"
       data-testid="portfolio"
       className="border-t border-white/5 px-6 py-24 md:px-12 md:py-36"
     >
