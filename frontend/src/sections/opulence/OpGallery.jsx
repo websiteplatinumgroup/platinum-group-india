@@ -4,7 +4,6 @@ import { OP_GALLERY } from "./data";
 export default function OpGallery() {
   return (
     <section data-testid="opulence-gallery" className="relative border-t border-white/5 px-6 py-24 md:px-12 md:py-32">
-      <img src="/brand/opulence-symbol.png" alt="" aria-hidden="true" className="pointer-events-none absolute -right-10 top-10 h-64 opacity-[0.05] md:h-96" />
       <Mask>
         <span className="font-mono text-[10px] tracking-[0.4em] text-eglow">THE RESIDENCES</span>
       </Mask>

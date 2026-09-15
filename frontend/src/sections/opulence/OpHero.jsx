@@ -17,9 +17,11 @@ export default function OpHero() {
   return (
     <section ref={ref} data-testid="opulence-hero" className="relative flex min-h-[100svh] flex-col overflow-hidden">
       <motion.div className="absolute inset-0" style={{ y: yBg }}>
-        <img src="/opulence/hero-aerial.webp" alt="Platinum Greens Opulence aerial view" className="h-full w-full object-cover" />
+        <img src="/opulence/hero-aerial.webp" alt="Platinum Greens Opulence aerial view" className="hidden h-full w-full object-cover md:block" />
+        <img src="/opulence/hero-mobile.webp" alt="Platinum Greens Opulence residences" className="h-full w-full object-cover md:hidden" />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-t from-[#061410] via-[#061410]/60 to-[#061410]/45" />
+      <div className="absolute inset-0 bg-[#061410]/45 md:hidden" />
       <div className="absolute inset-0 bg-emerald/25 mix-blend-multiply" />
 
       {/* gold aura behind the rising leaf */}

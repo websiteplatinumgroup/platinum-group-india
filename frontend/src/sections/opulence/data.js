@@ -5,7 +5,7 @@ export const OP_STATS = [
 ];
 
 export const OP_GALLERY = [
-  { src: "/opulence/gallery-lounge.webp", badge: "GRAND LOUNGE", title: "The Residents' Lounge", cls: "md:col-span-7 md:row-span-2", pos: "object-top" },
+  { src: "/opulence/gallery-lounge.webp", badge: "SAMPLE FLAT", title: "Sample Flat", cls: "md:col-span-7 md:row-span-2", pos: "object-top" },
   { src: "/opulence/gallery-pool.webp", badge: "INDOOR POOL", title: "Covered Swimming Pool", cls: "md:col-span-5" },
   { src: "/opulence/gallery-games.webp", badge: "GAMES ROOM", title: "Billiards & Card Lounge", cls: "md:col-span-5" },
   { src: "/opulence/gallery-gym.webp", badge: "GYMNASIUM", title: "Fully Equipped Fitness Studio", cls: "md:col-span-6" },

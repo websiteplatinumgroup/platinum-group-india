@@ -224,3 +224,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-15 — Greens Mobile Hero + Cleanup (DONE)
 - GrHero: mobile (<768px) uses new portrait render (/public/greens/hero-mobile.webp, dusky-graded) with extra dark layer for legibility; desktop keeps landscape hero.webp. GrCTA label now lowercase "ready to move". GrHighlights leaf watermark removed.
+
+---
+## Update: 2026-09-15 — Opulence Mobile Hero + Feature BG (DONE)
+- New portrait render (CA0553CD) dusky-graded: mobile hero on /opulence (hero-mobile.webp) + landscape crop for home Opulence flagship section background (feature-bg.webp, replaces /brand/elevation.webp). OpGallery leaf removed; lounge tile renamed SAMPLE FLAT / "Sample Flat".
