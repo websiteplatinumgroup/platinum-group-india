@@ -258,3 +258,9 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
   - Generated `/apple-touch-icon.png` (180x180) & `/logo192.png` & `/logo512.png`
   - Linked all sizes in `public/index.html`
   - Awaiting updated PDF brochures for Greens and Greens Opulence (ready to swap into `/public/brochure/` once provided).
+
+---
+## Update: 2026-09-16 — Mobile Cookie/Footer Bugs Fixed (DONE, testing_agent verified)
+- BUG: cookie banner overlapped footer links on mobile → footer ENQUIRE taps were intercepted. Fixed: banner now sits above mobile CTA bar (bottom: calc(70px + safe-area)), opacity-only entrance (no clipping), max-h 60vh scroll; footer mobile padding pb-60 clears even 320px screens. Verified at 320x568, 360x640, 390x844, desktop.
+- BUG: "cookie popup gets cut on mobile" — fixed by same changes (iteration_4.json: 4/5 pass, edge case then fixed & self-verified at 320px).
+- Specs typo fixed: Kitchen item "Dado upt 2 feet" → "Dado upto 2 Feet Height".
