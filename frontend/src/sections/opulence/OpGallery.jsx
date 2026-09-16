@@ -15,7 +15,7 @@ export default function OpGallery() {
 
       <div className="mt-14 grid auto-rows-[220px] grid-cols-1 gap-3 md:auto-rows-[240px] md:grid-cols-12">
         {OP_GALLERY.map((g, i) => (
-          <FadeUp key={g.badge} delay={i * 0.08} className={`group relative overflow-hidden ${g.cls}`}>
+          <FadeUp key={g.title} delay={i * 0.08} className={`group relative overflow-hidden ${g.cls}`}>
             <img
               src={g.src}
               alt={g.title}
@@ -25,9 +25,11 @@ export default function OpGallery() {
               className={`h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04] ${g.pos || ""}`}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#061410]/85 via-transparent to-transparent" />
-            <span className="absolute left-4 top-4 border border-eglow/40 bg-[#061410]/80 px-3 py-1.5 font-mono text-[9px] tracking-[0.25em] text-eglow backdrop-blur-sm">
-              {g.badge}
-            </span>
+            {g.badge && (
+              <span className="absolute left-4 top-4 border border-eglow/40 bg-[#061410]/80 px-3 py-1.5 font-mono text-[9px] tracking-[0.25em] text-eglow backdrop-blur-sm">
+                {g.badge}
+              </span>
+            )}
             <span className="absolute bottom-4 left-4 font-editorial text-lg italic text-bone">{g.title}</span>
           </FadeUp>
         ))}
