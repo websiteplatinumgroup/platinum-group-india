@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer
       data-testid="site-footer"
-      className="flex w-full flex-col items-center justify-center gap-3 border-t border-white/5 px-6 py-8 text-center font-mono text-[9px] tracking-[0.25em] text-platinum/40 md:text-[10px]"
+      className="flex w-full flex-col items-center justify-center gap-3 border-t border-white/5 px-6 pb-40 pt-8 text-center font-mono text-[9px] tracking-[0.25em] text-platinum/40 md:pb-8 md:text-[10px]"
     >
       <span className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
         <Link to="/" className="transition-colors hover:text-gold">HOME</Link>

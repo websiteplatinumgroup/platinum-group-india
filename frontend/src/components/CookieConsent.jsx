@@ -27,11 +27,11 @@ export default function CookieConsent() {
           data-testid="cookie-consent"
           role="dialog"
           aria-label="Cookie consent"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 24 }}
-          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed bottom-20 left-1/2 z-[90] w-[calc(100%-2rem)] max-w-lg -translate-x-1/2 border border-white/10 bg-ink2/95 p-5 backdrop-blur-md md:bottom-6 md:left-6 md:translate-x-0"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+          className="fixed bottom-[calc(70px+env(safe-area-inset-bottom,0px))] left-3 right-3 z-[90] max-h-[60vh] overflow-y-auto border border-white/10 bg-ink2/95 p-4 backdrop-blur-md md:bottom-6 md:left-6 md:right-auto md:max-h-none md:w-[26rem] md:overflow-visible"
         >
           <p className="font-body text-xs leading-relaxed text-platinum/75">
             We use cookies and privacy-respecting analytics to improve your experience. See our{" "}
