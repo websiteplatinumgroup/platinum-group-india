@@ -6,14 +6,14 @@ const BACK = [22, 15, 26, 13, 20, 17, 24, 15, 21, 16, 25, 19, 14, 23];
 const MID = [30, 24, 36, 22, 28, 26, 34, 25, 31, 23, 33, 27, 24, 30];
 const FRONT = [40, 32, 46, 30, 38, 34, 52, 36, 44, 33, 48, 37, 31, 42];
 
-const Row = ({ hts, cls, y }) => (
+const Row = ({ hts, cls, shadow, y }) => (
   <motion.div
     style={{ y }}
     className="absolute inset-x-0 bottom-0 flex items-end gap-1.5 px-2"
     aria-hidden="true"
   >
     {hts.map((h, i) => (
-      <div key={i} className={`flex-1 ${cls}`} style={{ height: `${h}vh` }} />
+      <div key={i} className={`flex-1 ${cls}`} style={{ height: `${h}vh`, boxShadow: `0 150vh 0 0 ${shadow}` }} />
     ))}
   </motion.div>
 );
@@ -60,8 +60,8 @@ export default function JaipurRising() {
           />
         </motion.div>
 
-        <Row hts={BACK} cls="bg-white/[0.05]" y={yBack} />
-        <Row hts={MID} cls="bg-white/[0.09]" y={yMid} />
+        <Row hts={BACK} cls="bg-white/[0.05]" shadow="rgba(255,255,255,0.05)" y={yBack} />
+        <Row hts={MID} cls="bg-white/[0.09]" shadow="rgba(255,255,255,0.09)" y={yMid} />
 
         <motion.h2
           style={{ opacity: b1o, y: b1y }}
@@ -79,7 +79,7 @@ export default function JaipurRising() {
         <motion.div style={{ y: yFront, opacity: frontO }} className="absolute inset-x-0 bottom-0" aria-hidden="true">
           <div className="relative flex items-end gap-1.5 px-2">
             {FRONT.map((h, i) => (
-              <div key={i} className="flex-1 bg-white/[0.14]" style={{ height: `${h}vh` }} />
+              <div key={i} className="flex-1 bg-white/[0.14]" style={{ height: `${h}vh`, boxShadow: "0 150vh 0 0 rgba(255,255,255,0.14)" }} />
             ))}
           </div>
         </motion.div>
