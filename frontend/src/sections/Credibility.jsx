@@ -41,7 +41,7 @@ export default function Credibility() {
     <section
       data-testid="credibility-band"
       aria-label="Platinum Group at a glance"
-      className="border-y border-white/5"
+      className=""
     >
       <div className="grid grid-cols-2 md:grid-cols-4">
         {STATS.map((s, i) => (
