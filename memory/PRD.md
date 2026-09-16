@@ -249,3 +249,12 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ## Update: 2026-09-15 — Performance Fix + Footer Edits (DONE, testing_agent verified 100%)
 - LAG BUG FIXED: hero glow blobs were blur-3xl (64px filter) on huge elements — replaced with filter-free radial-gradient blobs + will-change-transform; hero bg layer also will-change-transform. Measured: intro ~57.6fps, full-page scroll ~48.6fps, no stalls (iteration_3.json).
 - Footer bottom line now just "© 2026 PLATINUM GROUP". Mobile bar ENQUIRE → plain /enquire.
+
+---
+## Update: 2026-09-16 — Official Favicon Integration (DONE)
+- Integrated client's official triangle favicon (`PlatinumGroup_Favicon_OuterTriangle_Transparent.webp`):
+  - Generated `/favicon.ico` (16x16, 32x32, 48x48, 64x64 multi-res)
+  - Generated `/favicon-32x32.png` & `/favicon-16x16.png`
+  - Generated `/apple-touch-icon.png` (180x180) & `/logo192.png` & `/logo512.png`
+  - Linked all sizes in `public/index.html`
+  - Awaiting updated PDF brochures for Greens and Greens Opulence (ready to swap into `/public/brochure/` once provided).
