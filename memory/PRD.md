@@ -268,3 +268,7 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-16 — Jaipur Rising Parallel Lines Removed (DONE)
 - Removed Credibility section's border-y (two full-width 1px lines that slid over the skyline animation). Animation untouched. Verified visually at the overlap point.
+
+---
+## Update: 2026-09-16 — Jaipur Rising Parallel Lines FIXED (testing_agent verified 100%)
+- True root cause: translucent bar rows lifting exposed their bottom edges as full-width horizontal bands. Fix: per-bar downward boxShadow extension (0 150vh 0 same-rgba) — edges never enter view; motion values unchanged. Verified at scroll fractions 0.4/0.7/0.9 desktop + mobile, gaps stay pure black (iteration_5.json). NOTE: first attempt (Credibility border removal) did NOT fix it; padding-extension attempt broke % translations and was reverted.
