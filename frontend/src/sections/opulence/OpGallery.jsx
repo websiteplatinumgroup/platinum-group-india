@@ -25,11 +25,6 @@ export default function OpGallery() {
               className={`h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04] ${g.pos || ""}`}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#061410]/85 via-transparent to-transparent" />
-            {g.badge && (
-              <span className="absolute left-4 top-4 border border-eglow/40 bg-[#061410]/80 px-3 py-1.5 font-mono text-[9px] tracking-[0.25em] text-eglow backdrop-blur-sm">
-                {g.badge}
-              </span>
-            )}
             <span className="absolute bottom-4 left-4 font-editorial text-lg italic text-bone">{g.title}</span>
           </FadeUp>
         ))}
