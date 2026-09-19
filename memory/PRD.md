@@ -276,3 +276,8 @@ Build a production-quality, cinematic, immersive website for Platinum Group, a p
 ---
 ## Update: 2026-09-16 — Jaipur Rising Tagline (DONE)
 - Added "WE BUILD UPWARDS" micro-label beneath the TierMark logo in the final phase of the Jaipur Is Rising animation. Verified in place.
+
+---
+## Update: 2026-09-19 — Updated Brochures Wired (DONE)
+- New PDFs live: Opulence brochure updated (9.3MB, 21pp) + new Platinum Greens brochure (12MB, 9pp) in /public/brochure/. tryBrochureDownload is now project-aware (BROCHURES map; placements starting "greens" serve the Greens PDF, all others serve Opulence). Both verified HTTP 200 application/pdf.
+- OpGallery: "THE RESIDENCES" micro-label removed.

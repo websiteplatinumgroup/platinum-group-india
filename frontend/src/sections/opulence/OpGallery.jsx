@@ -4,11 +4,8 @@ import { OP_GALLERY } from "./data";
 export default function OpGallery() {
   return (
     <section data-testid="opulence-gallery" className="relative border-t border-white/5 px-6 py-24 md:px-12 md:py-32">
-      <Mask>
-        <span className="font-mono text-[10px] tracking-[0.4em] text-eglow">THE RESIDENCES</span>
-      </Mask>
       <Mask delay={0.1}>
-        <h2 className="mt-5 max-w-2xl font-display text-4xl leading-[1.02] text-bone md:text-6xl">
+        <h2 className="max-w-2xl font-display text-4xl leading-[1.02] text-bone md:text-6xl">
           EVERY FRAME, <span className="font-editorial font-light italic text-gold">composed</span>
         </h2>
       </Mask>
