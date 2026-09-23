@@ -65,6 +65,7 @@ export default function LeadForm({
           source,
         }),
       });
+      console.log(res,"from res")
       if (!res.ok) throw new Error("failed");
       track("lead_submit", { project, intent, source });
       track(INTENT_EVENTS[intent] || "enquiry", { project, source });
