@@ -71,7 +71,7 @@ export default function JaipurRising() {
         </motion.h2>
         <motion.h2
           style={{ opacity: b2o, y: b2y }}
-          className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center text-center font-editorial text-[11vw] font-light italic text-gold md:text-8xl"
+          className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center text-center font-editorial text-[11vw] font-light italic text-gold md:text-8xl plat"
         >
           SO ARE WE
         </motion.h2>
