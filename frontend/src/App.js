@@ -49,8 +49,8 @@ function App() {
       <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/opulence" element={<Opulence />} />
-          <Route path="/greens" element={<Greens />} />
+          <Route path="/platinum-greens-opulence" element={<Opulence />} />
+          <Route path="/platinum-greens" element={<Greens />} />
           <Route path="/enquire" element={<Enquire />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />

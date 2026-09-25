@@ -13,8 +13,8 @@ import {
 
 const ITEMS = [
   { n: "01", label: "HOME", type: "route", to: "/" },
-  { n: "02", label: "GREENS", type: "route", to: "/greens" },
-  { n: "03", label: "GREENS OPULENCE", type: "route", to: "/opulence" },
+  { n: "02", label: "GREENS", type: "route", to: "/platinum-greens" },
+  { n: "03", label: "GREENS OPULENCE", type: "route", to: "/platinum-greens-opulence" },
   { n: "04", label: "PROJECTS", type: "scroll", to: "portfolio" },
   { n: "05", label: "ENQUIRE", type: "route", to: "/enquire" },
 ];
