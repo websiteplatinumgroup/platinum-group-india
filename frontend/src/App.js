@@ -13,6 +13,7 @@ const Privacy = lazy(() => import("@/pages/Privacy"));
 const Terms = lazy(() => import("@/pages/Terms"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 import CookieConsent from "@/components/CookieConsent";
+import LeadPopup from "./components/Leadpop";
 
 const ScrollManager = () => {
   const { pathname } = useLocation();
@@ -42,6 +43,7 @@ function App() {
   }, []);
 
   return (
+    <>
     <BrowserRouter>
       <ScrollManager />
       <Ascent />
@@ -61,6 +63,8 @@ function App() {
       <MobileCTA />
       <WhatsAppFloat />
     </BrowserRouter>
+    <LeadPopup/>
+    </>
   );
 }
 
