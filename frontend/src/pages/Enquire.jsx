@@ -67,7 +67,7 @@ export default function Enquire() {
               CONTACT — PLATINUM GROUP
             </span>
           </Mask>
-          <h1 className="mt-6">
+          <h1 className="mt-6" class>
             <Mask delay={0.1}>
               <span className="block font-display text-5xl leading-tight text-bone md:text-6xl">
                 BEGIN A
