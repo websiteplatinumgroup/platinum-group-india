@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { X } from "lucide-react";
 import LeadForm from "../components/LeadForm";
 
-const POPUP_INTERVAL_MS = 1 * 60 * 1000; // every 4 minutes
+const POPUP_DELAY_MS = 3000; // popup dikhne se pehle ka delay
 const HIDDEN_PATHS = ["/thank-you", "/enquire"];
 
 export default function LeadPopup() {
@@ -11,17 +11,15 @@ export default function LeadPopup() {
   const location = useLocation();
 
   useEffect(() => {
-    // show once shortly after load, then repeat every 4 minutes
-    const openPopup = () => setIsOpen(true);
+    if (HIDDEN_PATHS.includes(location.pathname)) {
+      setIsOpen(false);
+      return;
+    }
 
-    const initialTimer = setTimeout(openPopup, POPUP_INTERVAL_MS);
-    const interval = setInterval(openPopup, POPUP_INTERVAL_MS);
+    const timer = setTimeout(() => setIsOpen(true), POPUP_DELAY_MS);
 
-    return () => {
-      clearTimeout(initialTimer);
-      clearInterval(interval);
-    };
-  }, []);
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
 
   if (HIDDEN_PATHS.includes(location.pathname)) return null;
   if (!isOpen) return null;
@@ -32,7 +30,7 @@ export default function LeadPopup() {
       onClick={() => setIsOpen(false)}
     >
       <div
-        className="relative w-full max-w-lg bg-ink border border-white/10 p-8 max-h-[90vh] overflow-y-auto"
+        className="relative w-full max-w-lg bg-ink border border-white/10 p-8  overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <button
