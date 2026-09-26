@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowUpRight, Check } from "lucide-react";
 import { API, track, waLink } from "../lib/config";
-
+import { useNavigate } from "react-router-dom";
 const INTERESTS = [
   { id: "opulence", label: "Platinum Greens Opulence" },
   { id: "greens", label: "Platinum Greens" },
@@ -36,10 +36,16 @@ export default function LeadForm({
   const [intent, setIntent] = useState(defaultIntent);
   const [errors, setErrors] = useState({});
   const [state, setState] = useState("idle");
+  const navigate = useNavigate();
+
 
   const set = (k) => (e) => setForm({ ...form, [k]: e.target.value });
 
   const submit = async (e) => {
+
+
+
+
     e.preventDefault();
     const errs = {};
     if (form.name.trim().length < 2) errs.name = "Please share your name";
@@ -70,6 +76,8 @@ export default function LeadForm({
       track("lead_submit", { project, intent, source });
       track(INTENT_EVENTS[intent] || "enquiry", { project, source });
       setState("done");
+          navigate("/thank-you");
+
     } catch {
       setState("error");
     }

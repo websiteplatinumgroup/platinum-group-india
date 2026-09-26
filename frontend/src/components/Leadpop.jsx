@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { X } from "lucide-react";
 import LeadForm from "../components/LeadForm";
 
 const POPUP_INTERVAL_MS = 1 * 60 * 1000; // every 4 minutes
+const HIDDEN_PATHS = ["/thank-you", "/enquire"];
 
 export default function LeadPopup() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     // show once shortly after load, then repeat every 4 minutes
@@ -20,6 +23,7 @@ export default function LeadPopup() {
     };
   }, []);
 
+  if (HIDDEN_PATHS.includes(location.pathname)) return null;
   if (!isOpen) return null;
 
   return (

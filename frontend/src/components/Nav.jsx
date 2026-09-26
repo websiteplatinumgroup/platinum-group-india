@@ -17,6 +17,7 @@ const ITEMS = [
   { n: "03", label: "GREENS OPULENCE", type: "route", to: "/platinum-greens-opulence" },
   { n: "04", label: "PROJECTS", type: "scroll", to: "portfolio" },
   { n: "05", label: "ENQUIRE", type: "route", to: "/enquire" },
+  
 ];
 
 export default function Nav() {

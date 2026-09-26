@@ -14,6 +14,7 @@ const Terms = lazy(() => import("@/pages/Terms"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 import CookieConsent from "@/components/CookieConsent";
 import LeadPopup from "./components/Leadpop";
+import ThankYou from "./pages/Thankupage";
 
 const ScrollManager = () => {
   const { pathname } = useLocation();
@@ -57,13 +58,15 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/thank-you" element={<ThankYou />} />
         </Routes>
       </Suspense>
       <CookieConsent />
       <MobileCTA />
       <WhatsAppFloat />
+          <LeadPopup/>
+
     </BrowserRouter>
-    <LeadPopup/>
     </>
   );
 }
