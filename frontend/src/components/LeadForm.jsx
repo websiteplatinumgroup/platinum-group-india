@@ -24,7 +24,7 @@ const INTENT_EVENTS = {
 };
 
 const inputCls =
-  "w-full border-b border-white/15 bg-transparent py-3 font-body text-base text-bone placeholder:text-platinum/30 focus:border-gold focus:outline-none transition-colors";
+  "w-full border-b border-white/15 bg-transparent py-2 sm:py-3 font-body text-base text-bone placeholder:text-platinum/30 focus:border-gold focus:outline-none transition-colors";
 
 export default function LeadForm({
   defaultProject = "opulence",
@@ -87,7 +87,7 @@ export default function LeadForm({
     const pLabel = INTERESTS.find((i) => i.id === project)?.label;
     const iLabel = INTENTS.find((i) => i.id === intent)?.label;
     return (
-      <div data-testid="lead-success" className="flex flex-col items-start gap-6 py-10">
+      <div data-testid="lead-success" className="flex flex-col items-start gap-4 sm:gap-6 py-6 sm:py-10">
         <span className="flex h-12 w-12 items-center justify-center border border-gold text-gold">
           <Check size={20} />
         </span>
@@ -117,7 +117,7 @@ export default function LeadForm({
 
   return (
     <form data-testid="lead-form" onSubmit={submit} noValidate>
-      <div className="space-y-7">
+      <div className="space-y-4 sm:space-y-7">
         <div>
           <label htmlFor="lead-name" className="font-mono text-[10px] tracking-[0.3em] text-platinum/50">
             NAME *
@@ -132,7 +132,7 @@ export default function LeadForm({
             autoComplete="name"
           />
           {errors.name && (
-            <p data-testid="lead-name-error" className="mt-2 font-mono text-[10px] tracking-widest text-red-400">
+            <p data-testid="lead-name-error" className="mt-1 sm:mt-2 font-mono text-[10px] tracking-widest text-red-400">
               {errors.name}
             </p>
           )}
@@ -155,7 +155,7 @@ export default function LeadForm({
             />
           </div>
           {errors.mobile && (
-            <p data-testid="lead-mobile-error" className="mt-2 font-mono text-[10px] tracking-widest text-red-400">
+            <p data-testid="lead-mobile-error" className="mt-1 sm:mt-2 font-mono text-[10px] tracking-widest text-red-400">
               {errors.mobile}
             </p>
           )}
@@ -174,13 +174,13 @@ export default function LeadForm({
             className={inputCls}
           />
           {errors.email && (
-            <p data-testid="lead-email-error" className="mt-2 font-mono text-[10px] tracking-widest text-red-400">
+            <p data-testid="lead-email-error" className="mt-1 sm:mt-2 font-mono text-[10px] tracking-widest text-red-400">
               {errors.email}
             </p>
           )}
         </div>
         <fieldset>
-          <legend className="mb-3 font-mono text-[10px] tracking-[0.3em] text-platinum/50">
+          <legend className="mb-2 sm:mb-3 font-mono text-[10px] tracking-[0.3em] text-platinum/50">
             I'M INTERESTED IN
           </legend>
           <div className="flex flex-wrap gap-2">
@@ -203,7 +203,7 @@ export default function LeadForm({
           </div>
         </fieldset>
         <fieldset>
-          <legend className="mb-3 font-mono text-[10px] tracking-[0.3em] text-platinum/50">
+          <legend className="mb-2 sm:mb-3 font-mono text-[10px] tracking-[0.3em] text-platinum/50">
             I WOULD LIKE TO
           </legend>
           <div className="flex flex-wrap gap-2">
@@ -246,3 +246,10 @@ export default function LeadForm({
     </form>
   );
 }
+
+
+
+
+
+
+
