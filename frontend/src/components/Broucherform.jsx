@@ -3,8 +3,8 @@ import { ArrowUpRight, Check } from "lucide-react";
 import { API, track } from "../lib/config";
 
 const CONFIGS = [
-  { id: "2bhk", label: "2 BHK" },
   { id: "3bhk", label: "3 BHK" },
+  { id: "4bhk", label: "4 BHK" },
 ];
 
 const inputCls =
