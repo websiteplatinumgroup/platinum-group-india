@@ -62,7 +62,7 @@ import { useLocation } from "react-router-dom";
 import { X } from "lucide-react";
 import LeadForm from "../components/LeadForm";
 
-const POPUP_DELAY_MS = 3000;
+const POPUP_DELAY_MS = 9000;
 const HIDDEN_PATHS = ["/thank-you", "/enquire"];
 
 export default function LeadPopup() {
