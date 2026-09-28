@@ -76,7 +76,7 @@ export default function LeadForm({
       track("lead_submit", { project, intent, source });
       track(INTENT_EVENTS[intent] || "enquiry", { project, source });
       setState("done");
-          navigate("/thank-you");
+       navigate("/thank-you");
 
     } catch {
       setState("error");

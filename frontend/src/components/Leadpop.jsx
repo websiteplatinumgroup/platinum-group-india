@@ -63,7 +63,7 @@ import { X } from "lucide-react";
 import LeadForm from "../components/LeadForm";
 
 const POPUP_DELAY_MS = 9000;
-const HIDDEN_PATHS = ["/thank-you", "/enquire"];
+const HIDDEN_PATHS = ["/thank-you", "/enquire","/brochure-thank-you","/"];
 
 export default function LeadPopup() {
   const [isOpen, setIsOpen] = useState(false);

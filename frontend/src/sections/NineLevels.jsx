@@ -19,7 +19,7 @@ const LEVELS = [
   { n: "09", title: "PLATINUM", line: "The next level is always up." },
 ];
 
-export default function NineLevels() {
+export default function NineLevels() { 
   const ref = useRef(null);
   const [active, setActive] = useState(0);
   const activeRef = useRef(0);
