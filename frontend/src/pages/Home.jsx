@@ -50,5 +50,6 @@ export default function Home() {
       <EnquireSection />
       <Footer />
     </main>
+    
   );
 }
